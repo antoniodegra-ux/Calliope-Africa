@@ -1,0 +1,7 @@
+
+    Wind_DRC_W_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 326289.65645
+            resource: file=Wind_WAPP_MSR.csv:DRC_W1
+            resource_unit: energy_per_cap

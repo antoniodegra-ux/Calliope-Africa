@@ -1,0 +1,7 @@
+
+    PV_KEN_MTKR_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 43449954.61499
+            resource: file=Solar_WAPP_MSR.csv:KEN_MTKR1
+            resource_unit: energy_per_cap

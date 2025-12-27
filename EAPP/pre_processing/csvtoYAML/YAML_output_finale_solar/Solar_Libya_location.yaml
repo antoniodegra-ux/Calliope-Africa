@@ -1,0 +1,14 @@
+
+    PV_Libya_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 148803422.06037998
+            resource: file=Solar_WAPP_MSR.csv:Libya1
+            resource_unit: energy_per_cap
+
+    PV_Libya_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 117104489.86670004
+            resource: file=Solar_WAPP_MSR.csv:Libya2
+            resource_unit: energy_per_cap

@@ -1,0 +1,21 @@
+
+    PV_KEN_WSTR_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 24724231.21080001
+            resource: file=Solar_WAPP_MSR.csv:KEN_WSTR1
+            resource_unit: energy_per_cap
+
+    PV_KEN_WSTR_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 7086162.53148
+            resource: file=Solar_WAPP_MSR.csv:KEN_WSTR2
+            resource_unit: energy_per_cap
+
+    PV_KEN_WSTR_MSR3:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 20320532.627299998
+            resource: file=Solar_WAPP_MSR.csv:KEN_WSTR3
+            resource_unit: energy_per_cap

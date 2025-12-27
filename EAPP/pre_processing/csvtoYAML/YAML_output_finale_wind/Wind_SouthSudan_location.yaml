@@ -1,0 +1,14 @@
+
+    Wind_SouthSudan_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 33084463.979659975
+            resource: file=Wind_WAPP_MSR.csv:SouthSudan1
+            resource_unit: energy_per_cap
+
+    Wind_SouthSudan_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 33659809.39399001
+            resource: file=Wind_WAPP_MSR.csv:SouthSudan2
+            resource_unit: energy_per_cap

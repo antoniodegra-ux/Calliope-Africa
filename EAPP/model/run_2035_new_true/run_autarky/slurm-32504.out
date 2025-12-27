@@ -1,0 +1,5 @@
+
+🚀 Lancio scenario: autarky_VRES_2030_BESS
+[2025-08-22 10:16:00] INFO     Loading sets
+[2025-08-22 10:16:00] INFO     Loading parameters
+slurmstepd-node3: error: *** JOB 32504 ON node3 CANCELLED AT 2025-08-22T10:16:24 ***

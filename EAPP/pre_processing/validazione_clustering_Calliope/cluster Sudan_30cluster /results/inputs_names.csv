@@ -1,0 +1,129 @@
+techs,names
+132_kV,132_kV
+220_kV,220_kV
+400_kV,400_kV
+500_kV,500_kV
+Bioenergy_Power_Plant,Bioenergy Power Plant
+CCGT_NG_EGYPT,Open_Cycle_Gas_Turbine_ng_fuelled
+CCGT_NG_LYBIA,Open_Cycle_Gas_Turbine_ng_fuelled
+CCGT_NG_SUDAN,Open_Cycle_Gas_Turbine_ng_fuelled
+CCGT_NG_TAN,Open_Cycle_Gas_Turbine_ng_fuelled
+Diesel_Engine_DJIBOUTI,Diesel_Engine
+Diesel_Engine_DRC,Diesel_Engine
+Diesel_Engine_ERITREA,Diesel_Engine
+Diesel_Engine_ETHIOPIA,Diesel_Engine
+Diesel_Engine_KENYA,Diesel_Engine
+Diesel_Engine_LYBIA,Diesel_Engine
+Diesel_Engine_RWANDA,Diesel_Engine
+Diesel_Engine_SOUTH_SUDAN,Diesel_Engine
+Diesel_Engine_SUDAN,Diesel_Engine
+Diesel_Engine_TAN,Diesel_Engine
+Diesel_Engine_UGANDA,Diesel_Engine
+Gas_Engine_BURUNDI,GAS_Engine
+Gas_Engine_RWANDA,GAS_Engine
+Gas_Engine_TANZANIA,GAS_Engine
+Geothermal_Power_Plant,Geothermal_Power_Plant
+HFO_PP_KENYA,HFO_PP
+HFO_PP_LYBIA,HFO_PP
+HFO_PP_SUDAN,HFO_PP
+HFO_PP_TANZANIA,HFO_PP
+HFO_PP_UGANDA,HFO_PP
+Heavy_Fuel_Oil_Power_Plant,Heavy_Fuel_Oil_Power-Plant
+Hydro_Power_Plant_large1,Hydro_Power_Plant
+Hydro_Power_Plant_large10,Hydro_Power_Plant
+Hydro_Power_Plant_large11,Hydro_Power_Plant
+Hydro_Power_Plant_large12,Hydro_Power_Plant
+Hydro_Power_Plant_large13,Hydro_Power_Plant
+Hydro_Power_Plant_large14,Hydro_Power_Plant
+Hydro_Power_Plant_large15,Hydro_Power_Plant
+Hydro_Power_Plant_large16,Hydro_Power_Plant
+Hydro_Power_Plant_large17,Hydro_Power_Plant
+Hydro_Power_Plant_large18,Hydro_Power_Plant
+Hydro_Power_Plant_large19,Hydro_Power_Plant
+Hydro_Power_Plant_large2,Hydro_Power_Plant
+Hydro_Power_Plant_large20,Hydro_Power_Plant
+Hydro_Power_Plant_large21,Hydro_Power_Plant
+Hydro_Power_Plant_large3,Hydro_Power_Plant
+Hydro_Power_Plant_large4,Hydro_Power_Plant
+Hydro_Power_Plant_large5,Hydro_Power_Plant
+Hydro_Power_Plant_large6,Hydro_Power_Plant
+Hydro_Power_Plant_large7,Hydro_Power_Plant
+Hydro_Power_Plant_large8,Hydro_Power_Plant
+Hydro_Power_Plant_large9,Hydro_Power_Plant
+Hydro_Power_Plant_small1,Hydro_Power_Plant
+Hydro_Power_Plant_small2,Hydro_Power_Plant
+Hydro_Power_Plant_small3,Hydro_Power_Plant
+Hydro_Power_Plant_small4,Hydro_Power_Plant
+Hydro_Power_Plant_small5,Hydro_Power_Plant
+Hydro_Power_Plant_small6,Hydro_Power_Plant
+ICCC_NG_EGYPT,Open_Cycle_Gas_Turbine_ng_fuelled
+ISCC_NG_EGYPT,Open_Cycle_Gas_Turbine_ng_fuelled
+OCGT_Kerosene_KEN,Open_Cycle_Gas_Turbine_ng_fuelled
+OCGT_LFO,Open_Cycle_Gas_Turbine_ng_fuelled
+OCGT_NG_EGYPT,Open_Cycle_Gas_Turbine_ng_fuelled
+OCGT_NG_LYBIA,Open_Cycle_Gas_Turbine_ng_fuelled
+OCGT_NG_SUDAN,Open_Cycle_Gas_Turbine_ng_fuelled
+OCGT_NG_TAN,Open_Cycle_Gas_Turbine_ng_fuelled
+OCGT_NG_UGANDA,Open_Cycle_Gas_Turbine_ng_fuelled
+PV_SUD_MSR1,PV Power Plant SUD 1
+PV_SUD_MSR10,PV Power Plant SUD 10
+PV_SUD_MSR11,PV Power Plant SUD 11
+PV_SUD_MSR12,PV Power Plant SUD 12
+PV_SUD_MSR13,PV Power Plant SUD 13
+PV_SUD_MSR14,PV Power Plant SUD 14
+PV_SUD_MSR15,PV Power Plant SUD 15
+PV_SUD_MSR16,PV Power Plant SUD 16
+PV_SUD_MSR17,PV Power Plant SUD 17
+PV_SUD_MSR18,PV Power Plant SUD 18
+PV_SUD_MSR19,PV Power Plant SUD 19
+PV_SUD_MSR2,PV Power Plant SUD 2
+PV_SUD_MSR20,PV Power Plant SUD 20
+PV_SUD_MSR21,PV Power Plant SUD 21
+PV_SUD_MSR22,PV Power Plant SUD 22
+PV_SUD_MSR23,PV Power Plant SUD 23
+PV_SUD_MSR24,PV Power Plant SUD 24
+PV_SUD_MSR25,PV Power Plant SUD 25
+PV_SUD_MSR26,PV Power Plant SUD 26
+PV_SUD_MSR27,PV Power Plant SUD 27
+PV_SUD_MSR28,PV Power Plant SUD 28
+PV_SUD_MSR29,PV Power Plant SUD 29
+PV_SUD_MSR3,PV Power Plant SUD 3
+PV_SUD_MSR30,PV Power Plant SUD 30
+PV_SUD_MSR4,PV Power Plant SUD 4
+PV_SUD_MSR5,PV Power Plant SUD 5
+PV_SUD_MSR6,PV Power Plant SUD 6
+PV_SUD_MSR7,PV Power Plant SUD 7
+PV_SUD_MSR8,PV Power Plant SUD 8
+PV_SUD_MSR9,PV Power Plant SUD 9
+Solar_PV1,SOLAR_PV
+Solar_PV10,SOLAR_PV
+Solar_PV11,SOLAR_PV
+Solar_PV12,SOLAR_PV
+Solar_PV13,SOLAR_PV
+Solar_PV14,SOLAR_PV
+Solar_PV15,SOLAR_PV
+Solar_PV16,SOLAR_PV
+Solar_PV17,SOLAR_PV
+Solar_PV18,SOLAR_PV
+Solar_PV19,SOLAR_PV
+Solar_PV2,SOLAR_PV
+Solar_PV20,SOLAR_PV
+Solar_PV3,SOLAR_PV
+Solar_PV4,SOLAR_PV
+Solar_PV5,SOLAR_PV
+Solar_PV6,SOLAR_PV
+Solar_PV7,SOLAR_PV
+Solar_PV8,SOLAR_PV
+Solar_PV9,SOLAR_PV
+Steam_turbine_NG_EGYPT,Open_Cycle_Gas_Turbine_ng_fuelled
+Steam_turbine_NG_LYBIA,Open_Cycle_Gas_Turbine_ng_fuelled
+Steam_turbine_NG_SUDAN,Open_Cycle_Gas_Turbine_ng_fuelled
+Steam_turbine_petroleum_coke_SUDAN,Open_Cycle_Gas_Turbine_ng_fuelled
+Wind_Turbine1,wind_turbine
+Wind_Turbine2,wind_turbine
+Wind_Turbine3,wind_turbine
+Wind_Turbine4,wind_turbine
+Wind_Turbine5,wind_turbine
+Wind_Turbine6,wind_turbine
+Wind_Turbine7,wind_turbine
+final_demand,final_demand

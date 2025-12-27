@@ -1,0 +1,7 @@
+
+    Wind_Egypt_CR_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 2221899.02059
+            resource: file=Wind_WAPP_MSR.csv:Egypt_CR1
+            resource_unit: energy_per_cap

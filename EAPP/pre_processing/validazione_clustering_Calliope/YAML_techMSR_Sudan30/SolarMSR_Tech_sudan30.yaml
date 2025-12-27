@@ -1,0 +1,540 @@
+
+    PV_SUD_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1328.1354464054937
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1320.5628364779716
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1318.2719653337663
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1351.9838218794043
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1315.3184743845318
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR6:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 6
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1310.0488299231656
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR7:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 7
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1338.3962216097455
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR8:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 8
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1317.8817820718116
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR9:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 9
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1336.830358255919
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR10:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 10
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1335.2741796189157
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR11:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 11
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1305.9115200006834
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR12:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 12
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1319.7493717233115
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR13:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 13
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1316.163867020753
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR14:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 14
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1378.684711477778
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR15:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 15
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1311.8874682388305
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR16:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 16
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1347.7384938956534
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR17:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 17
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1343.9691101074284
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR18:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 18
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1290.4203823900418
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR19:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 19
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1350.2603198302074
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR20:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 20
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1326.816450777228
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR21:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 21
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1311.1446137421128
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR22:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 22
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1379.1059149
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR23:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 23
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1343.5752218244904
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR24:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 24
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1344.279598245935
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR25:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 25
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1302.3391982344988
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR26:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 26
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1302.625312
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR27:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 27
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1332.9452791046165
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR28:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 28
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1323.255472199858
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR29:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 29
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1300.9141880163843
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_SUD_MSR30:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant SUD 30
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1334.291130314231
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0

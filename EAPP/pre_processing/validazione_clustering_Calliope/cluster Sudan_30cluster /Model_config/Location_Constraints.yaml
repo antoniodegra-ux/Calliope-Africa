@@ -1,0 +1,299 @@
+# Location Definition #
+
+# Parameters:
+# lat: Latitude of the location
+# lon: Longitude of the location
+# energy_cap_equals: Real Capacity [kW]
+
+locations:
+
+    ################################### Sudan ##################################
+
+    Sudan:
+
+        # Available Technologies
+        techs:
+
+            HFO_PP_SUDAN:
+                constraints:
+                    energy_cap_equals: 1558900 # kW
+
+            OCGT_NG_SUDAN:
+                constraints:
+                    energy_cap_equals: 918000 # kW
+
+            CCGT_NG_SUDAN:
+                constraints:
+                    energy_cap_equals: 900000 # kW
+
+            Steam_turbine_NG_SUDAN:
+                constraints:
+                    energy_cap_equals: 905000 # kW
+
+            Steam_turbine_petroleum_coke_SUDAN:
+                constraints:
+                    energy_cap_equals: 110000 # kW
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 5600 # kW
+                    resource: file=Solar.csv:Sudan1
+                    resource_unit: energy_per_cap
+
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 5400 # kW
+                    resource: file=Solar.csv:Sudan2
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 19000 # kW
+                    resource: file=Hydro.csv:Sudan1
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 296000 # kW
+                    resource: file=Hydro.csv:Sudan2
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 1240000 # kW
+                    resource: file=Hydro.csv:Sudan3
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 320000 # kW
+                    resource: file=Hydro.csv:Sudan4
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 200 # kW
+                    resource: file=Hydro.csv:Sudan5
+                    resource_unit: energy_per_cap
+
+            Diesel_Engine_SUDAN:
+                constraints:
+                    energy_cap_equals: 13000 # kW
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 244580 # kW
+
+            PV_SUD_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9522522.928000001
+                    resource: file=Solar_EAPP_MSR.csv:SUD1
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9968804.03033
+                    resource: file=Solar_EAPP_MSR.csv:SUD2
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7876473.96471
+                    resource: file=Solar_EAPP_MSR.csv:SUD3
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 31884138.146999992
+                    resource: file=Solar_EAPP_MSR.csv:SUD4
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7318191.75813
+                    resource: file=Solar_EAPP_MSR.csv:SUD5
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR6:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9576266.70715
+                    resource: file=Solar_EAPP_MSR.csv:SUD6
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR7:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 17223621.64692
+                    resource: file=Solar_EAPP_MSR.csv:SUD7
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR8:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 10249588.539169999
+                    resource: file=Solar_EAPP_MSR.csv:SUD8
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR9:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 27353509.857619997
+                    resource: file=Solar_EAPP_MSR.csv:SUD9
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR10:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7869250.721
+                    resource: file=Solar_EAPP_MSR.csv:SUD10
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR11:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 6387832.71009
+                    resource: file=Solar_EAPP_MSR.csv:SUD11
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR12:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 8252449.58314
+                    resource: file=Solar_EAPP_MSR.csv:SUD12
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR13:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7089257.02498
+                    resource: file=Solar_EAPP_MSR.csv:SUD13
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR14:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 22746331.160999995
+                    resource: file=Solar_EAPP_MSR.csv:SUD14
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR15:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 4967786.062
+                    resource: file=Solar_EAPP_MSR.csv:SUD15
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR16:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 12366446.27525
+                    resource: file=Solar_EAPP_MSR.csv:SUD16
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR17:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 14552396.89
+                    resource: file=Solar_EAPP_MSR.csv:SUD17
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR18:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 959480.0897
+                    resource: file=Solar_EAPP_MSR.csv:SUD18
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR19:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 23973167.93369
+                    resource: file=Solar_EAPP_MSR.csv:SUD19
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR20:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 5225778.01337
+                    resource: file=Solar_EAPP_MSR.csv:SUD20
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR21:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9479437.18475
+                    resource: file=Solar_EAPP_MSR.csv:SUD21
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR22:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 148834.4497
+                    resource: file=Solar_EAPP_MSR.csv:SUD22
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR23:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 14787794.065379996
+                    resource: file=Solar_EAPP_MSR.csv:SUD23
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR24:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 5789360.92985
+                    resource: file=Solar_EAPP_MSR.csv:SUD24
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR25:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1827374.42014
+                    resource: file=Solar_EAPP_MSR.csv:SUD25
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR26:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 2307313.2380000004
+                    resource: file=Solar_EAPP_MSR.csv:SUD26
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR27:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 5020005.995
+                    resource: file=Solar_EAPP_MSR.csv:SUD27
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR28:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9265161.16271
+                    resource: file=Solar_EAPP_MSR.csv:SUD28
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR29:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 4459997.6095
+                    resource: file=Solar_EAPP_MSR.csv:SUD29
+                    resource_unit: energy_per_cap
+
+            PV_SUD_MSR30:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 6867841.36694
+                    resource: file=Solar_EAPP_MSR.csv:SUD30
+                    resource_unit: energy_per_cap
+
+            final_demand:
+                constraints:
+                    resource: file=Demand_2040.csv:Sudan

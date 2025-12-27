@@ -1,0 +1,7 @@
+
+    Wind_TAN_LR_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 6936956.3093799995
+            resource: file=Wind_WAPP_MSR.csv:TAN_LR1
+            resource_unit: energy_per_cap

@@ -1,0 +1,7 @@
+
+    PV_Rwanda_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 4054295.883080001
+            resource: file=Solar_WAPP_MSR.csv:Rwanda1
+            resource_unit: energy_per_cap

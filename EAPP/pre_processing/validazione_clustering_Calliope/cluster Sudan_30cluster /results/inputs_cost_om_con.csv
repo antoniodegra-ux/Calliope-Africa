@@ -1,0 +1,8 @@
+costs,locs,techs,cost_om_con
+monetary,Sudan,Bioenergy_Power_Plant,0.0113
+monetary,Sudan,CCGT_NG_SUDAN,0.013651877
+monetary,Sudan,Diesel_Engine_SUDAN,0.252307692
+monetary,Sudan,HFO_PP_SUDAN,0.13
+monetary,Sudan,OCGT_NG_SUDAN,0.013651877
+monetary,Sudan,Steam_turbine_NG_SUDAN,0.013651877
+monetary,Sudan,Steam_turbine_petroleum_coke_SUDAN,0.017054

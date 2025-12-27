@@ -1,0 +1,15 @@
+locs,techs,energy_cap_equals
+Sudan,Bioenergy_Power_Plant,244580.0
+Sudan,CCGT_NG_SUDAN,900000.0
+Sudan,Diesel_Engine_SUDAN,13000.0
+Sudan,HFO_PP_SUDAN,1558900.0
+Sudan,Hydro_Power_Plant_large1,19000.0
+Sudan,Hydro_Power_Plant_large2,296000.0
+Sudan,Hydro_Power_Plant_large3,1240000.0
+Sudan,Hydro_Power_Plant_large4,320000.0
+Sudan,Hydro_Power_Plant_small1,200.0
+Sudan,OCGT_NG_SUDAN,918000.0
+Sudan,Solar_PV1,5600.0
+Sudan,Solar_PV2,5400.0
+Sudan,Steam_turbine_NG_SUDAN,905000.0
+Sudan,Steam_turbine_petroleum_coke_SUDAN,110000.0

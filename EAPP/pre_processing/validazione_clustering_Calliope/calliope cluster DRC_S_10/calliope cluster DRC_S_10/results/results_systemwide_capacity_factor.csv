@@ -1,0 +1,17 @@
+carriers,techs,systemwide_capacity_factor
+electricity,Diesel_Engine_DRC,0.8015306379090812
+electricity,Hydro_Power_Plant_large1,0.2790193779023222
+electricity,Hydro_Power_Plant_large2,0.34459552606736427
+electricity,Hydro_Power_Plant_large3,0.21243748398341458
+electricity,Hydro_Power_Plant_large4,0.4564997348977278
+electricity,Hydro_Power_Plant_large5,0.24279512846506596
+electricity,Hydro_Power_Plant_large6,0.29803572313025395
+electricity,Hydro_Power_Plant_small1,0.34745937027155205
+electricity,Hydro_Power_Plant_small2,0.12053242698329818
+electricity,PV_DRC_S_MSR4,0.20220606856990003
+electricity,PV_DRC_S_MSR5,0.21348403062500015
+electricity,PV_DRC_S_MSR6,0.20087851787112876
+electricity,PV_DRC_S_MSR7,0.2135344669669849
+electricity,PV_DRC_S_MSR8,0.19814448302663934
+electricity,Solar_PV1,0.06898627426322569
+electricity,Solar_PV2,0.0937596669903907

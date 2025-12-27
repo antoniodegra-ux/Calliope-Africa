@@ -1,0 +1,7 @@
+
+    PV_TAN_NR_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 9427737.33643
+            resource: file=Solar_WAPP_MSR.csv:TAN_NR1
+            resource_unit: energy_per_cap

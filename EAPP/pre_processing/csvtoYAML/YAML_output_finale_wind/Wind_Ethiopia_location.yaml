@@ -1,0 +1,21 @@
+
+    Wind_Ethiopia_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 103758924.92123994
+            resource: file=Wind_WAPP_MSR.csv:Ethiopia1
+            resource_unit: energy_per_cap
+
+    Wind_Ethiopia_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 36853992.174030006
+            resource: file=Wind_WAPP_MSR.csv:Ethiopia2
+            resource_unit: energy_per_cap
+
+    Wind_Ethiopia_MSR3:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 25609572.802569997
+            resource: file=Wind_WAPP_MSR.csv:Ethiopia3
+            resource_unit: energy_per_cap

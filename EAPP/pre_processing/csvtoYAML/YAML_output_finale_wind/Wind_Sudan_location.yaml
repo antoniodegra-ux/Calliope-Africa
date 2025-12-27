@@ -1,0 +1,21 @@
+
+    Wind_Sudan_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 54994451.55486998
+            resource: file=Wind_WAPP_MSR.csv:Sudan1
+            resource_unit: energy_per_cap
+
+    Wind_Sudan_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 138787217.80008996
+            resource: file=Wind_WAPP_MSR.csv:Sudan2
+            resource_unit: energy_per_cap
+
+    Wind_Sudan_MSR3:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 78711312.80798
+            resource: file=Wind_WAPP_MSR.csv:Sudan3
+            resource_unit: energy_per_cap

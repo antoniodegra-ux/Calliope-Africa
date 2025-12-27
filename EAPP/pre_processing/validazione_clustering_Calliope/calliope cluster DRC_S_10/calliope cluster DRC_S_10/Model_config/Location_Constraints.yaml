@@ -1,0 +1,157 @@
+
+# Location Definition #
+
+# Parameters:
+
+    # lat: Latitude of the location
+    # lon: Longtitude of the location 
+    # energy_cap_equals: Real Capacity [kW]
+
+# Defining the locations 
+
+locations:
+
+
+
+                    
+
+################################### DRC_S ##################################                                                                                                                                                      
+    DRC_S:
+ 
+
+        # Available Technologies              
+        techs:
+        
+          
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 1100 #kW
+                    resource: file=Solar.csv:DRC_S1
+                    resource_unit: energy_per_cap  
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 48000 #kW
+                    resource: file=Solar.csv:DRC_S2
+                    resource_unit: energy_per_cap 
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 42120 #kW
+                    resource: file=Hydro.csv:DRC_S1
+                    resource_unit: energy_per_cap 
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 68000 #kW
+                    resource: file=Hydro.csv:DRC_S2
+                    resource_unit: energy_per_cap 
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 110000 #kW
+                    resource: file=Hydro.csv:DRC_S3
+                    resource_unit: energy_per_cap 
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 248000 #kW
+                    resource: file=Hydro.csv:DRC_S4
+                    resource_unit: energy_per_cap 
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 9900 #kW
+                    resource: file=Hydro.csv:DRC_S5
+                    resource_unit: energy_per_cap 
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 243000 #kW
+                    resource: file=Hydro.csv:DRC_S6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 40000 #kW
+                    resource: file=Hydro.csv:DRC_S7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 400 #kW
+                    resource: file=Hydro.csv:DRC_S8
+                    resource_unit: energy_per_cap
+            
+            PV_DRC_S_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7107353.270839993
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S1
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR2:
+                constraints:
+                   energy_cap_min: 0
+                   energy_cap_max: 19592205.20027
+                   resource: file=Solar_EAPP_MSR.csv:DRC_S2
+                   resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR3:
+                constraints:
+                   energy_cap_min: 0
+                   energy_cap_max: 21325263.24770999
+                   resource: file=Solar_EAPP_MSR.csv:DRC_S3
+                   resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 19743597.140329994
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S4
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR5:
+                constraints:
+                   energy_cap_min: 0
+                   energy_cap_max: 3291706.88337
+                   resource: file=Solar_EAPP_MSR.csv:DRC_S5
+                   resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR6:
+                constraints:
+                   energy_cap_min: 0
+                   energy_cap_max: 8613679.344519995
+                   resource: file=Solar_EAPP_MSR.csv:DRC_S6
+                   resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR7:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11996506.142179985
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S7
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR8:
+                constraints:
+                   energy_cap_min: 0
+                   energy_cap_max: 15729575.108040003
+                   resource: file=Solar_EAPP_MSR.csv:DRC_S8
+                   resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR9:
+               constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 15739541.347869994
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S9
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR10:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 14243181.515819991
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S10
+                    resource_unit: energy_per_cap            
+           
+            Diesel_Engine_DRC:
+                constraints:
+                    energy_cap_equals: 89000 #kW 
+            
+          
+            
+       
+            final_demand:
+                constraints:
+                    resource: file=Demand_2040_giusta.csv:DRC_S
+

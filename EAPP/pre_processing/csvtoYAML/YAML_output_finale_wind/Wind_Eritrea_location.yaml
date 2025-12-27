@@ -1,0 +1,7 @@
+
+    Wind_Eritrea_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 17279882.40441
+            resource: file=Wind_WAPP_MSR.csv:Eritrea1
+            resource_unit: energy_per_cap

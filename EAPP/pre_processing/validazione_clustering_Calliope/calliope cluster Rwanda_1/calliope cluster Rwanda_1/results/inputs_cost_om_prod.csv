@@ -1,0 +1,14 @@
+costs,locs,techs,cost_om_prod
+co2,Rwanda,Bioenergy_Power_Plant,0.133
+co2,Rwanda,Diesel_Engine_RWANDA,0.6514
+co2,Rwanda,Gas_Engine_RWANDA,0.5645
+co2,Rwanda,PV_Rwanda_MSR1,0.0
+co2,Rwanda,Solar_PV1,0.0
+co2,Rwanda,Solar_PV2,0.0
+co2,Rwanda,Solar_PV3,0.0
+co2,Rwanda,Solar_PV4,0.0
+co2,Rwanda,Solar_PV5,0.0
+co2,Rwanda,Solar_PV6,0.0
+monetary,Rwanda,Bioenergy_Power_Plant,0.0075
+monetary,Rwanda,Diesel_Engine_RWANDA,0.003
+monetary,Rwanda,Gas_Engine_RWANDA,0.0024

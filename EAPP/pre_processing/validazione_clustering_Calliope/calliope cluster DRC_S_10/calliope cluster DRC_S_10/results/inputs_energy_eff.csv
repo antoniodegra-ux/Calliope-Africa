@@ -1,0 +1,10 @@
+locs,techs,energy_eff
+DRC_S,Diesel_Engine_DRC,0.35
+DRC_S,Hydro_Power_Plant_large1,1.0
+DRC_S,Hydro_Power_Plant_large2,1.0
+DRC_S,Hydro_Power_Plant_large3,1.0
+DRC_S,Hydro_Power_Plant_large4,1.0
+DRC_S,Hydro_Power_Plant_large5,1.0
+DRC_S,Hydro_Power_Plant_large6,1.0
+DRC_S,Hydro_Power_Plant_small1,1.0
+DRC_S,Hydro_Power_Plant_small2,1.0

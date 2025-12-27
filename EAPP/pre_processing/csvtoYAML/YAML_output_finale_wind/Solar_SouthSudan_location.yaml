@@ -1,0 +1,7 @@
+
+    PV_SouthSudan_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 103983093.33682996
+            resource: file=Solar_WAPP_MSR.csv:SouthSudan1
+            resource_unit: energy_per_cap

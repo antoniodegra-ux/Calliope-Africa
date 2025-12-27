@@ -1,0 +1,14 @@
+
+    Wind_Libya_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 206249058.08999
+            resource: file=Wind_WAPP_MSR.csv:Libya1
+            resource_unit: energy_per_cap
+
+    Wind_Libya_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 31741308.770929992
+            resource: file=Wind_WAPP_MSR.csv:Libya2
+            resource_unit: energy_per_cap

@@ -1,0 +1,35 @@
+
+    PV_Sudan_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 26771558.793420002
+            resource: file=Solar_EAPP_MSR.csv:Sudan1
+            resource_unit: energy_per_cap
+
+    PV_Sudan_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 130116048.05486007
+            resource: file=Solar_EAPP_MSR.csv:Sudan2
+            resource_unit: energy_per_cap
+
+    PV_Sudan_MSR3:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 59534832.88321001
+            resource: file=Solar_EAPP_MSR.csv:Sudan3
+            resource_unit: energy_per_cap
+
+    PV_Sudan_MSR4:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 28142406.858229995
+            resource: file=Solar_EAPP_MSR.csv:Sudan4
+            resource_unit: energy_per_cap
+
+    PV_Sudan_MSR5:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 60751567.87550001
+            resource: file=Solar_EAPP_MSR.csv:Sudan5
+            resource_unit: energy_per_cap

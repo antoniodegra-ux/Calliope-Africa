@@ -1,0 +1,360 @@
+
+    PV_Sudan_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1192.5343842867433
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1222.653636932863
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1186.0266148059648
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1195.4172450730193
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1200.7413123978722
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1192.5343842867433
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1222.653636932863
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1186.0266148059648
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1195.4172450730193
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1200.7413123978722
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1322.5343842867433
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1352.653636932863
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1316.0266148059648
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1325.4172450730193
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1330.7413123978722
+            om_annual: 20
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1322.5343842867433
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1352.653636932863
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1316.0266148059648
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1325.4172450730193
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_Sudan_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant Sudan 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1330.7413123978722
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0

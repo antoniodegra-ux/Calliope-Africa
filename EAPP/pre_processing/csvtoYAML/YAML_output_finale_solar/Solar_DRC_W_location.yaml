@@ -1,0 +1,56 @@
+
+    PV_DRC_W_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 33002737.824689995
+            resource: file=Solar_WAPP_MSR.csv:DRC_W1
+            resource_unit: energy_per_cap
+
+    PV_DRC_W_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 28568465.86862998
+            resource: file=Solar_WAPP_MSR.csv:DRC_W2
+            resource_unit: energy_per_cap
+
+    PV_DRC_W_MSR3:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 11654628.4978
+            resource: file=Solar_WAPP_MSR.csv:DRC_W3
+            resource_unit: energy_per_cap
+
+    PV_DRC_W_MSR4:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 11210108.743700005
+            resource: file=Solar_WAPP_MSR.csv:DRC_W4
+            resource_unit: energy_per_cap
+
+    PV_DRC_W_MSR5:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 20445070.19152999
+            resource: file=Solar_WAPP_MSR.csv:DRC_W5
+            resource_unit: energy_per_cap
+
+    PV_DRC_W_MSR6:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 13196488.963840004
+            resource: file=Solar_WAPP_MSR.csv:DRC_W6
+            resource_unit: energy_per_cap
+
+    PV_DRC_W_MSR7:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 10017673.484329997
+            resource: file=Solar_WAPP_MSR.csv:DRC_W7
+            resource_unit: energy_per_cap
+
+    PV_DRC_W_MSR8:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 29759235.002360005
+            resource: file=Solar_WAPP_MSR.csv:DRC_W8
+            resource_unit: energy_per_cap

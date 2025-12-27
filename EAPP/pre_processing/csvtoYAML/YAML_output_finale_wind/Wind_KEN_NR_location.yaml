@@ -1,0 +1,7 @@
+
+    Wind_KEN_NR_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 1638017.6337000006
+            resource: file=Wind_WAPP_MSR.csv:KEN_NR1
+            resource_unit: energy_per_cap

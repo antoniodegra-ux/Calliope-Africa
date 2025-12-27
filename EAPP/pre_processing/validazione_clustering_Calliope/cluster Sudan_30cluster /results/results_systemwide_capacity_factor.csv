@@ -1,0 +1,17 @@
+carriers,techs,systemwide_capacity_factor
+electricity,Bioenergy_Power_Plant,0.4589482200644767
+electricity,CCGT_NG_SUDAN,0.9975167198213925
+electricity,Diesel_Engine_SUDAN,0.0
+electricity,HFO_PP_SUDAN,0.09105201239990329
+electricity,Hydro_Power_Plant_large1,0.6921857923497268
+electricity,Hydro_Power_Plant_large2,0.49863387978142076
+electricity,Hydro_Power_Plant_large3,0.8922404371584699
+electricity,Hydro_Power_Plant_large4,0.2742896174863388
+electricity,Hydro_Power_Plant_small1,0.7196994535519126
+electricity,OCGT_NG_SUDAN,0.9969768802389473
+electricity,PV_SUD_MSR15,0.21663450447336052
+electricity,PV_SUD_MSR19,0.22705452477937152
+electricity,Solar_PV1,0.20854462659380615
+electricity,Solar_PV2,0.1909076730418943
+electricity,Steam_turbine_NG_SUDAN,0.8788443627483713
+electricity,Steam_turbine_petroleum_coke_SUDAN,0.4734489044699589

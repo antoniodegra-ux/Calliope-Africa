@@ -1,0 +1,2845 @@
+# Location Definition #
+
+# Parameters:
+
+    # lat: Latitude of the location
+    # lon: Longtitude of the location 
+    # energy_cap_equals: Real Capacity [kW]
+
+# Defining the locations 
+
+locations:
+
+################################### Uganda ##################################                                                   
+    UGANDA:
+        # Available Technologies
+        techs:
+
+            
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 630000 #kW
+                    resource: file=Hydro.csv:Uganda1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 183000 #kW
+                    resource: file=Hydro.csv:Uganda2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 70500 #kW
+                    resource: file=Hydro.csv:Uganda3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 41500 #kW
+                    resource: file=Hydro.csv:Uganda4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 3500 #kW
+                    resource: file=Hydro.csv:Uganda5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 295000 #kW
+                    resource: file=Hydro.csv:Uganda6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 16600 #kW
+                    resource: file=Hydro.csv:Uganda7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large7:
+                constraints:
+                    energy_cap_equals: 23400 #kW
+                    resource: file=Hydro.csv:Uganda8
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 6500 #kW
+                    resource: file=Hydro.csv:Uganda9
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large8:
+                constraints:
+                    energy_cap_equals: 52000 #kW
+                    resource: file=Hydro.csv:Uganda10
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small3:
+                constraints:
+                    energy_cap_equals: 6600 #kW
+                    resource: file=Hydro.csv:Uganda11
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large9:
+                constraints:
+                    energy_cap_equals: 600000 #kW
+                    resource: file=Hydro.csv:Uganda12
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large10:
+                constraints:
+                    energy_cap_equals: 41000 #kW
+                    resource: file=Hydro.csv:Uganda13
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large11:
+                constraints:
+                    energy_cap_equals: 45000 #kW
+                    resource: file=Hydro.csv:Uganda14
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large12:
+                constraints:
+                    energy_cap_equals: 15000 #kW
+                    resource: file=Hydro.csv:Uganda15
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small4:
+                constraints:
+                    energy_cap_equals: 5000 #kW
+                    resource: file=Hydro.csv:Uganda16
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small5:
+                constraints:
+                    energy_cap_equals: 6700 #kW
+                    resource: file=Hydro.csv:Uganda17
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large13:
+                constraints:
+                    energy_cap_equals: 55000 #kW
+                    resource: file=Hydro.csv:Uganda18
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large14:
+                constraints:
+                    energy_cap_equals: 11600 #kW
+                    resource: file=Hydro.csv:Uganda19
+                    resource_unit: energy_per_cap
+
+
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 100000 #kW  
+            HFO_PP:
+                constraints:
+                    energy_cap_equals: 231000 #kW  
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 1600 #kW
+
+            Geothermal_Power_Plant:
+                constraints:
+                    energy_cap_equals: 100000 #kW 
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 122700 #kW
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 120000 #kW
+                    resource: file=Wind.csv:Uganda1
+                    resource_unit: energy_per_cap
+            Wind_Turbine2:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Wind.csv:Uganda2
+                    resource_unit: energy_per_cap
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 24000 #kW
+                    resource: file=Solar.csv:Uganda1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 4000 #kW
+                    resource: file=Solar.csv:Uganda2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 15000 #kW
+                    resource: file=Solar.csv:Uganda3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                    resource: file=Solar.csv:Uganda4
+                    resource_unit: energy_per_cap
+            Solar_PV5:
+                constraints:
+                    energy_cap_equals: 10900 #kW
+                    resource: file=Solar.csv:Uganda5
+                    resource_unit: energy_per_cap
+            Solar_PV6:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                    resource: file=Solar.csv:Uganda6
+                    resource_unit: energy_per_cap
+            Solar_PV7:
+                constraints:
+                    energy_cap_equals: 23000 #kW
+                    resource: file=Solar.csv:Uganda7
+                    resource_unit: energy_per_cap
+            Solar_PV8:
+                constraints:
+                    energy_cap_equals: 1600 #kW
+                    resource: file=Solar.csv:Uganda8
+                    resource_unit: energy_per_cap
+            Solar_PV9:
+                constraints:
+                    energy_cap_equals: 24000 #kW
+                    resource: file=Solar.csv:Uganda9
+                    resource_unit: energy_per_cap
+            Solar_PV10:
+                constraints:
+                    energy_cap_equals: 6300 #kW
+                    resource: file=Solar.csv:Uganda10
+                    resource_unit: energy_per_cap
+            Solar_PV11:
+                constraints:
+                    energy_cap_equals: 10800 #kW
+                    resource: file=Solar.csv:Uganda11
+                    resource_unit: energy_per_cap
+            Solar_PV12:
+                constraints:
+                    energy_cap_equals: 10300 #kW
+                    resource: file=Solar.csv:Uganda12
+                    resource_unit: energy_per_cap
+            Solar_PV13:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Solar.csv:Uganda13
+                    resource_unit: energy_per_cap
+            Solar_PV14:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Solar.csv:Uganda14
+                    resource_unit: energy_per_cap
+            Solar_PV15:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Solar.csv:Uganda15
+                    resource_unit: energy_per_cap
+            Solar_PV16:
+                constraints:
+                    energy_cap_equals: 40000 #kW
+                    resource: file=Solar.csv:Uganda16
+                    resource_unit: energy_per_cap
+            Solar_PV17:
+                constraints:
+                    energy_cap_equals: 60000 #kW
+                    resource: file=Solar.csv:Uganda17
+                    resource_unit: energy_per_cap
+            Solar_PV18:
+                constraints:
+                    energy_cap_equals: 150000 #kW
+                    resource: file=Solar.csv:Uganda18
+                    resource_unit: energy_per_cap
+            PV_Uganda_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 12564115.320800003
+                    resource: file=Solar_EAPP_MSR.csv:Uganda1
+                    resource_unit: energy_per_cap
+
+            PV_Uganda_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 13820256.658890001
+                    resource: file=Solar_EAPP_MSR.csv:Uganda2
+                    resource_unit: energy_per_cap
+
+            PV_Uganda_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 13704441.319899995
+                    resource: file=Solar_EAPP_MSR.csv:Uganda3
+                    resource_unit: energy_per_cap
+            Wind_Uganda_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 3189758.391639999
+                    resource: file=Wind_EAPP_MSR.csv:Uganda1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Uganda
+
+
+################################### Sudan ##################################                                                 
+    Sudan:
+        # Available Technologies   
+        techs:
+
+
+            HFO_PP:
+                constraints:
+                    energy_cap_equals: 1558900 #kW
+                costs:
+                    monetary:
+                        om_con: 0.13 #$/kWh-fuel
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 918000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.013651877 #$/kWh-fuel  
+            CCGT_NG:
+                constraints:
+                    energy_cap_equals: 1900000 #kW
+            Steam_turbine_NG:
+                constraints:
+                    energy_cap_equals: 905000 #kW
+            Steam_turbine_petroleum_coke_SUDAN:
+                constraints:
+                    energy_cap_equals: 110000 #kW
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 5600 #kW
+                    resource: file=Solar.csv:Sudan1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 5400 #kW
+                    resource: file=Solar.csv:Sudan2
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 19000 #kW
+                    resource: file=Hydro.csv:Sudan1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 296000 #kW
+                    resource: file=Hydro.csv:Sudan2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 320000  #kW
+                    resource: file=Hydro.csv:Sudan4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Hydro.csv:Sudan5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 312000  #kW
+                    resource: file=Hydro.csv:Sudan6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 937000 #kW
+                    resource: file=Hydro.csv:Sudan7
+                    resource_unit: energy_per_cap
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 13000 #kW
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 244580 #kW
+            PV_Sudan_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 142606266.86486003
+                    resource: file=Solar_EAPP_MSR.csv:Sudan1
+                    resource_unit: energy_per_cap
+
+            PV_Sudan_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 79977630.82773003
+                    resource: file=Solar_EAPP_MSR.csv:Sudan2
+                    resource_unit: energy_per_cap
+
+            PV_Sudan_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 82732516.77263004
+                    resource: file=Solar_EAPP_MSR.csv:Sudan3
+                    resource_unit: energy_per_cap
+            Wind_Sudan_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 54994451.55486998
+                    resource: file=Wind_EAPP_MSR.csv:Sudan1
+                    resource_unit: energy_per_cap
+
+            Wind_Sudan_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 138787217.80008996
+                    resource: file=Wind_EAPP_MSR.csv:Sudan2
+                    resource_unit: energy_per_cap
+
+            Wind_Sudan_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 78711312.80798
+                    resource: file=Wind_EAPP_MSR.csv:Sudan3
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Sudan
+
+################################### South_Sudan ##################################                                                                                                   
+    South_Sudan:
+        # Available Technologies              
+        techs:
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 191800 #kW
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 42000 #kW
+                    resource: file=Hydro.csv:South_Sudan1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 570000 #kW
+                    resource: file=Hydro.csv:South_Sudan2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 410000 #kW
+                    resource: file=Hydro.csv:South_Sudan3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 235000 #kW
+                    resource: file=Hydro.csv:South_Sudan4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 10400 #kW
+                    resource: file=Hydro.csv:South_Sudan5
+                    resource_unit: energy_per_cap
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 20000 #kW
+                    resource: file=Solar.csv:South_Sudan1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 1250 #kW
+                    resource: file=Solar.csv:South_Sudan2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 100 #kW
+                    resource: file=Solar.csv:South_Sudan3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 700 #kW
+                    resource: file=Solar.csv:South_Sudan4
+                    resource_unit: energy_per_cap
+            Solar_PV5:
+                constraints:
+                    energy_cap_equals: 26000 #kW
+                    resource: file=Solar.csv:South_Sudan5
+                    resource_unit: energy_per_cap
+
+            PV_SouthSudan_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 103983093.33682996
+                    resource: file=Solar_EAPP_MSR.csv:SouthSudan1
+                    resource_unit: energy_per_cap
+            Wind_SouthSudan_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 33084463.979659975
+                    resource: file=Wind_EAPP_MSR.csv:SouthSudan1
+                    resource_unit: energy_per_cap
+
+            Wind_SouthSudan_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 33659809.39399001
+                    resource: file=Wind_EAPP_MSR.csv:SouthSudan2
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:South_Sudan
+
+
+################################### TAN_LR ##################################                                                                                                                                                      
+    TAN_LR:
+
+        # Available Technologies              
+        techs:
+            HFO_PP:
+                constraints:
+                    energy_cap_equals: 63000 #kW
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 40000 #kW
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 80000 #kW
+                    resource: file=Hydro.csv:TAN_LR1
+                    resource_unit: energy_per_cap
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 5000 #kW         
+            PV_TAN_LR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 38958205.07431
+                    resource: file=Solar_EAPP_MSR.csv:TAN_LR1
+                    resource_unit: energy_per_cap
+            Wind_TAN_LR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 6936956.3093799995
+                    resource: file=Wind_EAPP_MSR.csv:TAN_LR1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:TAN_LR
+################################### TAN_NR ##################################                                                                                                                                                      
+    TAN_NR:
+
+        # Available Technologies              
+        techs:
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 8000 #kW
+                    resource: file=Hydro.csv:TAN_NR1
+                    resource_unit: energy_per_cap
+
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 17500 #kW
+            PV_TAN_NR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9427737.33643
+                    resource: file=Solar_EAPP_MSR.csv:TAN_NR1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:TAN_NR
+################################### TAN_ER ##################################                                                                                                                                                      
+    TAN_ER:
+
+        # Available Technologies              
+        techs:
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 303000 #kW
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 204000 #kW
+                    resource: file=Hydro.csv:TAN_ER1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 68000 #kW
+                    resource: file=Hydro.csv:TAN_ER2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 21000 #kW
+                    resource: file=Hydro.csv:TAN_ER3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 180000 #kW
+                    resource: file=Hydro.csv:TAN_ER4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Hydro.csv:TAN_ER5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 900000 #kW
+                    resource: file=Hydro.csv:TAN_ER6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 1200000 #kW
+                    resource: file=Hydro.csv:TAN_ER7
+                    resource_unit: energy_per_cap
+
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 22900 #kW  
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 42500 #kW
+                    resource: file=Solar.csv:TAN_ER1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 30000 #kW
+                    resource: file=Solar.csv:TAN_ER2
+                    resource_unit: energy_per_cap
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 240000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.0153 #$/kWh-fuel  
+            CCGT_NG:
+                constraints:
+                    energy_cap_equals: 900000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.0153 #$/kWh-fuel  
+            Wind_TAN_ER_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1229999.9934099999
+                    resource: file=Wind_EAPP_MSR.csv:TAN_ER1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:TAN_ER
+################################### TAN_SR ##################################                                                                                                                                                      
+    TAN_SR:
+
+        # Available Technologies              
+        techs:
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 9670 #kW
+
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.0153 #$/kWh-fuel  
+            Gas_Engine:
+                constraints:
+                    energy_cap_equals: 18000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.0153 #$/kWh-fuel
+            Wind_TAN_SR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 317652.23601000005
+                    resource: file=Wind_EAPP_MSR.csv:TAN_SR1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:TAN_SR
+################################### TAN_SWR ##################################                                                                                                                                                      
+    TAN_SWR:
+
+        # Available Technologies              
+        techs:
+
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 222000 #kW
+                    resource: file=Hydro.csv:TAN_SWR1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 180000 #kW
+                    resource: file=Hydro.csv:TAN_SWR2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 1290 #kW
+                    resource: file=Hydro.csv:TAN_SWR3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 340000 #kW
+                    resource: file=Hydro.csv:TAN_SWR4
+                    resource_unit: energy_per_cap
+
+            Geothermal_Power_Plant:
+                constraints:
+                    energy_cap_equals: 600000 #kW 
+            PV_TAN_SWR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 24537562.00936
+                    resource: file=Solar_EAPP_MSR.csv:TAN_SWR1
+                    resource_unit: energy_per_cap
+            Wind_TAN_SWR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 27369846.148839995
+                    resource: file=Wind_EAPP_MSR.csv:TAN_SWR1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:TAN_SWR
+################################### TAN_WR ##################################                                                                                                                                                      
+    TAN_WR:
+
+        # Available Technologies              
+        techs:
+
+
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 4000 #kW
+                    resource: file=Hydro.csv:TAN_WR1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Hydro.csv:TAN_WR2
+                    resource_unit: energy_per_cap
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 8750 #kW
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 4800 #kW
+                    resource: file=Solar.csv:TAN_WR1
+                    resource_unit: energy_per_cap
+            Wind_TAN_WR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1104112.24651
+                    resource: file=Wind_EAPP_MSR.csv:TAN_WR1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:TAN_WR
+################################### TAN_CR ##################################                                                                                                                                                      
+    TAN_CR:
+
+        # Available Technologies              
+        techs:
+
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 80000 #kW
+                    resource: file=Hydro.csv:TAN_CR1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 1220 #kW
+                    resource: file=Hydro.csv:TAN_CR2
+                    resource_unit: energy_per_cap
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 62440 #kW
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 4100 #kW
+                    resource: file=Solar.csv:TAN_CR1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 210000 #kW
+                    resource: file=Solar.csv:TAN_CR2
+                    resource_unit: energy_per_cap
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 100000 #kW
+                    resource: file=Wind.csv:TAN_CR1
+                    resource_unit: energy_per_cap
+            Wind_Turbine2:
+                constraints:
+                    energy_cap_equals: 2400 #kW
+                    resource: file=Wind.csv:TAN_CR2
+                    resource_unit: energy_per_cap
+
+            PV_TAN_CR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 38912812.38323999
+                    resource: file=Solar_EAPP_MSR.csv:TAN_CR1
+                    resource_unit: energy_per_cap
+
+            PV_TAN_CR_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 44140904.49448
+                    resource: file=Solar_EAPP_MSR.csv:TAN_CR2
+                    resource_unit: energy_per_cap
+            Wind_TAN_CR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 56128391.821060024
+                    resource: file=Wind_EAPP_MSR.csv:TAN_CR1
+                    resource_unit: energy_per_cap
+
+            Wind_TAN_CR_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 28490045.93157
+                    resource: file=Wind_EAPP_MSR.csv:TAN_CR2
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:TAN_CR
+################################### Eritrea ##################################                                                                                                                                                      
+    Eritrea:
+
+        # Available Technologies              
+        techs:
+
+
+          
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 105700 #kW
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 6000 #kW
+                    resource: file=Solar.csv:Eritrea1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 1200 #kW
+                    resource: file=Solar.csv:Eritrea2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 1900 #kW
+                    resource: file=Solar.csv:Eritrea3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 1800 #kW
+                    resource: file=Solar.csv:Eritrea4
+                    resource_unit: energy_per_cap
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 825 #kW
+                    resource: file=Wind.csv:Eritrea1
+                    resource_unit: energy_per_cap
+
+            PV_Eritrea_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 19514518.661909997
+                    resource: file=Solar_EAPP_MSR.csv:Eritrea1
+                    resource_unit: energy_per_cap
+            Wind_Eritrea_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 17279882.40441
+                    resource: file=Wind_EAPP_MSR.csv:Eritrea1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Eritrea
+################################### Ethiopia ##################################                                                                                                                                                      
+    Ethiopia:
+
+        # Available Technologies              
+        techs:
+
+
+          
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 104000 #kW
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 1200 #kW
+                    resource: file=Solar.csv:Ethiopia1
+                    resource_unit: energy_per_cap
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 204000 #kW
+                    resource: file=Wind.csv:Ethiopia1
+                    resource_unit: energy_per_cap
+            Wind_Turbine2:
+                constraints:
+                    energy_cap_equals: 240000 #kW
+                    resource: file=Wind.csv:Ethiopia2
+                    resource_unit: energy_per_cap
+            Wind_Turbine3:
+                constraints:
+                    energy_cap_equals: 134000 #kW
+                    resource: file=Wind.csv:Ethiopia3
+                    resource_unit: energy_per_cap
+            Wind_Turbine4:
+                constraints:
+                    energy_cap_equals: 250000 #kW
+                    resource: file=Wind.csv:Ethiopia4
+                    resource_unit: energy_per_cap
+            Wind_Turbine5:
+                constraints:
+                    energy_cap_equals: 120180 #kW
+                    resource: file=Wind.csv:Ethiopia5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 153000 #kW
+                    resource: file=Hydro.csv:Ethiopia1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 769000 #kW
+                    resource: file=Hydro.csv:Ethiopia2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 2160000 #kW
+                    resource: file=Hydro.csv:Ethiopia3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 184000 #kW
+                    resource: file=Hydro.csv:Ethiopia4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 420000 #kW
+                    resource: file=Hydro.csv:Ethiopia5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 1870000 #kW
+                    resource: file=Hydro.csv:Ethiopia6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large7:
+                constraints:
+                    energy_cap_equals: 100000 #kW
+                    resource: file=Hydro.csv:Ethiopia7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large8:
+                constraints:
+                    energy_cap_equals: 246000 #kW
+                    resource: file=Hydro.csv:Ethiopia8
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large9:
+                constraints:
+                    energy_cap_equals: 43000 #kW
+                    resource: file=Hydro.csv:Ethiopia9
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large10:
+                constraints:
+                    energy_cap_equals: 32000 #kW
+                    resource: file=Hydro.csv:Ethiopia10
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large11:
+                constraints:
+                    energy_cap_equals: 280000 #kW
+                    resource: file=Hydro.csv:Ethiopia11
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large12:
+                constraints:
+                    energy_cap_equals: 32000 #kW
+                    resource: file=Hydro.csv:Ethiopia12
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large13:
+                constraints:
+                    energy_cap_equals: 436000 #kW
+                    resource: file=Hydro.csv:Ethiopia13
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large14:
+                constraints:
+                    energy_cap_equals: 226000 #kW
+                    resource: file=Hydro.csv:Ethiopia14
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large15:
+                constraints:
+                    energy_cap_equals: 382000 #kW
+                    resource: file=Hydro.csv:Ethiopia15
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large16:
+                constraints:
+                    energy_cap_equals: 216000 #kW
+                    resource: file=Hydro.csv:Ethiopia16
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large17:
+                constraints:
+                    energy_cap_equals: 326000 #kW
+                    resource: file=Hydro.csv:Ethiopia17
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large18:
+                constraints:
+                    energy_cap_equals: 467000 #kW
+                    resource: file=Hydro.csv:Ethiopia18
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large19:
+                constraints:
+                    energy_cap_equals: 460000 #kW
+                    resource: file=Hydro.csv:Ethiopia19
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large20:
+                constraints:
+                    energy_cap_equals: 375000 #kW
+                    resource: file=Hydro.csv:Ethiopia20
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large21:
+                constraints:
+                    energy_cap_equals: 254000 #kW
+                    resource: file=Hydro.csv:Ethiopia21
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large22:
+                constraints:
+                    energy_cap_equals: 1600000 #kW
+                    resource: file=Hydro.csv:Ethiopia22
+                    resource_unit: energy_per_cap
+
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 289500 #kW 
+
+            Geothermal_Power_Plant:
+                constraints:
+                    energy_cap_equals: 355000  #kW 
+            PV_Ethiopia_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9608150.949639997
+                    resource: file=Solar_EAPP_MSR.csv:Ethiopia1
+                    resource_unit: energy_per_cap
+
+            PV_Ethiopia_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 24775879.31942999
+                    resource: file=Solar_EAPP_MSR.csv:Ethiopia2
+                    resource_unit: energy_per_cap
+
+            PV_Ethiopia_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 86705295.78717002
+                    resource: file=Solar_EAPP_MSR.csv:Ethiopia3
+                    resource_unit: energy_per_cap
+
+            PV_Ethiopia_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 49454859.88739002
+                    resource: file=Solar_EAPP_MSR.csv:Ethiopia4
+                    resource_unit: energy_per_cap
+
+            PV_Ethiopia_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7698525.755349998
+                    resource: file=Solar_EAPP_MSR.csv:Ethiopia5
+                    resource_unit: energy_per_cap
+
+            PV_Ethiopia_MSR6:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9064299.339579998
+                    resource: file=Solar_EAPP_MSR.csv:Ethiopia6
+                    resource_unit: energy_per_cap
+            Wind_Ethiopia_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 103758924.92123994
+                    resource: file=Wind_EAPP_MSR.csv:Ethiopia1
+                    resource_unit: energy_per_cap
+
+            Wind_Ethiopia_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 36853992.174030006
+                    resource: file=Wind_EAPP_MSR.csv:Ethiopia2
+                    resource_unit: energy_per_cap
+
+            Wind_Ethiopia_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 25609572.802569997
+                    resource: file=Wind_EAPP_MSR.csv:Ethiopia3
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Ethiopia
+################################### Djibouti ##################################                                                                                                                                                      
+    Djibouti:
+
+        # Available Technologies              
+        techs:
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 100000 #kW
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 25000 #kW
+                    resource: file=Solar.csv:Djibouti1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 25000 #kW
+                    resource: file=Solar.csv:Djibouti2
+                    resource_unit: energy_per_cap
+
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 60000 #kW
+                    resource: file=Wind.csv:Djibouti1
+                    resource_unit: energy_per_cap
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 40000 #kW 
+
+            PV_Djibouti_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 2462372.0497
+                    resource: file=Solar_EAPP_MSR.csv:Djibouti1
+                    resource_unit: energy_per_cap
+            Wind_Djibouti_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 2710182.8525100006
+                    resource: file=Wind_EAPP_MSR.csv:Djibouti1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Djibouti
+################################### Burundi ##################################                                                                                                                                                      
+    Burundi:
+
+        # Available Technologies              
+        techs:
+            Gas_Engine:
+                constraints:
+                    energy_cap_equals: 30000 #kW
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 8000 #kW
+                    resource: file=Solar.csv:Burundi1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 6000 #kW
+                    resource: file=Solar.csv:Burundi2
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 287000 #kW
+                    resource: file=Hydro.csv:Burundi1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 17000 #kW
+                    resource: file=Hydro.csv:Burundi2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 33000 #kW
+                    resource: file=Hydro.csv:Burundi3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 8000 #kW
+                    resource: file=Hydro.csv:Burundi4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Hydro.csv:Burundi5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 26700 #kW
+                    resource: file=Hydro.csv:Burundi6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 43800 #kW
+                    resource: file=Hydro.csv:Burundi7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 20000 #kW
+                    resource: file=Hydro.csv:Burundi8
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large7:
+                constraints:
+                    energy_cap_equals: 15000 #kW
+                    resource: file=Hydro.csv:Burundi9
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large9:
+                constraints:
+                    energy_cap_equals: 206000 #kW
+                    resource: file=Hydro.csv:Burundi15
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small3:
+                constraints:
+                    energy_cap_equals: 8000 #kW
+                    resource: file=Hydro.csv:Burundi10
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large8:
+                constraints:
+                    energy_cap_equals: 18000 #kW
+                    resource: file=Hydro.csv:Burundi11
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small4:
+                constraints:
+                    energy_cap_equals: 2880 #kW
+                    resource: file=Hydro.csv:Burundi12
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small5:
+                constraints:
+                    energy_cap_equals: 3100 #kW
+                    resource: file=Hydro.csv:Burundi13
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small6:
+                constraints:
+                    energy_cap_equals: 850 #kW
+                    resource: file=Hydro.csv:Burundi14
+                    resource_unit: energy_per_cap
+            PV_Burundi_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 3326607.65547
+                    resource: file=Solar_EAPP_MSR.csv:Burundi1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Burundi
+################################### Rwanda ##################################                                                                                                                                                      
+    Rwanda:
+
+        # Available Technologies              
+        techs:
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 68800 #kW
+            Gas_Engine:
+                constraints:
+                    energy_cap_equals: 111980 #kW
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 8500 #kW
+                    resource: file=Solar.csv:Rwanda1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 3300 #kW
+                    resource: file=Solar.csv:Rwanda2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 250 #kW
+                    resource: file=Solar.csv:Rwanda3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 7000 #kW
+                    resource: file=Solar.csv:Rwanda4
+                    resource_unit: energy_per_cap
+            Solar_PV5:
+                constraints:
+                    energy_cap_equals: 1800 #kW
+                    resource: file=Solar.csv:Rwanda5
+                    resource_unit: energy_per_cap
+            Solar_PV6:
+                constraints:
+                    energy_cap_equals: 2400 #kW
+                    resource: file=Solar.csv:Rwanda6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 28000 #kW
+                    resource: file=Hydro.csv:Rwanda1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 80000 #kW
+                    resource: file=Hydro.csv:Rwanda2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 32250 #kW
+                    resource: file=Hydro.csv:Rwanda3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 250000 #kW
+                    resource: file=Hydro.csv:Rwanda4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 30000 #kW
+                    resource: file=Hydro.csv:Rwanda5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 500 #kW
+                    resource: file=Hydro.csv:Rwanda6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 2600 #kW
+                    resource: file=Hydro.csv:Rwanda7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small3:
+                constraints:
+                    energy_cap_equals: 5000 #kW
+                    resource: file=Hydro.csv:Rwanda8
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 36522 #kW
+                    resource: file=Hydro.csv:Rwanda9
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large7:
+                constraints:
+                    energy_cap_equals: 43000 #kW
+                    resource: file=Hydro.csv:Rwanda10
+                    resource_unit: energy_per_cap
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 13000 #kW 
+            PV_Rwanda_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 4054295.883080001
+                    resource: file=Solar_EAPP_MSR.csv:Rwanda1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Rwanda
+
+
+################################### Lybia ##################################                                                                                                                                                      
+    LYBIA:
+
+        # Available Technologies              
+        techs:
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 3995000 #kW
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 11306000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.008532423 #$/kWh-fuel  
+            CCGT_NG:
+                constraints:
+                    energy_cap_equals: 900000 #kW 
+                costs:
+                    monetary:
+                        om_con: 0.008532423 #$/kWh-fuel 
+            HFO_PP:
+                constraints:
+                    energy_cap_equals: 1332000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.1 #$/kWh-fuel
+            OCGT_LFO:
+                constraints:
+                    energy_cap_equals: 1420000 #kW
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 500000 #kW
+                    resource: file=Solar.csv:Lybia1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 1700000 #kW
+                    resource: file=Solar.csv:Lybia2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                    resource: file=Solar.csv:Lybia3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 3600000 #kW
+                    resource: file=Solar.csv:Lybia4
+                    resource_unit: energy_per_cap
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 600000 #kW
+                    resource: file=Wind.csv:Lybia1
+                    resource_unit: energy_per_cap
+            Steam_turbine_NG:
+                constraints:
+                    energy_cap_equals: 480000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.008532423 #$/kWh-fuel
+
+            PV_Libya_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 148803422.06037998
+                    resource: file=Solar_EAPP_MSR.csv:Libya1
+                    resource_unit: energy_per_cap
+
+            PV_Libya_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 117104489.86670004
+                    resource: file=Solar_EAPP_MSR.csv:Libya2
+                    resource_unit: energy_per_cap
+            Wind_Libya_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 206249058.08999
+                    resource: file=Wind_EAPP_MSR.csv:Libya1
+                    resource_unit: energy_per_cap
+
+            Wind_Libya_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 31741308.770929992
+                    resource: file=Wind_EAPP_MSR.csv:Libya2
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Lybia
+
+################################### KEN_WR ##################################                                                                                                                                                      
+    KEN_WR:
+
+        # Available Technologies              
+        techs:
+            OCGT_Kerosene_KEN:
+                constraints:
+                    energy_cap_equals: 56000 #kW
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 105000 #kW
+                    resource: file=Hydro.csv:KEN_WR1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 80000 #kW
+                    resource: file=Hydro.csv:KEN_WR2
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 4748 #kW
+                    resource: file=Hydro.csv:KEN_WR3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 2000 #kW
+                    resource: file=Hydro.csv:KEN_WR4
+                    resource_unit: energy_per_cap
+
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 40000 #kW
+                    resource: file=Solar.csv:KEN_WR1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 40000 #kW
+                    resource: file=Solar.csv:KEN_WR2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 11000 #kW
+                    resource: file=Solar.csv:KEN_WR3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 40000 #kW
+                    resource: file=Solar.csv:KEN_WR4
+                    resource_unit: energy_per_cap
+            Solar_PV5:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                    resource: file=Solar.csv:KEN_WR5
+                    resource_unit: energy_per_cap
+            Solar_PV6:
+                constraints:
+                    energy_cap_equals: 619 #kW
+                    resource: file=Solar.csv:KEN_WR6
+                    resource_unit: energy_per_cap
+            Solar_PV7:
+                constraints:
+                    energy_cap_equals: 44000 #kW
+                    resource: file=Solar.csv:KEN_WR7
+                    resource_unit: energy_per_cap
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 68500 #kW 
+            Geothermal_Power_Plant:
+                constraints:
+                    energy_cap_equals: 1031340  #kW 
+            PV_KEN_WSTR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 24724231.21080001
+                    resource: file=Solar_EAPP_MSR.csv:KEN_WSTR1
+                    resource_unit: energy_per_cap
+
+            PV_KEN_WSTR_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7086162.53148
+                    resource: file=Solar_EAPP_MSR.csv:KEN_WSTR2
+                    resource_unit: energy_per_cap
+
+            PV_KEN_WSTR_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 20320532.627299998
+                    resource: file=Solar_EAPP_MSR.csv:KEN_WSTR3
+                    resource_unit: energy_per_cap
+            Wind_KEN_WSTR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 9134153.575789997
+                    resource: file=Wind_EAPP_MSR.csv:KEN_WSTR1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:KEN_WR
+################################### KEN_MKR ##################################                                                                                                                                                      
+    KEN_MKR:
+
+        # Available Technologies              
+        techs:
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 3200 #kW
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 40000 #kW
+                    resource: file=Hydro.csv:KEN_MKR1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 90000 #kW
+                    resource: file=Hydro.csv:KEN_MKR2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 216000 #kW
+                    resource: file=Hydro.csv:KEN_MKR3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 164000 #kW
+                    resource: file=Hydro.csv:KEN_MKR4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 44000 #kW
+                    resource: file=Hydro.csv:KEN_MKR5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 24000 #kW
+                    resource: file=Hydro.csv:KEN_MKR6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large7:
+                constraints:
+                    energy_cap_equals: 20000 #kW
+                    resource: file=Hydro.csv:KEN_MKR7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large8:
+                constraints:
+                    energy_cap_equals: 21630 #kW
+                    resource: file=Hydro.csv:KEN_MKR8
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large9:
+                constraints:
+                    energy_cap_equals: 140000 #kW
+                    resource: file=Hydro.csv:KEN_MKR9
+                    resource_unit: energy_per_cap
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 32000 #kW
+                    resource: file=Solar.csv:KEN_MKR1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 82500 #kW
+                    resource: file=Solar.csv:KEN_MKR2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 180000 #kW
+                    resource: file=Solar.csv:KEN_MKR3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 42500 #kW
+                    resource: file=Solar.csv:KEN_MKR4
+                    resource_unit: energy_per_cap
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 80000 #kW
+                    resource: file=Wind.csv:KEN_MKR1
+                    resource_unit: energy_per_cap
+            Wind_Turbine2:
+                constraints:
+                    energy_cap_equals: 310000 #kW
+                    resource: file=Wind.csv:KEN_MKR2
+                    resource_unit: energy_per_cap
+            Wind_Turbine3:
+                constraints:
+                    energy_cap_equals: 600000 #kW
+                    resource: file=Wind.csv:KEN_MKR3
+                    resource_unit: energy_per_cap
+            PV_KEN_MTKR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 43449954.61499
+                    resource: file=Solar_EAPP_MSR.csv:KEN_MTKR1
+                    resource_unit: energy_per_cap
+            Wind_KEN_MTKR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 67149659.59240998
+                    resource: file=Wind_EAPP_MSR.csv:KEN_MTKR1
+                    resource_unit: energy_per_cap
+
+            Wind_KEN_MTKR_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7991640.933359998
+                    resource: file=Wind_EAPP_MSR.csv:KEN_MTKR2
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:KEN_MKR
+################################### KEN_NR ##################################                                                                                                                                                      
+    KEN_NR:
+
+        # Available Technologies              
+        techs:
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 100000 #kW
+            HFO_PP:
+                constraints:
+                    energy_cap_equals: 411820 #kW
+            Geothermal_Power_Plant:
+                constraints:
+                    energy_cap_equals: 165300 #kW
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 93000 #kW
+                    resource: file=Hydro.csv:KEN_NR1
+                    resource_unit: energy_per_cap
+
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 36500 #kW
+                    resource: file=Wind.csv:KEN_NR1
+                    resource_unit: energy_per_cap
+            Wind_Turbine2:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                    resource: file=Wind.csv:KEN_NR2
+                    resource_unit: energy_per_cap
+            Wind_Turbine3:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                    resource: file=Wind.csv:KEN_NR3
+                    resource_unit: energy_per_cap
+            Wind_Turbine4:
+                constraints:
+                    energy_cap_equals: 30000 #kW
+                    resource: file=Wind.csv:KEN_NR4
+                    resource_unit: energy_per_cap
+            Wind_Turbine5:
+                constraints:
+                    energy_cap_equals: 102000 #kW
+                    resource: file=Wind.csv:KEN_NR5
+                    resource_unit: energy_per_cap
+            Wind_Turbine6:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                    resource: file=Wind.csv:KEN_NR6
+                    resource_unit: energy_per_cap
+            Wind_KEN_NR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1638017.6337000006
+                    resource: file=Wind_EAPP_MSR.csv:KEN_NR1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:KEN_NR
+################################### KEN_CR ##################################                                                                                                                                                      
+    KEN_CR:
+
+        # Available Technologies              
+        techs:
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 73500 #kW
+            HFO_PP:
+                constraints:
+                    energy_cap_equals: 281500 #kW
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 52000 #kW
+                    resource: file=Solar.csv:KEN_CR1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 56000 #kW
+                    resource: file=Solar.csv:KEN_CR2
+                    resource_unit: energy_per_cap
+
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 36000 #kW
+                    resource: file=Wind.csv:KEN_CR1
+                    resource_unit: energy_per_cap
+            Wind_Turbine2:
+                constraints:
+                    energy_cap_equals: 90000 #kW
+                    resource: file=Wind.csv:KEN_CR2
+                    resource_unit: energy_per_cap
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 18000 #kW 
+
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:KEN_CR
+################################### Egypt_UE ##################################                                                                                                                                                      
+            OCGT_NG_new_2035_installed:
+                constraints:
+                    energy_cap_equals: 50185.99999999999
+    Egypt_UE:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 1875000 #kW
+                    resource: file=Solar.csv:Egypt_UE1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 6800 #kW
+                    resource: file=Solar.csv:Egypt_UE2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 5500 #kW
+                    resource: file=Solar.csv:Egypt_UE3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 1600 #kW
+                    resource: file=Solar.csv:Egypt_UE4
+                    resource_unit: energy_per_cap
+            Solar_PV5:
+                constraints:
+                    energy_cap_equals: 20000 #kW
+                    resource: file=Solar.csv:Egypt_UE5
+                    resource_unit: energy_per_cap
+
+            PV_Egypt_UE_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 35712549.68911
+                    resource: file=Solar_EAPP_MSR.csv:Egypt_UE1
+                    resource_unit: energy_per_cap
+            Wind_Egypt_UE_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 75328994.30153997
+                    resource: file=Wind_EAPP_MSR.csv:Egypt_UE1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Egypt_UE
+################################### Egypt_ME ##################################                                                                                                                                                      
+    Egypt_ME:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 49000 #kW
+                    resource: file=Solar.csv:Egypt_ME1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Solar.csv:Egypt_ME2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 30000 #kW
+                    resource: file=Solar.csv:Egypt_ME3
+                    resource_unit: energy_per_cap
+
+
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 6000 #kW 
+            Wind_Egypt_ME_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 894897.2285299998
+                    resource: file=Wind_EAPP_MSR.csv:Egypt_ME1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Egypt_ME
+
+################################### Egypt_NE ##################################                                                                                                                                                      
+    Egypt_NE:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 28700 #kW
+                    resource: file=Solar.csv:Egypt_NE1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 17000 #kW
+                    resource: file=Solar.csv:Egypt_NE2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 4800 #kW
+                    resource: file=Solar.csv:Egypt_NE3
+                    resource_unit: energy_per_cap
+            CCGT_NG:
+                constraints:
+                    energy_cap_equals: 12778000 #kW 
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 586000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel  
+            Steam_turbine_NG:
+                constraints:
+                    energy_cap_equals: 3115000 #kW   
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 130000 #kW 
+            Wind_Egypt_NE_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1847147.8760099998
+                    resource: file=Wind_EAPP_MSR.csv:Egypt_NE1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Egypt_NE
+################################### Egypt_AL ##################################                                                                                                                                                      
+    Egypt_AL:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 10000 #kW
+                    resource: file=Solar.csv:Egypt_AL1
+                    resource_unit: energy_per_cap
+
+            CCGT_NG:
+                constraints:
+                    energy_cap_equals: 855000 #kW 
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 333000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel  
+            Steam_turbine_NG:
+                constraints:
+                    energy_cap_equals: 1382500 #kW  
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel
+            Wind_Egypt_AL_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 3377817.51841
+                    resource: file=Wind_EAPP_MSR.csv:Egypt_AL1
+                    resource_unit: energy_per_cap
+
+            Nuclear:
+                constraints:
+                    energy_cap_equals: 1200000 #kW
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Egypt_AL
+################################### Egypt_CR ##################################                                                                                                                                                      
+    Egypt_CR:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 1200 #kW
+                    resource: file=Solar.csv:Egypt_CR1
+                    resource_unit: energy_per_cap
+
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 1900 #kW
+                    resource: file=Solar.csv:Egypt_CR2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 2700 #kW
+                    resource: file=Solar.csv:Egypt_CR3
+                    resource_unit: energy_per_cap
+            CCGT_NG:
+                constraints:
+                    energy_cap_equals: 7368700 #kW 
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 975000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel  
+            Steam_turbine_NG:
+                constraints:
+                    energy_cap_equals: 4005000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel
+
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 16000 #kW 
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 31735 #kW
+                    resource: file=Hydro.csv:Egypt_CR1
+                    resource_unit: energy_per_cap
+            OCGT_LFO:
+                constraints:
+                    energy_cap_equals: 150000 #kW 
+            Wind_Egypt_CR_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 2221899.02059
+                    resource: file=Wind_EAPP_MSR.csv:Egypt_CR1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Egypt_CR
+################################### Egypt_CN ##################################                                                                                                                                                      
+    Egypt_CN:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 20000 #kW
+                    resource: file=Solar.csv:Egypt_CN1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 106000 #kW
+                    resource: file=Solar.csv:Egypt_CN2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 25000 #kW
+                    resource: file=Solar.csv:Egypt_CN3
+                    resource_unit: energy_per_cap
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 8500 #kW
+                    resource: file=Solar.csv:Egypt_CN4
+                    resource_unit: energy_per_cap
+            Solar_PV5:
+                constraints:
+                    energy_cap_equals: 7800  #kW
+                    resource: file=Solar.csv:Egypt_CN5
+                    resource_unit: energy_per_cap
+            Solar_PV6:
+                constraints:
+                    energy_cap_equals: 2500 #kW
+                    resource: file=Solar.csv:Egypt_CN6
+                    resource_unit: energy_per_cap
+            Solar_PV7:
+                constraints:
+                    energy_cap_equals: 36000 #kW
+                    resource: file=Solar.csv:Egypt_CN7
+                    resource_unit: energy_per_cap
+            Solar_PV8:
+                constraints:
+                    energy_cap_equals: 5000 #kW
+                    resource: file=Solar.csv:Egypt_CN8
+                    resource_unit: energy_per_cap
+            Solar_PV9:
+                constraints:
+                    energy_cap_equals: 8700 #kW
+                    resource: file=Solar.csv:Egypt_CN9
+                    resource_unit: energy_per_cap
+            Solar_PV10:
+                constraints:
+                    energy_cap_equals: 500000 #kW
+                    resource: file=Solar.csv:Egypt_CN10
+                    resource_unit: energy_per_cap
+            Solar_PV11:
+                constraints:
+                    energy_cap_equals: 20000 #kW
+                    resource: file=Solar.csv:Egypt_CN11
+                    resource_unit: energy_per_cap
+            Solar_PV12:
+                constraints:
+                    energy_cap_equals: 20000 #kW
+                    resource: file=Solar.csv:Egypt_CN12
+                    resource_unit: energy_per_cap
+            Solar_PV13:
+                constraints:
+                    energy_cap_equals: 50000 #kW
+                    resource: file=Solar.csv:Egypt_CN13
+                    resource_unit: energy_per_cap
+            Solar_PV14:
+                constraints:
+                    energy_cap_equals: 3700 #kW
+                    resource: file=Solar.csv:Egypt_CN14
+                    resource_unit: energy_per_cap
+            Solar_PV15:
+                constraints:
+                    energy_cap_equals: 200000 #kW
+                    resource: file=Solar.csv:Egypt_CN15
+                    resource_unit: energy_per_cap
+            Solar_PV16:
+                constraints:
+                    energy_cap_equals: 1000000 #kW
+                    resource: file=Solar.csv:Egypt_CN16
+                    resource_unit: energy_per_cap
+            Solar_PV17:
+                constraints:
+                    energy_cap_equals: 4500 #kW
+                    resource: file=Solar.csv:Egypt_CN17
+                    resource_unit: energy_per_cap
+            Solar_PV18:
+                constraints:
+                    energy_cap_equals: 20000 #kW
+                    resource: file=Solar.csv:Egypt_CN18
+                    resource_unit: energy_per_cap
+            Solar_PV19:
+                constraints:
+                    energy_cap_equals: 560000 #kW
+                    resource: file=Solar.csv:Egypt_CN19
+                    resource_unit: energy_per_cap
+            Solar_PV20:
+                constraints:
+                    energy_cap_equals: 26000 #kW
+                    resource: file=Solar.csv:Egypt_CN20
+                    resource_unit: energy_per_cap
+
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 550000 #kW
+                    resource: file=Hydro.csv:Egypt_CN1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 2100000 #kW
+                    resource: file=Hydro.csv:Egypt_CN2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 86000 #kW
+                    resource: file=Hydro.csv:Egypt_CN3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 64000 #kW
+                    resource: file=Hydro.csv:Egypt_CN4
+                    resource_unit: energy_per_cap
+            Wind_Turbine1:
+                constraints:
+                    energy_cap_equals: 544820 #kW
+                    resource: file=Wind.csv:Egypt_CN1
+                    resource_unit: energy_per_cap
+            Wind_Turbine2:
+                constraints:
+                    energy_cap_equals: 1002000 #kW
+                    resource: file=Wind.csv:Egypt_CN2
+                    resource_unit: energy_per_cap
+            Wind_Turbine3:
+                constraints:
+                    energy_cap_equals: 252000 #kW
+                    resource: file=Wind.csv:Egypt_CN3
+                    resource_unit: energy_per_cap
+            Wind_Turbine4:
+                constraints:
+                    energy_cap_equals: 252000 #kW
+                    resource: file=Wind.csv:Egypt_CN4
+                    resource_unit: energy_per_cap
+            Wind_Turbine5:
+                constraints:
+                    energy_cap_equals: 580000 #kW
+                    resource: file=Wind.csv:Egypt_CN5
+                    resource_unit: energy_per_cap
+            Wind_Turbine6:
+                constraints:
+                    energy_cap_equals: 262500 #kW
+                    resource: file=Wind.csv:Egypt_CN6
+                    resource_unit: energy_per_cap
+            Wind_Turbine7:
+                constraints:
+                    energy_cap_equals: 252000 #kW
+                    resource: file=Wind.csv:Egypt_CN7
+                    resource_unit: energy_per_cap
+            CCGT_NG:
+                constraints:
+                    energy_cap_equals: 9600000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel 
+            OCGT_NG:
+                constraints:
+                    energy_cap_equals: 1714000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel  
+            Steam_turbine_NG:
+                constraints:
+                    energy_cap_equals: 5004000 #kW
+                costs:
+                    monetary:
+                        om_con: 0.00341 #$/kWh-fuel
+            OCGT_LFO:
+                constraints:
+                    energy_cap_equals: 437000 #kW 
+            ICCC_NG_EGYPT:
+                constraints:
+                    energy_cap_equals: 160000 #kW
+            ISCC_NG_EGYPT:
+                constraints:
+                    energy_cap_equals: 150000 #kW
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 45000 #kW 
+            PV_Egypt_CN_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 44346765.567839995
+                    resource: file=Solar_EAPP_MSR.csv:Egypt_CN1
+                    resource_unit: energy_per_cap
+
+            PV_Egypt_CN_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 80893350.2882
+                    resource: file=Solar_EAPP_MSR.csv:Egypt_CN2
+                    resource_unit: energy_per_cap
+            Wind_Egypt_CN_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 35548832.35100999
+                    resource: file=Wind_EAPP_MSR.csv:Egypt_CN1
+                    resource_unit: energy_per_cap
+
+            Wind_Egypt_CN_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 24798707.97584
+                    resource: file=Wind_EAPP_MSR.csv:Egypt_CN2
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:Egypt_CN
+################################### DRC_E ##################################                                                                                                                                                      
+    DRC_E:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 1500 #kW
+                    resource: file=Solar.csv:DRC_E1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 22000 #kW
+                    resource: file=Hydro.csv:DRC_E1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 1600 #kW
+                    resource: file=Hydro.csv:DRC_E2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 29800 #kW
+                    resource: file=Hydro.csv:DRC_E3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 43800 #kW
+                    resource: file=Hydro.csv:DRC_E4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 16000 #kW
+                    resource: file=Hydro.csv:DRC_E5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 41050 #kW
+                    resource: file=Hydro.csv:DRC_E6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 19000 #kW
+                    resource: file=Hydro.csv:DRC_E7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 5100 #kW
+                    resource: file=Hydro.csv:DRC_E8
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large7:
+                constraints:
+                    energy_cap_equals: 39300 #kW
+                    resource: file=Hydro.csv:DRC_E9
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small3:
+                constraints:
+                    energy_cap_equals: 2900 #kW
+                    resource: file=Hydro.csv:DRC_E10
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large8:
+                constraints:
+                    energy_cap_equals: 146000 #kW
+                    resource: file=Hydro.csv:DRC_E11
+                    resource_unit: energy_per_cap
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 364 #kW 
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 60000 #kW
+            PV_DRC_E_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 6825451.037859998
+                    resource: file=Solar_EAPP_MSR.csv:DRC_E1
+                    resource_unit: energy_per_cap
+
+            PV_DRC_E_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 49624640.620680004
+                    resource: file=Solar_EAPP_MSR.csv:DRC_E2
+                    resource_unit: energy_per_cap
+
+            PV_DRC_E_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 8217877.2193
+                    resource: file=Solar_EAPP_MSR.csv:DRC_E3
+                    resource_unit: energy_per_cap
+
+            PV_DRC_E_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 25533840.53309999
+                    resource: file=Solar_EAPP_MSR.csv:DRC_E4
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:DRC_E
+################################### DRC_W ##################################                                                                                                                                                      
+    DRC_W:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 200000 #kW
+                    resource: file=Solar.csv:DRC_W1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 12825000 #kW
+                    resource: file=Hydro.csv:DRC_W1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 12000 #kW
+                    resource: file=Hydro.csv:DRC_W2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 75000 #kW
+                    resource: file=Hydro.csv:DRC_W3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 150000 #kW
+                    resource: file=Hydro.csv:DRC_W4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 12710 #kW
+                    resource: file=Hydro.csv:DRC_W5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 11370 #kW
+                    resource: file=Hydro.csv:DRC_W6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 1600 #kW
+                    resource: file=Hydro.csv:DRC_W7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large7:
+                constraints:
+                    energy_cap_equals: 7424000 #kW
+                    resource: file=Hydro.csv:DRC_W8
+                    resource_unit: energy_per_cap
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 8020 #kW
+            PV_DRC_W_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 33002737.824689995
+                    resource: file=Solar_EAPP_MSR.csv:DRC_W1
+                    resource_unit: energy_per_cap
+
+            PV_DRC_W_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 28568465.86862998
+                    resource: file=Solar_EAPP_MSR.csv:DRC_W2
+                    resource_unit: energy_per_cap
+
+            PV_DRC_W_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11654628.4978
+                    resource: file=Solar_EAPP_MSR.csv:DRC_W3
+                    resource_unit: energy_per_cap
+
+            PV_DRC_W_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11210108.743700005
+                    resource: file=Solar_EAPP_MSR.csv:DRC_W4
+                    resource_unit: energy_per_cap
+
+            PV_DRC_W_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 20445070.19152999
+                    resource: file=Solar_EAPP_MSR.csv:DRC_W5
+                    resource_unit: energy_per_cap
+
+            PV_DRC_W_MSR6:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 13196488.963840004
+                    resource: file=Solar_EAPP_MSR.csv:DRC_W6
+                    resource_unit: energy_per_cap
+
+            PV_DRC_W_MSR7:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 10017673.484329997
+                    resource: file=Solar_EAPP_MSR.csv:DRC_W7
+                    resource_unit: energy_per_cap
+
+            PV_DRC_W_MSR8:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 29759235.002360005
+                    resource: file=Solar_EAPP_MSR.csv:DRC_W8
+                    resource_unit: energy_per_cap
+            Wind_DRC_W_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 326289.65645
+                    resource: file=Wind_EAPP_MSR.csv:DRC_W1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:DRC_W
+################################### DRC_S ##################################                                                                                                                                                      
+    DRC_S:
+
+        # Available Technologies              
+        techs:
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 1100 #kW
+                    resource: file=Solar.csv:DRC_S1
+                    resource_unit: energy_per_cap
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 48000 #kW
+                    resource: file=Solar.csv:DRC_S2
+                    resource_unit: energy_per_cap
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 133000 #kW
+                    resource: file=Solar.csv:DRC_S3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 42120 #kW
+                    resource: file=Hydro.csv:DRC_S1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 68000 #kW
+                    resource: file=Hydro.csv:DRC_S2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 110000 #kW
+                    resource: file=Hydro.csv:DRC_S3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 248000 #kW
+                    resource: file=Hydro.csv:DRC_S4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 9900 #kW
+                    resource: file=Hydro.csv:DRC_S5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 243000 #kW
+                    resource: file=Hydro.csv:DRC_S6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 40000 #kW
+                    resource: file=Hydro.csv:DRC_S7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 400 #kW
+                    resource: file=Hydro.csv:DRC_S8
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large7:
+                constraints:
+                    energy_cap_equals: 150000 #kW
+                    resource: file=Hydro.csv:DRC_S9
+                    resource_unit: energy_per_cap
+
+            Diesel_Engine:
+                constraints:
+                    energy_cap_equals: 89000 #kW 
+            PV_DRC_S_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 3291706.88337
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S1
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR2:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 23928113.074559968
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S2
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR3:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 20639135.042389993
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S3
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR4:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 19710376.33817
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S4
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR5:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 14621898.657269992
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S5
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR6:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 14327657.268239984
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S6
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR7:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 11617789.000729986
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S7
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR8:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 14196909.684520004
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S8
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR9:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7987229.937719993
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S9
+                    resource_unit: energy_per_cap
+
+            PV_DRC_S_MSR10:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 7061793.313979993
+                    resource: file=Solar_EAPP_MSR.csv:DRC_S10
+                    resource_unit: energy_per_cap
+            Wind_DRC_S_MSR1:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: 1513627.80454
+                    resource: file=Wind_EAPP_MSR.csv:DRC_S1
+                    resource_unit: energy_per_cap
+            BESS:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+                    energy_cap_per_storage_cap_equals: 0.25
+            OCGT_NG_new:
+                constraints:
+                    energy_cap_min: 0
+                    energy_cap_max: inf
+
+
+            final_demand:
+                constraints:
+                    resource: file=Demand.csv:DRC_S
+
+            OCGT_NG_new_2035_installed:
+                constraints:
+                    energy_cap_equals: 121634.95266028657

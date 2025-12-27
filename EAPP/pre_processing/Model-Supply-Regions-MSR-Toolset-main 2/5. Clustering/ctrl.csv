@@ -1,0 +1,10 @@
+﻿ctrl,val,explanatory
+f_in,/Users/antoniodegrazia/Desktop/Model-Supply-Regions-MSR-Toolset-main 2/SolarPV_BestMSRsToCover5%CountryArea.xlsx,input path for merge
+iterations,1000,number of iterations for k-means clustering
+cluster_metric,euclidean,clustering type for k-means clustering. Euclidean is default but can have other types c.f. TimeSeriesKMeans package
+debug_out,0,whether to write out debugging file
+ctrl_country_in,/Users/antoniodegrazia/Desktop/Model-Supply-Regions-MSR-Toolset-main 2/5. Clustering/ctrl_country.csv,path to control file with countries and number of clusters for each country
+tech,new_solare,wind solar or csp
+ctrl_param_in,/Users/antoniodegrazia/Desktop/Model-Supply-Regions-MSR-Toolset-main 2/5. Clustering/ctrl_param.csv,path to control file with list of parameters and their mode of aggregation
+ctryf_writeout,0,if write out to separate country folders or not
+use_elbow,yes

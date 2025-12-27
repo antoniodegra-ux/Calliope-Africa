@@ -1,0 +1,21 @@
+
+    PV_Uganda_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 12564115.320800003
+            resource: file=Solar_WAPP_MSR.csv:Uganda1
+            resource_unit: energy_per_cap
+
+    PV_Uganda_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 13820256.658890001
+            resource: file=Solar_WAPP_MSR.csv:Uganda2
+            resource_unit: energy_per_cap
+
+    PV_Uganda_MSR3:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 13704441.319899995
+            resource: file=Solar_WAPP_MSR.csv:Uganda3
+            resource_unit: energy_per_cap

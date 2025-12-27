@@ -1,0 +1,42 @@
+
+    PV_Ethiopia_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 9608150.949639997
+            resource: file=Solar_WAPP_MSR.csv:Ethiopia1
+            resource_unit: energy_per_cap
+
+    PV_Ethiopia_MSR2:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 24775879.31942999
+            resource: file=Solar_WAPP_MSR.csv:Ethiopia2
+            resource_unit: energy_per_cap
+
+    PV_Ethiopia_MSR3:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 86705295.78717002
+            resource: file=Solar_WAPP_MSR.csv:Ethiopia3
+            resource_unit: energy_per_cap
+
+    PV_Ethiopia_MSR4:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 49454859.88739002
+            resource: file=Solar_WAPP_MSR.csv:Ethiopia4
+            resource_unit: energy_per_cap
+
+    PV_Ethiopia_MSR5:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 7698525.755349998
+            resource: file=Solar_WAPP_MSR.csv:Ethiopia5
+            resource_unit: energy_per_cap
+
+    PV_Ethiopia_MSR6:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 9064299.339579998
+            resource: file=Solar_WAPP_MSR.csv:Ethiopia6
+            resource_unit: energy_per_cap

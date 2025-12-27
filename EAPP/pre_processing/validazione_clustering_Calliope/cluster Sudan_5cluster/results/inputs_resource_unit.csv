@@ -1,0 +1,14 @@
+locs,techs,resource_unit
+Sudan,Hydro_Power_Plant_large1,energy_per_cap
+Sudan,Hydro_Power_Plant_large2,energy_per_cap
+Sudan,Hydro_Power_Plant_large3,energy_per_cap
+Sudan,Hydro_Power_Plant_large4,energy_per_cap
+Sudan,Hydro_Power_Plant_small1,energy_per_cap
+Sudan,PV_Sudan_MSR1,energy_per_cap
+Sudan,PV_Sudan_MSR2,energy_per_cap
+Sudan,PV_Sudan_MSR3,energy_per_cap
+Sudan,PV_Sudan_MSR4,energy_per_cap
+Sudan,PV_Sudan_MSR5,energy_per_cap
+Sudan,Solar_PV1,energy_per_cap
+Sudan,Solar_PV2,energy_per_cap
+Sudan,final_demand,energy

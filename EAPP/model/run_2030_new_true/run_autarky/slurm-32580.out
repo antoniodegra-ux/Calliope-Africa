@@ -1,0 +1,822 @@
+
+🚀 Lancio scenario: autarky_VRES_2030_BESS
+[2025-09-11 15:46:59] INFO     Loading sets
+[2025-09-11 15:46:59] INFO     Loading parameters
+[2025-09-11 15:47:45] INFO     constraints are loaded in the following order: ['energy_balance', 'dispatch', 'costs', 'capacity', 'network', 'policy', 'conversion', 'group', 'conversion_plus', 'milp', 'export']
+[2025-09-11 15:47:45] INFO     creating energy_balance constraints
+[2025-09-11 15:51:31] INFO     creating dispatch constraints
+[2025-09-11 15:54:37] INFO     creating costs constraints
+[2025-09-11 16:03:53] INFO     creating capacity constraints
+[2025-09-11 16:03:53] INFO     creating network constraints
+[2025-09-11 16:03:53] INFO     creating policy constraints
+[2025-09-11 16:03:53] INFO     creating conversion constraints
+[2025-09-11 16:03:53] INFO     creating group constraints
+[2025-09-11 16:03:53] INFO     creating conversion_plus constraints
+[2025-09-11 16:03:53] INFO     creating milp constraints
+[2025-09-11 16:03:53] INFO     creating export constraints
+[2025-09-11 16:15:33] DEBUG    Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2680226
+[2025-09-11 16:15:33] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+[2025-09-11 16:16:05] DEBUG    Read LP format model from file /tmp/tmpkb5l26u9.pyomo.lp
+[2025-09-11 16:16:06] DEBUG    Reading time = 32.45 seconds
+x16068742: 21894193 rows, 16068742 columns, 52641835 nonzeros
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Debian GNU/Linux 11 (bullseye)")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+
+Non-default parameters:
+NumericFocus  1
+[2025-09-11 16:16:06] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+Optimize a model with 21894193 rows, 16068742 columns and 52641835 nonzeros
+[2025-09-11 16:16:06] DEBUG    Model fingerprint: 0x20449717
+[2025-09-11 16:16:06] DEBUG    Coefficient statistics:
+  Matrix range     [1e-07, 3e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 2e+08]
+[2025-09-11 16:16:12] DEBUG    Presolve removed 17670178 rows and 9452832 columns (presolve time = 6s)...
+[2025-09-11 16:16:16] DEBUG    Presolve removed 19306595 rows and 12880000 columns (presolve time = 10s)...
+[2025-09-11 16:16:21] DEBUG    Presolve removed 19788321 rows and 13310947 columns (presolve time = 15s)...
+[2025-09-11 16:16:25] DEBUG    Presolve removed 20475119 rows and 13328467 columns
+[2025-09-11 16:16:25] DEBUG    Presolve time: 19.49s
+Presolved: 1419074 rows, 2889178 columns, 8204425 nonzeros
+
+Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+[2025-09-11 16:16:27] DEBUG    Ordering time: 0.90s
+[2025-09-11 16:16:28] DEBUG    Barrier statistics:
+ Dense cols : 115
+ AA' NZ     : 8.251e+06
+ Factor NZ  : 2.663e+07 (roughly 2.0 GB of memory)
+ Factor Ops : 7.079e+08 (less than 1 second per iteration)
+ Threads    : 30
+[2025-09-11 16:16:32] DEBUG    Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+[2025-09-11 16:16:32] DEBUG    0   4.68904331e+21 -1.12119261e+19  6.49e+10 2.79e-01  6.24e+15    27s
+[2025-09-11 16:16:36] DEBUG    1   1.71068578e+21 -1.12428236e+19  2.06e+10 3.45e+05  2.43e+15    31s
+[2025-09-11 16:16:42] DEBUG    2   1.02748237e+21 -8.55068703e+18  1.17e+10 5.94e+04  1.03e+15    36s
+[2025-09-11 16:16:49] DEBUG    3   6.24056173e+20 -7.66541574e+18  6.93e+09 1.62e+04  5.70e+14    43s
+[2025-09-11 16:16:54] DEBUG    4   4.42046604e+20 -7.31972924e+18  4.91e+09 9.78e+03  3.99e+14    48s
+[2025-09-11 16:16:58] DEBUG    5   3.79508688e+20 -6.93488912e+18  4.19e+09 3.38e+03  3.33e+14    52s
+[2025-09-11 16:17:02] DEBUG    6   2.05698384e+20 -6.64688865e+18  2.23e+09 1.35e+03  1.79e+14    56s
+[2025-09-11 16:17:06] DEBUG    7   1.85256405e+20 -6.37075455e+18  2.00e+09 5.68e+02  1.61e+14    60s
+[2025-09-11 16:17:09] DEBUG    8   1.44621673e+20 -6.04247851e+18  1.56e+09 3.01e+02  1.25e+14    63s
+[2025-09-11 16:17:14] DEBUG    9   1.03355165e+20 -5.56033971e+18  1.11e+09 1.08e+02  8.89e+13    69s
+[2025-09-11 16:17:18] DEBUG    10   9.17692542e+19 -5.31861221e+18  9.87e+08 7.46e+01  7.88e+13    73s
+[2025-09-11 16:17:24] DEBUG    11   4.63331973e+19 -4.78384186e+18  5.05e+08 2.56e+01  4.03e+13    79s
+[2025-09-11 16:17:28] DEBUG    12   2.64836279e+19 -4.09036995e+18  2.89e+08 1.28e+01  2.31e+13    82s
+[2025-09-11 16:17:33] DEBUG    13   7.59230762e+18 -3.29245989e+18  8.31e+07 5.21e+00  6.90e+12    87s
+[2025-09-11 16:17:40] DEBUG    14   2.18615274e+18 -1.87274447e+18  2.34e+07 1.37e+00  2.01e+12    95s
+[2025-09-11 16:17:46] DEBUG    15   3.34444876e+17 -1.04705672e+18  3.39e+06 5.82e-01  4.13e+11   100s
+[2025-09-11 16:17:49] DEBUG    16   4.95546597e+16 -6.49824453e+17  4.65e+05 3.33e-01  1.45e+11   104s
+[2025-09-11 16:17:53] DEBUG    17   3.45658004e+15 -4.66592896e+16  2.83e+04 2.23e-02  9.36e+09   107s
+[2025-09-11 16:17:57] DEBUG    18   1.29310174e+14 -2.33562298e+15  3.49e+01 2.67e-02  4.18e+08   112s
+[2025-09-11 16:18:01] DEBUG    19   1.26695377e+14 -4.01881860e+14  4.21e-01 2.58e-02  7.49e+07   116s
+[2025-09-11 16:18:12] DEBUG    20   1.14108106e+14 -3.39541292e+14  2.13e-01 2.61e-02  6.28e+07   126s
+[2025-09-11 16:18:25] DEBUG    21   9.97611179e+13 -8.45327404e+13  7.05e-02 2.78e-02  1.62e+07   139s
+[2025-09-11 16:18:36] DEBUG    22   9.76404795e+13 -7.56097252e+13  6.32e-02 2.77e-02  1.45e+07   151s
+[2025-09-11 16:18:46] DEBUG    23   9.65800308e+13 -6.43847781e+13  5.94e-02 2.77e-02  1.24e+07   161s
+[2025-09-11 16:18:58] DEBUG    24   9.51237058e+13 -4.30930937e+13  5.43e-02 2.62e-02  8.46e+06   173s
+[2025-09-11 16:19:12] DEBUG    25   9.03002144e+13 -3.49940629e+13  3.63e-02 2.59e-02  6.76e+06   186s
+[2025-09-11 16:19:27] DEBUG    26   8.98270838e+13 -3.17476763e+13  3.50e-02 2.61e-02  6.15e+06   201s
+[2025-09-11 16:19:38] DEBUG    27   8.92823981e+13 -2.18899659e+13  3.35e-02 2.64e-02  4.33e+06   213s
+[2025-09-11 16:19:53] DEBUG    28   8.74972865e+13 -1.90807430e+13  2.90e-02 2.65e-02  3.76e+06   227s
+[2025-09-11 16:20:07] DEBUG    29   8.53176917e+13 -1.35986611e+13  2.26e-02 2.68e-02  2.68e+06   242s
+[2025-09-11 16:20:20] DEBUG    30   8.33141627e+13 -1.16194719e+13  1.79e-02 2.68e-02  2.26e+06   255s
+[2025-09-11 16:20:32] DEBUG    31   8.14995366e+13 -7.34667665e+12  1.44e-02 2.67e-02  1.43e+06   267s
+[2025-09-11 16:20:44] DEBUG    32   7.83404304e+13 -4.94935697e+12  9.47e-03 2.68e-02  9.14e+05   279s
+[2025-09-11 16:20:54] DEBUG    33   7.72727928e+13 -4.08004925e+12  8.29e-03 2.67e-02  7.38e+05   289s
+[2025-09-11 16:21:07] DEBUG    34   7.53260827e+13 -3.53386562e+12  6.60e-03 2.66e-02  6.11e+05   302s
+[2025-09-11 16:21:19] DEBUG    35   7.42700643e+13 -2.96428369e+12  5.56e-03 2.65e-02  4.92e+05   313s
+[2025-09-11 16:21:30] DEBUG    36   7.37658987e+13 -2.22168737e+12  5.17e-03 2.64e-02  3.57e+05   325s
+[2025-09-11 16:21:39] DEBUG    37   7.28984111e+13 -1.65297820e+12  4.26e-03 2.63e-02  2.47e+05   334s
+[2025-09-11 16:21:50] DEBUG    38   7.15236825e+13 -1.51795593e+12  3.43e-03 2.63e-02  2.09e+05   344s
+[2025-09-11 16:22:03] DEBUG    39   7.00263503e+13 -1.25634111e+12  2.68e-03 2.63e-02  1.52e+05   357s
+[2025-09-11 16:22:12] DEBUG    40   6.93894997e+13 -9.92904857e+11  2.12e-03 2.63e-02  1.05e+05   366s
+[2025-09-11 16:22:21] DEBUG    41   6.90352876e+13 -9.19809922e+11  1.84e-03 2.63e-02  9.08e+04   375s
+[2025-09-11 16:22:30] DEBUG    42   6.86075605e+13 -7.87628562e+11  1.63e-03 2.63e-02  6.72e+04   385s
+[2025-09-11 16:22:40] DEBUG    43   6.81714293e+13 -7.24517917e+11  1.33e-03 2.63e-02  5.40e+04   394s
+[2025-09-11 16:22:51] DEBUG    44   6.76097208e+13 -6.99538343e+11  1.05e-03 2.63e-02  4.63e+04   406s
+[2025-09-11 16:23:00] DEBUG    45   6.73778829e+13 -6.39559898e+11  9.54e-04 2.63e-02  3.51e+04   415s
+[2025-09-11 16:23:10] DEBUG    46   6.68847831e+13 -6.15285294e+11  8.43e-04 2.63e-02  2.82e+04   425s
+[2025-09-11 16:23:20] DEBUG    47   6.66950994e+13 -5.97763683e+11  7.71e-04 2.63e-02  2.43e+04   434s
+[2025-09-11 16:23:29] DEBUG    48   6.62948680e+13 -5.87683277e+11  6.41e-04 2.63e-02  2.07e+04   444s
+[2025-09-11 16:23:38] DEBUG    49   6.60066760e+13 -5.79399858e+11  5.00e-04 2.63e-02  1.79e+04   452s
+[2025-09-11 16:23:46] DEBUG    50   6.57727315e+13 -5.75548706e+11  4.77e-04 2.62e-02  1.63e+04   461s
+[2025-09-11 16:23:55] DEBUG    51   6.55493933e+13 -5.69251520e+11  4.46e-04 2.62e-02  1.42e+04   469s
+[2025-09-11 16:24:05] DEBUG    52   6.54132058e+13 -5.66321402e+11  4.58e-04 2.62e-02  1.31e+04   479s
+[2025-09-11 16:24:12] DEBUG    53   6.51338860e+13 -5.63894296e+11  4.23e-04 2.62e-02  1.18e+04   486s
+[2025-09-11 16:24:21] DEBUG    54   6.49731987e+13 -5.61449661e+11  4.39e-04 2.62e-02  1.10e+04   496s
+[2025-09-11 16:24:32] DEBUG    55   6.48413341e+13 -5.59310969e+11  4.16e-04 2.62e-02  1.03e+04   506s
+[2025-09-11 16:24:42] DEBUG    56   6.46628814e+13 -5.56467956e+11  3.74e-04 2.62e-02  9.54e+03   516s
+[2025-09-11 16:24:51] DEBUG    57   6.45039283e+13 -5.54776557e+11  3.66e-04 2.62e-02  8.92e+03   526s
+[2025-09-11 16:24:59] DEBUG    58   6.43048967e+13 -5.53760155e+11  3.32e-04 2.62e-02  8.42e+03   533s
+[2025-09-11 16:25:08] DEBUG    59   6.41609863e+13 -5.51700270e+11  3.13e-04 2.62e-02  7.91e+03   543s
+[2025-09-11 16:25:18] DEBUG    60   6.40289280e+13 -5.49872272e+11  2.98e-04 2.62e-02  7.45e+03   553s
+[2025-09-11 16:25:25] DEBUG    61   6.38571421e+13 -5.48787619e+11  2.86e-04 2.62e-02  7.11e+03   560s
+[2025-09-11 16:25:34] DEBUG    62   6.37337966e+13 -5.46204702e+11  2.71e-04 2.62e-02  6.70e+03   568s
+[2025-09-11 16:25:43] DEBUG    63   6.35975092e+13 -5.46023790e+11  2.59e-04 2.62e-02  6.39e+03   577s
+[2025-09-11 16:25:51] DEBUG    64   6.35080788e+13 -5.45667030e+11  2.44e-04 2.62e-02  6.24e+03   585s
+[2025-09-11 16:26:00] DEBUG    65   6.33799494e+13 -5.43171571e+11  2.37e-04 2.62e-02  5.86e+03   594s
+[2025-09-11 16:26:07] DEBUG    66   6.32433667e+13 -5.42845919e+11  2.37e-04 2.62e-02  5.66e+03   602s
+[2025-09-11 16:26:17] DEBUG    67   6.31253023e+13 -5.40647009e+11  2.37e-04 2.62e-02  5.33e+03   611s
+[2025-09-11 16:26:26] DEBUG    68   6.30441887e+13 -5.39130045e+11  2.25e-04 2.62e-02  5.10e+03   621s
+[2025-09-11 16:26:34] DEBUG    69   6.29397218e+13 -5.37710698e+11  2.17e-04 2.62e-02  4.85e+03   629s
+[2025-09-11 16:26:43] DEBUG    70   6.28388785e+13 -5.36992362e+11  2.10e-04 2.62e-02  4.65e+03   637s
+[2025-09-11 16:26:51] DEBUG    71   6.27390893e+13 -5.36059239e+11  2.06e-04 2.62e-02  4.46e+03   645s
+[2025-09-11 16:26:59] DEBUG    72   6.26685709e+13 -5.34948534e+11  2.02e-04 2.62e-02  4.29e+03   653s
+[2025-09-11 16:27:07] DEBUG    73   6.25716928e+13 -5.34076395e+11  2.02e-04 2.62e-02  4.12e+03   661s
+[2025-09-11 16:27:16] DEBUG    74   6.24817634e+13 -5.33344815e+11  1.98e-04 2.62e-02  3.95e+03   671s
+[2025-09-11 16:27:25] DEBUG    75   6.23818720e+13 -5.32617896e+11  1.91e-04 2.62e-02  3.78e+03   680s
+[2025-09-11 16:27:36] DEBUG    76   6.22857878e+13 -5.31832456e+11  1.91e-04 2.62e-02  3.62e+03   690s
+[2025-09-11 16:27:44] DEBUG    77   6.22167407e+13 -5.30785342e+11  1.87e-04 2.62e-02  3.51e+03   698s
+[2025-09-11 16:27:54] DEBUG    78   6.21317939e+13 -5.30091752e+11  1.83e-04 2.61e-02  3.40e+03   708s
+[2025-09-11 16:28:04] DEBUG    79   6.20544094e+13 -5.29378998e+11  1.75e-04 2.61e-02  3.28e+03   718s
+[2025-09-11 16:28:13] DEBUG    80   6.19768388e+13 -5.28724655e+11  1.72e-04 2.61e-02  3.16e+03   727s
+[2025-09-11 16:28:21] DEBUG    81   6.19090773e+13 -5.28202508e+11  1.68e-04 2.61e-02  3.07e+03   736s
+[2025-09-11 16:28:29] DEBUG    82   6.18554362e+13 -5.27556488e+11  1.68e-04 2.61e-02  2.99e+03   743s
+[2025-09-11 16:28:38] DEBUG    83   6.17967032e+13 -5.27010656e+11  1.60e-04 2.61e-02  2.91e+03   753s
+[2025-09-11 16:28:48] DEBUG    84   6.17215792e+13 -5.26614186e+11  1.60e-04 2.61e-02  2.83e+03   762s
+[2025-09-11 16:28:57] DEBUG    85   6.16514398e+13 -5.26028088e+11  1.53e-04 2.61e-02  2.74e+03   771s
+[2025-09-11 16:29:06] DEBUG    86   6.15851861e+13 -5.25191548e+11  1.53e-04 2.61e-02  2.66e+03   780s
+[2025-09-11 16:29:15] DEBUG    87   6.15268226e+13 -5.24633536e+11  1.53e-04 2.61e-02  2.59e+03   790s
+[2025-09-11 16:29:26] DEBUG    88   6.14531100e+13 -5.23911739e+11  1.53e-04 2.61e-02  2.51e+03   800s
+[2025-09-11 16:29:34] DEBUG    89   6.14039164e+13 -5.23199198e+11  1.53e-04 2.61e-02  2.45e+03   808s
+[2025-09-11 16:29:41] DEBUG    90   6.13583060e+13 -5.22752043e+11  1.53e-04 2.61e-02  2.40e+03   816s
+[2025-09-11 16:29:50] DEBUG    91   6.13006100e+13 -5.22468321e+11  1.53e-04 2.61e-02  2.34e+03   825s
+[2025-09-11 16:30:00] DEBUG    92   6.12368724e+13 -5.21865313e+11  1.83e-04 2.61e-02  2.27e+03   834s
+[2025-09-11 16:30:06] DEBUG    93   6.11872162e+13 -5.21535399e+11  1.83e-04 2.61e-02  2.22e+03   841s
+[2025-09-11 16:30:13] DEBUG    94   6.11448072e+13 -5.21194893e+11  1.83e-04 2.61e-02  2.18e+03   847s
+[2025-09-11 16:30:22] DEBUG    95   6.11038401e+13 -5.20984104e+11  1.83e-04 2.61e-02  2.15e+03   857s
+[2025-09-11 16:30:32] DEBUG    96   6.10627607e+13 -5.20606363e+11  1.83e-04 2.61e-02  2.11e+03   866s
+[2025-09-11 16:30:40] DEBUG    97   6.10093600e+13 -5.20057404e+11  1.53e-04 2.61e-02  2.06e+03   874s
+[2025-09-11 16:30:47] DEBUG    98   6.09690307e+13 -5.19611904e+11  1.83e-04 2.61e-02  2.02e+03   882s
+[2025-09-11 16:30:58] DEBUG    99   6.09258512e+13 -5.18774913e+11  1.83e-04 2.61e-02  1.98e+03   893s
+[2025-09-11 16:31:07] DEBUG    100   6.08698003e+13 -5.18129626e+11  1.83e-04 2.61e-02  1.93e+03   902s
+[2025-09-11 16:31:17] DEBUG    101   6.08413619e+13 -5.17523241e+11  1.83e-04 2.61e-02  1.91e+03   912s
+[2025-09-11 16:31:26] DEBUG    102   6.08146741e+13 -5.17366961e+11  1.83e-04 2.61e-02  1.89e+03   920s
+[2025-09-11 16:31:36] DEBUG    103   6.07751452e+13 -5.16892108e+11  1.83e-04 2.61e-02  1.86e+03   931s
+[2025-09-11 16:31:44] DEBUG    104   6.07459288e+13 -5.16436921e+11  1.83e-04 2.61e-02  2.05e+03   938s
+[2025-09-11 16:31:44] DEBUG    Barrier performed 104 iterations in 938.45 seconds (189.24 work units)
+Numerical trouble encountered
+
+Model may be infeasible or unbounded.  Consider using the
+homogeneous algorithm (through parameter 'BarHomogeneous')
+[2025-09-11 16:32:42] DEBUG    Solved with dual simplex
+[2025-09-11 16:32:51] DEBUG    Iteration    Objective       Primal Inf.    Dual Inf.      Time
+[2025-09-11 16:32:51] DEBUG    701408    1.3044776e+10   0.000000e+00   0.000000e+00   1006s
+
+Solved in 701408 iterations and 1005.71 seconds (267.25 work units)
+[2025-09-11 16:32:51] DEBUG    Optimal objective  1.304477634e+10
+❌ Errore nel run di autarky_VRES_2030_BESS: 'Model' object has no attribute 'backend_model'
+
+🚀 Lancio scenario: autarky_VRES_2030_PHES
+[2025-09-11 16:39:48] INFO     Loading sets
+[2025-09-11 16:39:48] INFO     Loading parameters
+[2025-09-11 16:40:22] INFO     constraints are loaded in the following order: ['energy_balance', 'dispatch', 'costs', 'capacity', 'network', 'policy', 'conversion', 'group', 'conversion_plus', 'milp', 'export']
+[2025-09-11 16:40:22] INFO     creating energy_balance constraints
+[2025-09-11 16:44:54] INFO     creating dispatch constraints
+[2025-09-11 16:48:31] INFO     creating costs constraints
+[2025-09-11 16:58:41] INFO     creating capacity constraints
+[2025-09-11 16:58:41] INFO     creating network constraints
+[2025-09-11 16:58:41] INFO     creating policy constraints
+[2025-09-11 16:58:41] INFO     creating conversion constraints
+[2025-09-11 16:58:41] INFO     creating group constraints
+[2025-09-11 16:58:41] INFO     creating conversion_plus constraints
+[2025-09-11 16:58:41] INFO     creating milp constraints
+[2025-09-11 16:58:41] INFO     creating export constraints
+[2025-09-11 17:10:16] DEBUG    Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2680226
+[2025-09-11 17:10:16] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+[2025-09-11 17:10:49] DEBUG    Read LP format model from file /tmp/tmpjvvur5ab.pyomo.lp
+Reading time = 32.80 seconds
+x16068742: 21894251 rows, 16068742 columns, 52895933 nonzeros
+[2025-09-11 17:10:49] DEBUG    Set parameter NumericFocus to value 1
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Debian GNU/Linux 11 (bullseye)")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+
+Non-default parameters:
+NumericFocus  1
+[2025-09-11 17:10:49] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+Optimize a model with 21894251 rows, 16068742 columns and 52895933 nonzeros
+[2025-09-11 17:10:50] DEBUG    Model fingerprint: 0x8ed24734
+[2025-09-11 17:10:50] DEBUG    Coefficient statistics:
+  Matrix range     [1e-07, 3e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 6e+09]
+Warning: Model contains large rhs
+[2025-09-11 17:10:55] DEBUG    Presolve removed 17801642 rows and 9531678 columns (presolve time = 6s)...
+[2025-09-11 17:11:00] DEBUG    Presolve removed 19649239 rows and 13170000 columns (presolve time = 10s)...
+[2025-09-11 17:11:05] DEBUG    Presolve removed 20431469 rows and 13368763 columns (presolve time = 16s)...
+[2025-09-11 17:11:08] DEBUG    Presolve removed 20580372 rows and 13386283 columns
+[2025-09-11 17:11:08] DEBUG    Presolve time: 19.14s
+Presolved: 1313879 rows, 2831362 columns, 7762575 nonzeros
+
+Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+[2025-09-11 17:11:11] DEBUG    Ordering time: 1.02s
+[2025-09-11 17:11:12] DEBUG    Barrier statistics:
+ Dense cols : 112
+ AA' NZ     : 7.530e+06
+[2025-09-11 17:11:12] DEBUG    Factor NZ  : 2.537e+07 (roughly 2.0 GB of memory)
+ Factor Ops : 7.707e+08 (less than 1 second per iteration)
+ Threads    : 30
+[2025-09-11 17:11:15] DEBUG    Objective                Residual
+[2025-09-11 17:11:15] DEBUG    Iter       Primal          Dual         Primal    Dual     Compl     Time
+[2025-09-11 17:11:16] DEBUG    0   5.22361614e+21 -1.16099624e+19  6.49e+10 3.52e-01  6.73e+15    27s
+[2025-09-11 17:11:20] DEBUG    1   4.80034379e+21 -1.19975476e+19  5.92e+10 3.32e+05  5.73e+15    31s
+[2025-09-11 17:11:26] DEBUG    2   4.52005774e+21 -4.75596356e+19  5.60e+10 2.57e+05  5.47e+15    37s
+[2025-09-11 17:11:34] DEBUG    3   3.67643258e+21 -1.96399488e+20  4.58e+10 5.61e+04  4.51e+15    45s
+[2025-09-11 17:11:39] DEBUG    4   7.02164485e+20 -1.81052036e+20  8.15e+09 1.59e+04  8.34e+14    50s
+[2025-09-11 17:11:46] DEBUG    5   1.72237965e+20 -1.22424040e+20  1.94e+09 2.50e+03  2.11e+14    57s
+[2025-09-11 17:11:51] DEBUG    6   8.93281604e+19 -5.28208773e+19  9.84e+08 1.89e+02  1.02e+14    62s
+[2025-09-11 17:11:56] DEBUG    7   3.80325291e+19 -2.56975555e+19  4.03e+08 5.31e+01  4.18e+13    67s
+[2025-09-11 17:11:59] DEBUG    8   2.60257121e+19 -1.48949678e+19  2.71e+08 1.85e+01  2.73e+13    70s
+[2025-09-11 17:12:04] DEBUG    9   1.46677066e+19 -1.05268600e+19  1.50e+08 3.21e+00  1.54e+13    75s
+[2025-09-11 17:12:08] DEBUG    10   9.43226422e+18 -6.46728238e+18  9.55e+07 2.18e+00  9.57e+12    79s
+[2025-09-11 17:12:12] DEBUG    11   7.94395651e+18 -3.84118426e+18  8.01e+07 6.93e-05  7.55e+12    83s
+[2025-09-11 17:12:16] DEBUG    12   5.34717849e+18 -2.75170725e+18  5.34e+07 5.52e-05  4.99e+12    87s
+[2025-09-11 17:12:20] DEBUG    13   4.21964360e+18 -1.55471838e+18  4.18e+07 1.70e-04  3.66e+12    91s
+[2025-09-11 17:12:23] DEBUG    14   1.33401196e+18 -1.09021132e+18  1.23e+07 5.37e-04  1.18e+12    95s
+[2025-09-11 17:12:29] DEBUG    15   2.72413220e+17 -5.02139652e+17  2.32e+06 1.54e-03  2.65e+11   100s
+[2025-09-11 17:12:33] DEBUG    16   1.00601481e+17 -2.36623089e+17  8.34e+05 4.17e-04  9.58e+10   104s
+[2025-09-11 17:12:38] DEBUG    17   1.08372064e+16 -4.99011142e+16  7.93e+04 1.55e-05  1.29e+10   109s
+[2025-09-11 17:12:42] DEBUG    18   8.39981049e+14 -5.43207355e+15  5.49e+03 7.22e-07  1.18e+09   113s
+[2025-09-11 17:12:47] DEBUG    19   6.32983553e+12 -8.68876952e+14  1.62e+00 8.85e-05  1.59e+08   118s
+[2025-09-11 17:12:58] DEBUG    20   4.68003792e+12 -3.56730404e+14  9.45e-03 4.04e-03  6.54e+07   130s
+[2025-09-11 17:13:19] DEBUG    21   3.96271427e+12 -2.51535569e+14  2.32e-03 5.12e-03  4.63e+07   150s
+[2025-09-11 17:13:36] DEBUG    22   4.13688716e+12 -7.93067093e+13  1.32e-03 5.38e-03  1.51e+07   167s
+[2025-09-11 17:13:51] DEBUG    23   3.77970308e+12 -3.71682910e+13  1.01e-03 6.12e-03  7.39e+06   182s
+[2025-09-11 17:14:02] DEBUG    24   3.69420712e+12 -3.57085052e+13  9.69e-04 6.23e-03  7.11e+06   193s
+[2025-09-11 17:14:16] DEBUG    25   3.65541479e+12 -3.44787695e+13  9.50e-04 6.32e-03  6.88e+06   207s
+[2025-09-11 17:14:28] DEBUG    26   3.55701170e+12 -3.29420628e+13  8.95e-04 6.43e-03  6.59e+06   219s
+[2025-09-11 17:14:47] DEBUG    27   2.96324620e+12 -2.70096225e+13  5.74e-04 1.90e-02  5.40e+06   238s
+[2025-09-11 17:15:10] DEBUG    28   2.70198052e+12 -1.96927025e+13  4.67e-04 1.93e-02  4.03e+06   262s
+[2025-09-11 17:15:35] DEBUG    29   2.45971987e+12 -1.33880358e+13  3.84e-04 1.94e-02  2.84e+06   286s
+[2025-09-11 17:15:54] DEBUG    30   2.40654481e+12 -1.25437043e+13  3.69e-04 1.94e-02  2.68e+06   306s
+[2025-09-11 17:16:22] DEBUG    31   2.17985185e+12 -9.67102361e+12  3.05e-04 1.93e-02  2.12e+06   334s
+[2025-09-11 17:16:46] DEBUG    32   1.92502519e+12 -6.09479173e+12  2.51e-04 1.92e-02  1.43e+06   357s
+[2025-09-11 17:17:12] DEBUG    33   1.60459172e+12 -2.83633765e+12  1.82e-04 1.97e-02  7.76e+05   383s
+[2025-09-11 17:17:41] DEBUG    34   1.33987935e+12 -2.14979936e+12  1.26e-04 1.99e-02  6.03e+05   412s
+[2025-09-11 17:18:06] DEBUG    35   1.22631965e+12 -9.23952359e+11  1.04e-04 2.01e-02  3.56e+05   437s
+[2025-09-11 17:18:32] DEBUG    36   9.65804057e+11 -4.00568636e+11  5.48e-05 2.01e-02  2.17e+05   463s
+[2025-09-11 17:18:49] DEBUG    37   9.32469546e+11 -1.55554500e+11  5.34e-05 1.99e-02  1.67e+05   480s
+[2025-09-11 17:19:05] DEBUG    38   8.45846781e+11  2.42230081e+10  5.48e-05 1.95e-02  1.22e+05   496s
+[2025-09-11 17:19:20] DEBUG    39   7.85893260e+11  1.03774978e+11  5.63e-05 1.91e-02  9.91e+04   511s
+[2025-09-11 17:19:34] DEBUG    40   7.70285765e+11  1.32300541e+11  8.01e-05 1.88e-02  9.19e+04   525s
+[2025-09-11 17:19:50] DEBUG    41   7.53357506e+11  2.12432381e+11  6.77e-05 1.79e-02  7.51e+04   541s
+[2025-09-11 17:20:08] DEBUG    42   7.16903932e+11  2.42618689e+11  7.87e-05 1.68e-02  6.50e+04   559s
+[2025-09-11 17:20:26] DEBUG    43   6.93903440e+11  3.55028262e+11  7.53e-05 1.26e-02  4.14e+04   577s
+[2025-09-11 17:20:42] DEBUG    44   6.52618619e+11  4.03190263e+11  7.25e-05 9.15e-03  2.70e+04   593s
+[2025-09-11 17:20:56] DEBUG    45   6.25592407e+11  4.41101263e+11  6.53e-05 5.33e-03  1.64e+04   607s
+[2025-09-11 17:21:11] DEBUG    46   6.12576066e+11  4.52141015e+11  7.06e-05 5.37e-03  1.27e+04   622s
+[2025-09-11 17:21:25] DEBUG    47   6.01364529e+11  4.57532791e+11  7.92e-05 5.38e-03  1.02e+04   636s
+[2025-09-11 17:21:37] DEBUG    48   5.99795732e+11  4.58333281e+11  6.01e-05 5.38e-03  9.82e+03   648s
+[2025-09-11 17:21:55] DEBUG    49   5.94958640e+11  4.59338670e+11  4.39e-05 5.36e-03  8.98e+03   666s
+[2025-09-11 17:22:07] DEBUG    50   5.83871497e+11  4.60514685e+11  7.15e-05 5.35e-03  7.22e+03   678s
+[2025-09-11 17:22:25] DEBUG    51   5.71296080e+11  4.62038731e+11  6.10e-05 5.32e-03  5.16e+03   696s
+[2025-09-11 17:22:38] DEBUG    52   5.62247615e+11  4.62880551e+11  6.87e-05 5.25e-03  3.83e+03   710s
+[2025-09-11 17:22:56] DEBUG    53   5.58790809e+11  4.62988388e+11  6.58e-05 5.21e-03  3.38e+03   727s
+[2025-09-11 17:23:11] DEBUG    54   5.51137165e+11  4.63211806e+11  1.16e-04 4.80e-03  2.43e+03   742s
+[2025-09-11 17:23:24] DEBUG    55   5.49239243e+11  4.63267498e+11  6.15e-05 4.63e-03  2.21e+03   756s
+[2025-09-11 17:23:48] DEBUG    56   5.47375562e+11  4.63416440e+11  7.72e-05 3.94e-03  1.99e+03   779s
+[2025-09-11 17:24:03] DEBUG    57   5.44643351e+11  4.63538590e+11  6.91e-05 2.82e-03  1.67e+03   794s
+[2025-09-11 17:24:15] DEBUG    58   5.43724467e+11  4.63567903e+11  9.54e-05 2.62e-03  1.56e+03   806s
+[2025-09-11 17:24:25] DEBUG    59   5.42540352e+11  4.63590375e+11  7.87e-05 2.60e-03  1.41e+03   816s
+[2025-09-11 17:24:35] DEBUG    60   5.40196292e+11  4.63625106e+11  6.06e-05 2.57e-03  1.11e+03   826s
+[2025-09-11 17:24:48] DEBUG    61   5.39107357e+11  4.63674349e+11  5.82e-05 2.55e-03  9.46e+02   839s
+[2025-09-11 17:24:48] DEBUG    Barrier performed 61 iterations in 838.64 seconds (143.12 work units)
+[2025-09-11 17:24:48] DEBUG    Barrier solve interrupted - model solved by another algorithm
+[2025-09-11 17:24:48] DEBUG    Solved with dual simplex
+[2025-09-11 17:24:56] DEBUG    Iteration    Objective       Primal Inf.    Dual Inf.      Time
+[2025-09-11 17:24:56] DEBUG    583219    4.6625564e+11   0.000000e+00   0.000000e+00    847s
+
+Solved in 583219 iterations and 847.41 seconds (219.05 work units)
+[2025-09-11 17:24:56] DEBUG    Optimal objective  4.662556360e+11
+❌ Errore nel run di autarky_VRES_2030_PHES: 'Model' object has no attribute 'backend_model'
+
+🚀 Lancio scenario: autarky_VRES_2030_nostorage
+[2025-09-11 17:34:35] INFO     Loading sets
+[2025-09-11 17:34:36] INFO     Loading parameters
+[2025-09-11 17:35:08] INFO     constraints are loaded in the following order: ['energy_balance', 'dispatch', 'costs', 'capacity', 'network', 'policy', 'conversion', 'group', 'conversion_plus', 'milp', 'export']
+[2025-09-11 17:35:08] INFO     creating energy_balance constraints
+[2025-09-11 17:37:56] INFO     creating dispatch constraints
+[2025-09-11 17:42:47] INFO     creating costs constraints
+[2025-09-11 17:50:36] INFO     creating capacity constraints
+[2025-09-11 17:50:36] INFO     creating network constraints
+[2025-09-11 17:50:36] INFO     creating policy constraints
+[2025-09-11 17:50:36] INFO     creating conversion constraints
+[2025-09-11 17:50:36] INFO     creating group constraints
+[2025-09-11 17:50:36] INFO     creating conversion_plus constraints
+[2025-09-11 17:50:36] INFO     creating milp constraints
+[2025-09-11 17:50:36] INFO     creating export constraints
+[2025-09-11 18:01:27] DEBUG    Set parameter WLSAccessID
+Set parameter WLSSecret
+[2025-09-11 18:01:27] DEBUG    Set parameter LicenseID to value 2680226
+[2025-09-11 18:01:27] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+[2025-09-11 18:01:57] DEBUG    Read LP format model from file /tmp/tmpk1oab2fj.pyomo.lp
+[2025-09-11 18:01:57] DEBUG    Reading time = 29.69 seconds
+x14798368: 20115739 rows, 14798368 columns, 48068796 nonzeros
+[2025-09-11 18:01:57] DEBUG    Set parameter NumericFocus to value 1
+[2025-09-11 18:01:57] DEBUG    Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Debian GNU/Linux 11 (bullseye)")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+[2025-09-11 18:01:57] DEBUG    Non-default parameters:
+NumericFocus  1
+[2025-09-11 18:01:57] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+[2025-09-11 18:01:57] DEBUG    Optimize a model with 20115739 rows, 14798368 columns and 48068796 nonzeros
+[2025-09-11 18:01:57] DEBUG    Model fingerprint: 0x2aca26bd
+[2025-09-11 18:01:58] DEBUG    Coefficient statistics:
+  Matrix range     [1e-07, 3e+02]
+[2025-09-11 18:01:58] DEBUG    Objective range  [1e+00, 1e+06]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 2e+08]
+[2025-09-11 18:02:03] DEBUG    Presolve removed 17162328 rows and 8949134 columns (presolve time = 5s)...
+[2025-09-11 18:02:08] DEBUG    Presolve removed 19029153 rows and 12603596 columns (presolve time = 10s)...
+[2025-09-11 18:02:12] DEBUG    Presolve removed 19715893 rows and 12629369 columns
+[2025-09-11 18:02:12] DEBUG    Presolve time: 15.38s
+Presolved: 399846 rows, 2317902 columns, 3918893 nonzeros
+[2025-09-11 18:02:12] DEBUG    Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+[2025-09-11 18:02:13] DEBUG    Ordering time: 0.13s
+[2025-09-11 18:02:13] DEBUG    Barrier statistics:
+ Dense cols : 86
+[2025-09-11 18:02:13] DEBUG    AA' NZ     : 1.285e+06
+ Factor NZ  : 6.821e+06 (roughly 1.1 GB of memory)
+ Factor Ops : 1.440e+08 (less than 1 second per iteration)
+ Threads    : 1
+[2025-09-11 18:02:14] DEBUG    Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+[2025-09-11 18:02:14] DEBUG    0   5.02391288e+21 -6.33612170e+19  6.49e+10 6.50e+04  3.06e+16    17s
+[2025-09-11 18:02:15] DEBUG    1   3.20144110e+21 -6.64411930e+19  2.88e+10 1.15e+06  1.37e+16    18s
+[2025-09-11 18:02:15] DEBUG    2   1.46559874e+21 -4.81967366e+19  8.89e+09 8.83e+04  4.18e+15    18s
+[2025-09-11 18:02:16] DEBUG    3   5.74464905e+19 -3.42708188e+19  1.38e+08 1.47e+03  8.09e+13    19s
+[2025-09-11 18:02:17] DEBUG    4   2.52957859e+19 -1.27270907e+19  5.91e+07 7.61e-06  3.24e+13    20s
+[2025-09-11 18:02:17] DEBUG    5   9.20597882e+18 -5.97620349e+18  2.06e+07 4.92e-04  1.13e+13    20s
+[2025-09-11 18:02:18] DEBUG    6   3.15349539e+18 -2.77198436e+18  6.50e+06 9.59e-05  3.58e+12    21s
+[2025-09-11 18:02:18] DEBUG    7   1.27432022e+18 -1.46681120e+18  2.52e+06 3.68e-04  1.38e+12    21s
+[2025-09-11 18:02:19] DEBUG    8   3.96281653e+17 -5.25583342e+17  7.40e+05 2.37e-04  3.78e+11    22s
+[2025-09-11 18:02:19] DEBUG    9   1.02650921e+17 -3.15991372e+17  1.76e+05 1.27e-04  1.30e+11    23s
+[2025-09-11 18:02:20] DEBUG    10   6.67120082e+16 -1.22125586e+17  1.11e+05 3.29e-05  5.71e+10    23s
+[2025-09-11 18:02:21] DEBUG    11   1.76655573e+16 -2.46348747e+16  2.44e+04 3.68e-06  1.14e+10    24s
+[2025-09-11 18:02:21] DEBUG    12   8.07836975e+15 -1.08537447e+16  8.51e+03 1.60e-06  4.83e+09    25s
+[2025-09-11 18:02:22] DEBUG    13   3.88956882e+15 -1.40062074e+15  1.81e+03 9.02e-07  1.31e+09    25s
+[2025-09-11 18:02:22] DEBUG    14   3.07774572e+15  1.40911687e+15  5.74e+02 1.30e-07  4.07e+08    26s
+[2025-09-11 18:02:23] DEBUG    15   2.86374648e+15  2.05015677e+15  2.52e+02 6.33e-08  1.98e+08    26s
+[2025-09-11 18:02:23] DEBUG    16   2.80996042e+15  2.33610937e+15  1.70e+02 4.06e-08  1.15e+08    27s
+[2025-09-11 18:02:24] DEBUG    17   2.78586231e+15  2.37841384e+15  1.34e+02 3.74e-08  9.89e+07    27s
+[2025-09-11 18:02:25] DEBUG    18   2.75068338e+15  2.44656789e+15  8.75e+01 2.37e-08  7.37e+07    28s
+[2025-09-11 18:02:25] DEBUG    19   2.73260431e+15  2.58381681e+15  5.96e+01 2.24e-08  3.61e+07    29s
+[2025-09-11 18:02:26] DEBUG    20   2.72555589e+15  2.60562018e+15  5.06e+01 1.55e-08  2.91e+07    30s
+[2025-09-11 18:02:27] DEBUG    21   2.71749069e+15  2.62612198e+15  3.81e+01 7.99e-09  2.21e+07    31s
+[2025-09-11 18:02:28] DEBUG    22   2.70993326e+15  2.63483775e+15  2.66e+01 9.17e-09  1.82e+07    31s
+[2025-09-11 18:02:29] DEBUG    23   2.70417629e+15  2.65582275e+15  1.75e+01 7.75e-09  1.17e+07    32s
+[2025-09-11 18:02:30] DEBUG    24   2.69514367e+15  2.66102781e+15  3.26e+00 1.86e-08  8.25e+06    33s
+[2025-09-11 18:02:31] DEBUG    25   2.69347811e+15  2.66972663e+15  6.63e-01 4.69e-09  5.75e+06    34s
+[2025-09-11 18:02:32] DEBUG    26   2.69319707e+15  2.67724764e+15  1.90e-01 6.91e-07  3.86e+06    35s
+[2025-09-11 18:02:33] DEBUG    27   2.69313649e+15  2.67820350e+15  1.40e-01 7.16e-07  3.61e+06    36s
+[2025-09-11 18:02:34] DEBUG    28   2.69305080e+15  2.68115581e+15  6.65e-02 5.42e-07  2.88e+06    37s
+[2025-09-11 18:02:34] DEBUG    29   2.69303297e+15  2.68211449e+15  5.29e-02 4.21e-07  2.64e+06    37s
+[2025-09-11 18:02:35] DEBUG    30   2.69303126e+15  2.68291814e+15  4.75e-02 9.28e-07  2.45e+06    38s
+[2025-09-11 18:02:35] DEBUG    31   2.69302726e+15  2.68365096e+15  3.97e-02 9.19e-07  2.27e+06    38s
+[2025-09-11 18:02:36] DEBUG    32   2.69301813e+15  2.68438990e+15  1.94e-02 9.25e-07  2.09e+06    39s
+[2025-09-11 18:02:36] DEBUG    33   2.69301208e+15  2.68636867e+15  1.61e-02 9.47e-07  1.61e+06    39s
+[2025-09-11 18:02:37] DEBUG    34   2.69301053e+15  2.69092871e+15  8.33e-03 2.48e-06  5.04e+05    40s
+[2025-09-11 18:02:37] DEBUG    35   2.69300044e+15  2.69238849e+15  6.46e-03 9.82e-05  1.48e+05    40s
+[2025-09-11 18:02:38] DEBUG    36   2.69299625e+15  2.69247029e+15  5.80e-03 1.07e-04  1.27e+05    41s
+[2025-09-11 18:02:38] DEBUG    37   2.69299049e+15  2.69251069e+15  5.04e-03 1.08e-04  1.16e+05    41s
+[2025-09-11 18:02:39] DEBUG    38   2.69298642e+15  2.69252084e+15  4.43e-03 1.08e-04  1.13e+05    42s
+[2025-09-11 18:02:39] DEBUG    39   2.69297090e+15  2.69253774e+15  2.38e-03 1.08e-04  1.05e+05    42s
+[2025-09-11 18:02:40] DEBUG    40   2.69296690e+15  2.69289305e+15  1.90e-03 1.71e-04  1.79e+04    43s
+[2025-09-11 18:02:41] DEBUG    41   2.69296248e+15  2.69292490e+15  1.48e-03 1.91e-04  9.10e+03    44s
+[2025-09-11 18:02:42] DEBUG    42   2.69295631e+15  2.69293809e+15  9.64e-04 1.24e-04  4.42e+03    45s
+[2025-09-11 18:02:43] DEBUG    43   2.69295245e+15  2.69294150e+15  6.92e-04 1.45e-04  2.66e+03    46s
+[2025-09-11 18:02:43] DEBUG    Barrier performed 43 iterations in 45.85 seconds (46.03 work units)
+Barrier solve interrupted - model solved by another algorithm
+[2025-09-11 18:02:43] DEBUG    Solved with dual simplex
+[2025-09-11 18:02:50] DEBUG    Iteration    Objective       Primal Inf.    Dual Inf.      Time
+[2025-09-11 18:02:50] DEBUG    246626    2.6929440e+15   0.000000e+00   0.000000e+00     53s
+
+Solved in 246626 iterations and 53.16 seconds (58.95 work units)
+Optimal objective  2.692944023e+15
+❌ Errore nel run di autarky_VRES_2030_nostorage: 'Model' object has no attribute 'backend_model'
+
+🚀 Lancio scenario: autarky_CG+VRES_2030_BESS
+[2025-09-11 18:14:55] INFO     Loading sets
+[2025-09-11 18:14:55] INFO     Loading parameters
+[2025-09-11 18:15:29] INFO     constraints are loaded in the following order: ['energy_balance', 'dispatch', 'costs', 'capacity', 'network', 'policy', 'conversion', 'group', 'conversion_plus', 'milp', 'export']
+[2025-09-11 18:15:29] INFO     creating energy_balance constraints
+[2025-09-11 18:18:31] INFO     creating dispatch constraints
+[2025-09-11 18:20:30] INFO     creating costs constraints
+[2025-09-11 18:33:51] INFO     creating capacity constraints
+[2025-09-11 18:33:51] INFO     creating network constraints
+[2025-09-11 18:33:51] INFO     creating policy constraints
+[2025-09-11 18:33:51] INFO     creating conversion constraints
+[2025-09-11 18:33:51] INFO     creating group constraints
+[2025-09-11 18:33:51] INFO     creating conversion_plus constraints
+[2025-09-11 18:33:51] INFO     creating milp constraints
+[2025-09-11 18:33:51] INFO     creating export constraints
+[2025-09-11 18:46:50] DEBUG    Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2680226
+[2025-09-11 18:46:50] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+[2025-09-11 18:47:24] DEBUG    Read LP format model from file /tmp/tmp3dghcu47.pyomo.lp
+Reading time = 34.26 seconds
+x16831007: 22656429 rows, 16831007 columns, 54928398 nonzeros
+[2025-09-11 18:47:24] DEBUG    Set parameter NumericFocus to value 1
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Debian GNU/Linux 11 (bullseye)")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+
+Non-default parameters:
+NumericFocus  1
+[2025-09-11 18:47:24] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+Optimize a model with 22656429 rows, 16831007 columns and 54928398 nonzeros
+[2025-09-11 18:47:25] DEBUG    Model fingerprint: 0x6e5dfc22
+[2025-09-11 18:47:25] DEBUG    Coefficient statistics:
+  Matrix range     [1e-07, 3e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 2e+08]
+[2025-09-11 18:47:31] DEBUG    Presolve removed 18178374 rows and 10215068 columns (presolve time = 6s)...
+[2025-09-11 18:47:35] DEBUG    Presolve removed 18692555 rows and 12520000 columns (presolve time = 10s)...
+[2025-09-11 18:47:41] DEBUG    Presolve removed 20296517 rows and 14073183 columns (presolve time = 15s)...
+[2025-09-11 18:47:45] DEBUG    Presolve removed 20983315 rows and 14090703 columns
+[2025-09-11 18:47:45] DEBUG    Presolve time: 20.44s
+Presolved: 1673114 rows, 2889207 columns, 8712505 nonzeros
+
+Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+[2025-09-11 18:47:47] DEBUG    Ordering time: 1.04s
+[2025-09-11 18:47:49] DEBUG    Barrier statistics:
+ Dense cols : 144
+[2025-09-11 18:47:49] DEBUG    AA' NZ     : 8.759e+06
+ Factor NZ  : 3.114e+07 (roughly 2.0 GB of memory)
+ Factor Ops : 8.670e+08 (less than 1 second per iteration)
+ Threads    : 30
+[2025-09-11 18:47:53] DEBUG    Objective                Residual
+[2025-09-11 18:47:53] DEBUG    Iter       Primal          Dual         Primal    Dual     Compl     Time
+[2025-09-11 18:47:54] DEBUG    0   2.34528364e+21 -8.01667767e+18  6.49e+10 2.89e-11  4.37e+15    29s
+[2025-09-11 18:47:58] DEBUG    1   1.95886994e+21 -8.03963935e+18  5.36e+10 2.39e+05  3.34e+15    34s
+[2025-09-11 18:48:04] DEBUG    2   1.59677962e+21 -7.50704167e+18  4.39e+10 1.07e+05  2.49e+15    40s
+[2025-09-11 18:48:12] DEBUG    3   1.13705722e+21 -6.62189613e+18  3.13e+10 3.52e+04  1.63e+15    48s
+[2025-09-11 18:48:19] DEBUG    4   7.88719593e+20 -6.13012875e+18  2.14e+10 1.59e+04  1.09e+15    55s
+[2025-09-11 18:48:23] DEBUG    5   6.54815607e+20 -5.82956391e+18  1.76e+10 7.53e+03  8.88e+14    59s
+[2025-09-11 18:48:28] DEBUG    6   4.49444149e+20 -5.57533950e+18  1.20e+10 3.47e+03  6.07e+14    63s
+[2025-09-11 18:48:32] DEBUG    7   3.05064609e+20 -5.40271682e+18  8.19e+09 1.85e+03  4.16e+14    68s
+[2025-09-11 18:48:36] DEBUG    8   1.21585275e+20 -5.16536926e+18  3.39e+09 1.08e+03  1.78e+14    72s
+[2025-09-11 18:48:44] DEBUG    9   5.61100962e+19 -4.65799106e+18  1.61e+09 3.01e+02  8.32e+13    79s
+[2025-09-11 18:48:48] DEBUG    10   3.97491977e+19 -4.17915039e+18  1.14e+09 1.28e+02  5.89e+13    83s
+[2025-09-11 18:48:54] DEBUG    11   2.59024110e+19 -3.63414920e+18  7.53e+08 2.84e+01  3.82e+13    90s
+[2025-09-11 18:49:02] DEBUG    12   1.04936813e+19 -2.93338649e+18  3.04e+08 1.58e+00  1.54e+13    98s
+[2025-09-11 18:49:08] DEBUG    13   1.08734376e+18 -2.27814552e+18  2.95e+07 1.28e+00  1.84e+12   103s
+[2025-09-11 18:49:12] DEBUG    14   2.74876687e+16 -8.91245196e+17  6.07e+05 3.51e-01  1.82e+11   108s
+[2025-09-11 18:49:17] DEBUG    15   1.44731579e+15 -4.50584305e+16  1.50e+03 1.67e-02  7.83e+09   112s
+[2025-09-11 18:49:21] DEBUG    16   1.34443649e+15 -4.78767369e+15  5.31e+01 2.32e-02  8.52e+08   117s
+[2025-09-11 18:49:26] DEBUG    17   1.32553113e+15 -2.26335451e+15  1.82e+01 2.36e-02  4.12e+08   121s
+[2025-09-11 18:49:31] DEBUG    18   1.32293848e+15 -1.87351671e+15  1.65e+01 2.39e-02  3.42e+08   127s
+[2025-09-11 18:49:36] DEBUG    19   1.31446725e+15 -5.21186407e+14  1.16e+01 2.46e-02  1.02e+08   132s
+[2025-09-11 18:49:42] DEBUG    20   1.29847408e+15 -1.23504342e+14  5.07e+00 2.52e-02  2.62e+07   137s
+[2025-09-11 18:49:46] DEBUG    21   1.28275670e+15 -5.79000794e+13  1.95e+00 2.53e-02  1.25e+07   142s
+[2025-09-11 18:49:52] DEBUG    22   1.27897610e+15 -1.34163018e+13  1.63e+00 2.55e-02  3.08e+06   148s
+[2025-09-11 18:50:00] DEBUG    23   1.26616186e+15 -6.04588954e+11  7.32e-01 2.55e-02  2.60e+05   155s
+[2025-09-11 18:50:05] DEBUG    24   1.26111721e+15 -4.92478290e+11  5.67e-01 2.55e-02  2.05e+05   160s
+[2025-09-11 18:50:09] DEBUG    25   1.26088185e+15 -3.68235518e+11  5.61e-01 2.55e-02  1.72e+05   165s
+[2025-09-11 18:50:14] DEBUG    26   1.25313539e+15 -2.44561685e+11  3.66e-01 2.54e-02  1.07e+05   169s
+[2025-09-11 18:50:18] DEBUG    27   1.24602515e+15 -1.62432862e+11  2.48e-01 2.54e-02  6.47e+04   173s
+[2025-09-11 18:50:25] DEBUG    28   1.24241215e+15 -1.15167920e+11  2.07e-01 2.54e-02  4.41e+04   180s
+[2025-09-11 18:50:31] DEBUG    29   1.23878500e+15 -1.13735140e+11  1.73e-01 2.54e-02  3.65e+04   187s
+[2025-09-11 18:50:36] DEBUG    30   1.23417111e+15 -1.10237931e+11  1.37e-01 2.54e-02  2.85e+04   192s
+[2025-09-11 18:50:44] DEBUG    31   1.23066090e+15 -1.12811433e+11  1.15e-01 2.55e-02  2.35e+04   199s
+[2025-09-11 18:50:52] DEBUG    32   1.22730726e+15 -1.13004084e+11  9.71e-02 2.55e-02  1.94e+04   207s
+[2025-09-11 18:51:00] DEBUG    33   1.22641977e+15 -1.13354116e+11  9.31e-02 2.55e-02  1.86e+04   215s
+[2025-09-11 18:51:11] DEBUG    34   1.22300703e+15 -1.14047654e+11  7.85e-02 2.55e-02  1.57e+04   226s
+[2025-09-11 18:51:22] DEBUG    35   1.22069889e+15 -1.14905163e+11  7.02e-02 2.55e-02  1.38e+04   238s
+[2025-09-11 18:51:34] DEBUG    36   1.21818647e+15 -1.15440349e+11  6.21e-02 2.55e-02  1.22e+04   250s
+[2025-09-11 18:51:41] DEBUG    37   1.21775042e+15 -1.15732875e+11  6.08e-02 2.55e-02  1.19e+04   257s
+[2025-09-11 18:51:50] DEBUG    38   1.21722191e+15 -1.15881207e+11  5.94e-02 2.55e-02  1.16e+04   265s
+[2025-09-11 18:52:00] DEBUG    39   1.21674071e+15 -1.16323877e+11  5.80e-02 2.55e-02  1.13e+04   275s
+[2025-09-11 18:52:07] DEBUG    40   1.21527408e+15 -1.16661034e+11  5.41e-02 2.55e-02  1.05e+04   282s
+[2025-09-11 18:52:14] DEBUG    41   1.21470943e+15 -1.16905623e+11  5.27e-02 2.55e-02  1.02e+04   290s
+[2025-09-11 18:52:21] DEBUG    42   1.21410468e+15 -1.17282673e+11  5.13e-02 2.54e-02  9.92e+03   297s
+[2025-09-11 18:52:32] DEBUG    43   1.21271587e+15 -1.17482053e+11  4.80e-02 2.54e-02  9.26e+03   308s
+[2025-09-11 18:52:40] DEBUG    44   1.21213534e+15 -1.17670384e+11  4.67e-02 2.54e-02  8.99e+03   315s
+[2025-09-11 18:52:46] DEBUG    45   1.21133635e+15 -1.17902898e+11  4.50e-02 2.54e-02  8.67e+03   322s
+[2025-09-11 18:52:57] DEBUG    46   1.20770114e+15 -1.18160096e+11  3.75e-02 2.54e-02  7.26e+03   333s
+[2025-09-11 18:53:08] DEBUG    47   1.20654425e+15 -1.18384829e+11  3.55e-02 2.54e-02  6.83e+03   344s
+[2025-09-11 18:53:17] DEBUG    48   1.20597695e+15 -1.18484378e+11  3.45e-02 2.54e-02  6.65e+03   353s
+[2025-09-11 18:53:28] DEBUG    49   1.20410770e+15 -1.18654135e+11  3.15e-02 2.54e-02  6.07e+03   363s
+[2025-09-11 18:53:40] DEBUG    50   1.20338830e+15 -1.18739384e+11  3.05e-02 2.54e-02  5.86e+03   375s
+[2025-09-11 18:53:47] DEBUG    51   1.20296092e+15 -1.18868299e+11  2.99e-02 2.54e-02  5.73e+03   382s
+[2025-09-11 18:53:54] DEBUG    52   1.20239819e+15 -1.18971751e+11  2.92e-02 2.54e-02  5.58e+03   389s
+[2025-09-11 18:54:01] DEBUG    53   1.20188043e+15 -1.19085360e+11  2.84e-02 2.54e-02  5.44e+03   397s
+[2025-09-11 18:54:12] DEBUG    54   1.20091365e+15 -1.19183030e+11  2.72e-02 2.54e-02  5.19e+03   407s
+[2025-09-11 18:54:18] DEBUG    55   1.20016799e+15 -1.19232854e+11  2.63e-02 2.54e-02  5.02e+03   414s
+[2025-09-11 18:54:28] DEBUG    56   1.19941597e+15 -1.19307674e+11  2.54e-02 2.54e-02  4.84e+03   424s
+[2025-09-11 18:54:39] DEBUG    57   1.19849342e+15 -1.19382399e+11  2.43e-02 2.54e-02  4.63e+03   434s
+[2025-09-11 18:54:50] DEBUG    58   1.19788476e+15 -1.19438873e+11  2.36e-02 2.54e-02  4.49e+03   446s
+[2025-09-11 18:55:00] DEBUG    59   1.19691090e+15 -1.19536942e+11  2.25e-02 2.54e-02  4.29e+03   456s
+[2025-09-11 18:55:11] DEBUG    60   1.19607391e+15 -1.19593867e+11  2.16e-02 2.54e-02  4.12e+03   466s
+[2025-09-11 18:55:22] DEBUG    61   1.19537115e+15 -1.19672357e+11  2.09e-02 2.54e-02  3.98e+03   477s
+[2025-09-11 18:55:32] DEBUG    62   1.19488963e+15 -1.19718095e+11  2.05e-02 2.54e-02  3.89e+03   487s
+[2025-09-11 18:55:40] DEBUG    63   1.19457354e+15 -1.19752367e+11  2.02e-02 2.54e-02  3.83e+03   496s
+[2025-09-11 18:55:51] DEBUG    64   1.19296873e+15 -1.19833933e+11  1.87e-02 2.54e-02  3.55e+03   506s
+[2025-09-11 18:55:59] DEBUG    65   1.19240004e+15 -1.19873756e+11  1.82e-02 2.54e-02  3.46e+03   514s
+[2025-09-11 18:56:09] DEBUG    66   1.19176224e+15 -1.19918923e+11  1.77e-02 2.54e-02  3.36e+03   524s
+[2025-09-11 18:56:21] DEBUG    67   1.18999205e+15 -1.20037952e+11  1.62e-02 2.54e-02  3.08e+03   537s
+[2025-09-11 18:56:33] DEBUG    68   1.18938297e+15 -1.20099044e+11  1.58e-02 2.54e-02  2.99e+03   548s
+[2025-09-11 18:56:41] DEBUG    69   1.18892842e+15 -1.20125518e+11  1.55e-02 2.54e-02  2.93e+03   557s
+[2025-09-11 18:56:53] DEBUG    70   1.18767144e+15 -1.20191563e+11  1.46e-02 2.54e-02  2.76e+03   568s
+[2025-09-11 18:57:00] DEBUG    71   1.18728980e+15 -1.20208935e+11  1.43e-02 2.54e-02  2.71e+03   576s
+[2025-09-11 18:57:11] DEBUG    72   1.18664707e+15 -1.20279358e+11  1.39e-02 2.54e-02  2.62e+03   586s
+[2025-09-11 18:57:22] DEBUG    73   1.18578958e+15 -1.20331748e+11  1.33e-02 2.54e-02  2.52e+03   597s
+[2025-09-11 18:57:33] DEBUG    74   1.18516698e+15 -1.20371287e+11  1.30e-02 2.54e-02  2.44e+03   608s
+[2025-09-11 18:57:44] DEBUG    75   1.18436791e+15 -1.20416303e+11  1.25e-02 2.54e-02  2.35e+03   620s
+[2025-09-11 18:57:53] DEBUG    76   1.18376418e+15 -1.20449273e+11  1.21e-02 2.54e-02  2.28e+03   629s
+[2025-09-11 18:58:05] DEBUG    77   1.18286379e+15 -1.20483610e+11  1.16e-02 2.54e-02  2.19e+03   640s
+[2025-09-11 18:58:13] DEBUG    78   1.18256116e+15 -1.20508350e+11  1.15e-02 2.54e-02  2.16e+03   648s
+[2025-09-11 18:58:22] DEBUG    79   1.18238387e+15 -1.20550827e+11  1.14e-02 2.54e-02  2.14e+03   658s
+[2025-09-11 18:58:31] DEBUG    80   1.18207285e+15 -1.20586932e+11  1.12e-02 2.54e-02  2.11e+03   667s
+[2025-09-11 18:58:42] DEBUG    81   1.18034527e+15 -1.20661966e+11  1.03e-02 2.54e-02  2.52e+03   678s
+[2025-09-11 18:58:42] DEBUG    Barrier performed 81 iterations in 677.60 seconds (137.67 work units)
+Numerical trouble encountered
+
+Model may be infeasible or unbounded.  Consider using the
+homogeneous algorithm (through parameter 'BarHomogeneous')
+[2025-09-11 18:59:46] DEBUG    Waiting for other threads to finish...         742s
+[2025-09-11 19:00:27] DEBUG    Solved with dual simplex
+[2025-09-11 19:00:37] DEBUG    Iteration    Objective       Primal Inf.    Dual Inf.      Time
+[2025-09-11 19:00:37] DEBUG    706828    1.1658942e+10   0.000000e+00   0.000000e+00    793s
+
+Solved in 706828 iterations and 792.92 seconds (283.96 work units)
+[2025-09-11 19:00:37] DEBUG    Optimal objective  1.165894206e+10
+❌ Errore nel run di autarky_CG+VRES_2030_BESS: 'Model' object has no attribute 'backend_model'
+
+🚀 Lancio scenario: autarky_CG+VRES_2030_nostorage
+[2025-09-11 19:12:39] INFO     Loading sets
+[2025-09-11 19:12:39] INFO     Loading parameters
+[2025-09-11 19:13:12] INFO     constraints are loaded in the following order: ['energy_balance', 'dispatch', 'costs', 'capacity', 'network', 'policy', 'conversion', 'group', 'conversion_plus', 'milp', 'export']
+[2025-09-11 19:13:12] INFO     creating energy_balance constraints
+[2025-09-11 19:16:03] INFO     creating dispatch constraints
+[2025-09-11 19:17:52] INFO     creating costs constraints
+[2025-09-11 19:32:32] INFO     creating capacity constraints
+[2025-09-11 19:32:32] INFO     creating network constraints
+[2025-09-11 19:32:32] INFO     creating policy constraints
+[2025-09-11 19:32:32] INFO     creating conversion constraints
+[2025-09-11 19:32:32] INFO     creating group constraints
+[2025-09-11 19:32:32] INFO     creating conversion_plus constraints
+[2025-09-11 19:32:32] INFO     creating milp constraints
+[2025-09-11 19:32:32] INFO     creating export constraints
+[2025-09-11 19:43:53] DEBUG    Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2680226
+[2025-09-11 19:43:54] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+[2025-09-11 19:44:25] DEBUG    Read LP format model from file /tmp/tmpsz9na7yr.pyomo.lp
+[2025-09-11 19:44:25] DEBUG    Reading time = 31.26 seconds
+x15560633: 20877975 rows, 15560633 columns, 50355359 nonzeros
+[2025-09-11 19:44:25] DEBUG    Set parameter NumericFocus to value 1
+[2025-09-11 19:44:25] DEBUG    Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Debian GNU/Linux 11 (bullseye)")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+[2025-09-11 19:44:25] DEBUG    Non-default parameters:
+NumericFocus  1
+[2025-09-11 19:44:25] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+[2025-09-11 19:44:25] DEBUG    Optimize a model with 20877975 rows, 15560633 columns and 50355359 nonzeros
+[2025-09-11 19:44:25] DEBUG    Model fingerprint: 0x7eaf93c2
+[2025-09-11 19:44:26] DEBUG    Coefficient statistics:
+  Matrix range     [1e-07, 3e+02]
+[2025-09-11 19:44:26] DEBUG    Objective range  [1e+00, 1e+06]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 2e+08]
+[2025-09-11 19:44:31] DEBUG    Presolve removed 17670178 rows and 9706872 columns (presolve time = 5s)...
+[2025-09-11 19:44:36] DEBUG    Presolve removed 19537349 rows and 13362043 columns (presolve time = 10s)...
+[2025-09-11 19:44:41] DEBUG    Presolve removed 20075186 rows and 13385757 columns (presolve time = 15s)...
+[2025-09-11 19:44:41] DEBUG    Presolve removed 20224089 rows and 13385757 columns
+[2025-09-11 19:44:41] DEBUG    Presolve time: 16.48s
+Presolved: 653886 rows, 2323779 columns, 4435170 nonzeros
+[2025-09-11 19:44:41] DEBUG    Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+[2025-09-11 19:44:42] DEBUG    Ordering time: 0.21s
+[2025-09-11 19:44:43] DEBUG    Barrier statistics:
+ Dense cols : 115
+ AA' NZ     : 1.796e+06
+ Factor NZ  : 1.069e+07 (roughly 1.3 GB of memory)
+[2025-09-11 19:44:43] DEBUG    Factor Ops : 2.338e+08 (less than 1 second per iteration)
+ Threads    : 1
+[2025-09-11 19:44:43] DEBUG    Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+[2025-09-11 19:44:44] DEBUG    0   2.46398552e+21 -9.49208543e+18  6.49e+10 3.27e-03  5.21e+15    19s
+[2025-09-11 19:44:44] DEBUG    1   2.03815751e+21 -9.51913583e+18  5.29e+10 3.80e+05  4.25e+15    19s
+[2025-09-11 19:44:45] DEBUG    2   1.66468863e+21 -9.08437199e+18  4.29e+10 2.77e+05  3.44e+15    20s
+[2025-09-11 19:44:46] DEBUG    3   1.42708511e+21 -8.43531384e+18  3.65e+10 1.91e+05  2.90e+15    21s
+[2025-09-11 19:44:47] DEBUG    4   1.20438385e+21 -8.12186521e+18  3.07e+10 1.42e+05  2.44e+15    22s
+[2025-09-11 19:44:48] DEBUG    5   9.14169554e+20 -7.32831114e+18  2.26e+10 4.49e+04  1.75e+15    23s
+[2025-09-11 19:44:49] DEBUG    6   4.33368751e+20 -7.00213000e+18  9.77e+09 1.91e+04  7.83e+14    24s
+[2025-09-11 19:44:50] DEBUG    7   3.44570398e+20 -6.40040425e+18  7.80e+09 3.89e+03  6.22e+14    25s
+[2025-09-11 19:44:51] DEBUG    8   5.40406222e+19 -5.87587382e+18  1.10e+09 3.99e+02  9.21e+13    26s
+[2025-09-11 19:44:52] DEBUG    9   1.86644486e+18 -4.19553031e+18  3.48e+07 1.82e+01  3.83e+12    27s
+[2025-09-11 19:44:53] DEBUG    10   5.55430807e+17 -1.62115395e+18  1.00e+07 3.74e+00  1.10e+12    28s
+[2025-09-11 19:44:53] DEBUG    11   2.68043263e+17 -6.54933779e+17  4.99e+06 1.51e+00  4.58e+11    29s
+[2025-09-11 19:44:54] DEBUG    12   1.22496210e+17 -2.61608139e+17  2.34e+06 9.64e-01  1.82e+11    29s
+[2025-09-11 19:44:55] DEBUG    13   4.45357372e+16 -1.29233549e+17  8.93e+05 6.81e-01  6.89e+10    30s
+[2025-09-11 19:44:55] DEBUG    14   1.19134225e+16 -3.47142144e+16  2.44e+05 2.90e-01  1.57e+10    31s
+[2025-09-11 19:44:56] DEBUG    15   3.28424151e+15 -8.84988515e+15  6.67e+04 5.74e-02  3.53e+09    31s
+[2025-09-11 19:44:57] DEBUG    16   5.05088337e+14 -1.59056122e+15  8.95e+03 1.90e-03  5.10e+08    32s
+[2025-09-11 19:44:57] DEBUG    17   7.21192516e+13 -6.53151863e+13  1.36e+02 2.89e-03  1.67e+07    33s
+[2025-09-11 19:44:58] DEBUG    18   5.00482276e+13 -5.89614283e+11  9.20e-04 2.93e-03  1.74e+05    33s
+[2025-09-11 19:44:59] DEBUG    19   3.85905244e+13 -1.89976681e+11  7.11e-04 2.94e-03  1.99e+06    35s
+[2025-09-11 19:45:01] DEBUG    20   3.89363375e+13 -1.95772581e+11  1.03e-03 2.94e-03  2.40e+06    36s
+[2025-09-11 19:45:02] DEBUG    21   3.98618657e+13 -2.36875705e+11  7.11e-04 2.94e-03  5.76e+06    37s
+[2025-09-11 19:45:04] DEBUG    22   2.54926202e+13 -1.09214181e+12  1.52e-03 5.06e-03  3.56e+06    39s
+[2025-09-11 19:45:06] DEBUG    23   1.07314219e+13 -6.86673356e+11  9.20e-04 2.93e-03  1.66e+06    41s
+[2025-09-11 19:45:08] DEBUG    24   7.43146364e+12 -1.37051317e+11  7.53e-04 2.94e-03  1.28e+06    43s
+[2025-09-11 19:45:10] DEBUG    25   4.31506832e+12 -2.79769986e+11  7.11e-04 2.94e-03  5.96e+05    45s
+[2025-09-11 19:45:11] DEBUG    26   2.01928740e+12 -4.78161198e+10  4.60e-04 2.94e-03  2.43e+05    46s
+[2025-09-11 19:45:11] DEBUG    Barrier performed 26 iterations in 45.92 seconds (43.00 work units)
+Barrier solve interrupted - model solved by another algorithm
+[2025-09-11 19:45:11] DEBUG    Solved with dual simplex
+[2025-09-11 19:45:18] DEBUG    Iteration    Objective       Primal Inf.    Dual Inf.      Time
+[2025-09-11 19:45:18] DEBUG    247232    1.1658942e+10   0.000000e+00   0.000000e+00     54s
+
+Solved in 247232 iterations and 53.64 seconds (56.13 work units)
+Optimal objective  1.165894206e+10
+❌ Errore nel run di autarky_CG+VRES_2030_nostorage: 'Model' object has no attribute 'backend_model'
+
+🚀 Lancio scenario: autarky_GT+VRES_2030_PHES
+[2025-09-11 19:57:13] INFO     Loading sets
+[2025-09-11 19:57:13] INFO     Loading parameters
+[2025-09-11 19:57:47] INFO     constraints are loaded in the following order: ['energy_balance', 'dispatch', 'costs', 'capacity', 'network', 'policy', 'conversion', 'group', 'conversion_plus', 'milp', 'export']
+[2025-09-11 19:57:47] INFO     creating energy_balance constraints
+[2025-09-11 20:00:49] INFO     creating dispatch constraints
+[2025-09-11 20:02:49] INFO     creating costs constraints
+[2025-09-11 20:11:43] INFO     creating capacity constraints
+[2025-09-11 20:11:43] INFO     creating network constraints
+[2025-09-11 20:11:43] INFO     creating policy constraints
+[2025-09-11 20:11:43] INFO     creating conversion constraints
+[2025-09-11 20:11:43] INFO     creating group constraints
+[2025-09-11 20:11:43] INFO     creating conversion_plus constraints
+[2025-09-11 20:11:43] INFO     creating milp constraints
+[2025-09-11 20:11:43] INFO     creating export constraints
+[2025-09-11 20:23:59] DEBUG    Set parameter WLSAccessID
+Set parameter WLSSecret
+[2025-09-11 20:23:59] DEBUG    Set parameter LicenseID to value 2680226
+[2025-09-11 20:24:00] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+[2025-09-11 20:24:34] DEBUG    Read LP format model from file /tmp/tmpt2fac5hr.pyomo.lp
+Reading time = 34.44 seconds
+x16831007: 22656487 rows, 16831007 columns, 55182496 nonzeros
+[2025-09-11 20:24:34] DEBUG    Set parameter NumericFocus to value 1
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (linux64 - "Debian GNU/Linux 11 (bullseye)")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 32 threads
+
+Non-default parameters:
+NumericFocus  1
+[2025-09-11 20:24:34] DEBUG    Academic license 2680226 - for non-commercial use only - registered to an___@mail.polimi.it
+Optimize a model with 22656487 rows, 16831007 columns and 55182496 nonzeros
+[2025-09-11 20:24:35] DEBUG    Model fingerprint: 0x793c6e63
+[2025-09-11 20:24:35] DEBUG    Coefficient statistics:
+  Matrix range     [1e-07, 3e+02]
+  Objective range  [1e+00, 1e+06]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 6e+09]
+Warning: Model contains large rhs
+[2025-09-11 20:24:41] DEBUG    Presolve removed 18309838 rows and 10293914 columns (presolve time = 6s)...
+[2025-09-11 20:24:45] DEBUG    Presolve removed 19025199 rows and 12800000 columns (presolve time = 10s)...
+[2025-09-11 20:24:50] DEBUG    Presolve removed 20401776 rows and 14130999 columns (presolve time = 15s)...
+[2025-09-11 20:24:54] DEBUG    Presolve removed 21088568 rows and 14148519 columns
+[2025-09-11 20:24:54] DEBUG    Presolve time: 20.19s
+Presolved: 1567919 rows, 2831391 columns, 8270655 nonzeros
+
+Concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+[2025-09-11 20:24:57] DEBUG    Ordering time: 0.90s
+[2025-09-11 20:24:58] DEBUG    Barrier statistics:
+ Dense cols : 141
+ AA' NZ     : 8.038e+06
+ Factor NZ  : 2.907e+07 (roughly 2.0 GB of memory)
+[2025-09-11 20:24:58] DEBUG    Factor Ops : 8.165e+08 (less than 1 second per iteration)
+ Threads    : 30
+[2025-09-11 20:25:01] DEBUG    Objective                Residual
+[2025-09-11 20:25:01] DEBUG    Iter       Primal          Dual         Primal    Dual     Compl     Time
+[2025-09-11 20:25:02] DEBUG    0   2.61167675e+21 -8.26649968e+18  6.49e+10 2.89e-11  4.68e+15    27s
+[2025-09-11 20:25:06] DEBUG    1   2.39382153e+21 -8.51013924e+18  5.92e+10 2.40e+05  3.91e+15    31s
+[2025-09-11 20:25:11] DEBUG    2   2.27339837e+21 -3.63900400e+19  5.63e+10 1.80e+05  3.72e+15    37s
+[2025-09-11 20:25:19] DEBUG    3   2.00686460e+21 -9.22085458e+19  4.99e+10 7.92e+04  3.24e+15    45s
+[2025-09-11 20:25:25] DEBUG    4   1.49987938e+21 -1.17030265e+20  3.67e+10 2.45e+04  2.37e+15    50s
+[2025-09-11 20:25:32] DEBUG    5   9.22641094e+20 -1.16020078e+20  2.22e+10 5.47e+03  1.45e+15    58s
+[2025-09-11 20:25:39] DEBUG    6   5.37446753e+20 -1.02927124e+20  1.27e+10 1.54e+03  8.28e+14    65s
+[2025-09-11 20:25:45] DEBUG    7   1.17746167e+20 -9.23118469e+19  2.44e+09 7.43e+02  1.77e+14    71s
+[2025-09-11 20:25:49] DEBUG    8   3.38796427e+19 -4.77467721e+19  6.79e+08 1.10e+02  5.12e+13    75s
+[2025-09-11 20:25:53] DEBUG    9   1.09990800e+19 -2.14194998e+19  2.14e+08 2.62e+01  1.67e+13    79s
+[2025-09-11 20:25:58] DEBUG    10   6.17148180e+18 -1.05148923e+19  1.18e+08 9.60e+00  8.68e+12    83s
+[2025-09-11 20:26:02] DEBUG    11   3.45677045e+18 -4.91758039e+18  6.58e+07 2.73e+00  4.48e+12    88s
+[2025-09-11 20:26:06] DEBUG    12   1.77966390e+18 -2.82741894e+18  3.35e+07 1.16e+00  2.26e+12    91s
+[2025-09-11 20:26:10] DEBUG    13   5.71588223e+17 -1.34148420e+18  1.06e+07 4.25e-01  7.56e+11    96s
+[2025-09-11 20:26:14] DEBUG    14   1.52232117e+17 -4.39994220e+17  2.84e+06 9.19e-02  1.97e+11   100s
+[2025-09-11 20:26:18] DEBUG    15   1.35231532e+16 -9.86159855e+16  2.33e+05 2.55e-02  2.49e+10   104s
+[2025-09-11 20:26:22] DEBUG    16   4.22043852e+14 -7.59622151e+15  2.43e+02 2.45e-04  1.33e+09   108s
+[2025-09-11 20:26:25] DEBUG    17   3.84403092e+14 -1.63517783e+15  2.07e+01 7.50e-04  2.86e+08   111s
+[2025-09-11 20:26:29] DEBUG    18   3.63461560e+14 -8.76610273e+14  1.38e-01 1.00e-03  1.54e+08   115s
+[2025-09-11 20:26:36] DEBUG    19   3.46788334e+14 -3.47382554e+14  1.01e-03 1.54e-02  6.10e+07   121s
+[2025-09-11 20:26:44] DEBUG    20   3.30443166e+14 -1.96161610e+14  1.08e-04 1.08e-02  3.48e+07   130s
+[2025-09-11 20:26:51] DEBUG    21   3.17616689e+14 -4.37851790e+13  8.20e-05 1.11e-02  8.23e+06   137s
+[2025-09-11 20:26:56] DEBUG    22   3.14807672e+14 -3.55476370e+13  7.92e-05 1.10e-02  6.74e+06   142s
+[2025-09-11 20:27:01] DEBUG    23   3.10700607e+14 -1.96168048e+13  5.17e-05 1.64e-02  3.87e+06   147s
+[2025-09-11 20:27:06] DEBUG    24   3.08272657e+14 -1.05113698e+13  6.96e-05 2.04e-02  2.20e+06   152s
+[2025-09-11 20:27:13] DEBUG    25   3.05101619e+14 -7.03890385e+12  5.91e-05 6.57e-02  1.54e+06   159s
+[2025-09-11 20:27:21] DEBUG    26   3.00159984e+14 -3.37950043e+12  3.81e-05 7.17e-02  8.16e+05   167s
+[2025-09-11 20:27:31] DEBUG    27   2.93613346e+14 -1.57492207e+12  6.53e-05 7.04e-02  4.23e+05   177s
+[2025-09-11 20:27:40] DEBUG    28   2.91322401e+14 -1.26942769e+12  5.82e-05 6.89e-02  3.53e+05   185s
+[2025-09-11 20:27:47] DEBUG    29   2.87623839e+14 -8.36839343e+11  4.15e-05 6.53e-02  2.51e+05   192s
+[2025-09-11 20:27:51] DEBUG    30   2.85240613e+14 -6.37768214e+11  4.05e-05 6.16e-02  2.02e+05   197s
+[2025-09-11 20:27:56] DEBUG    31   2.83133211e+14 -4.88408321e+11  7.39e-05 5.74e-02  1.65e+05   202s
+[2025-09-11 20:28:03] DEBUG    32   2.81853299e+14 -4.39975634e+11  4.82e-05 5.53e-02  1.50e+05   209s
+[2025-09-11 20:28:12] DEBUG    33   2.80040949e+14 -2.31290299e+11  6.34e-05 6.16e-02  1.02e+05   218s
+[2025-09-11 20:28:22] DEBUG    34   2.77324779e+14 -2.02749476e+11  5.01e-05 6.23e-02  8.79e+04   228s
+[2025-09-11 20:28:32] DEBUG    35   2.74010859e+14 -1.86334216e+11  5.10e-05 6.13e-02  7.56e+04   237s
+[2025-09-11 20:28:41] DEBUG    36   2.71799712e+14 -1.72854292e+11  7.72e-05 6.01e-02  6.78e+04   247s
+[2025-09-11 20:28:51] DEBUG    37   2.69965828e+14 -1.49790973e+11  6.58e-05 5.76e-02  5.96e+04   257s
+[2025-09-11 20:29:01] DEBUG    38   2.67190452e+14 -1.19045041e+11  8.87e-05 5.27e-02  4.86e+04   267s
+[2025-09-11 20:29:12] DEBUG    39   2.64773409e+14 -9.13269782e+10  6.34e-05 4.88e-02  3.98e+04   278s
+[2025-09-11 20:29:24] DEBUG    40   2.63324433e+14 -8.14994405e+10  5.91e-05 4.65e-02  3.59e+04   290s
+[2025-09-11 20:29:35] DEBUG    41   2.61290887e+14 -7.40158013e+10  6.20e-05 4.42e-02  3.21e+04   300s
+[2025-09-11 20:29:45] DEBUG    42   2.59409228e+14 -6.62659696e+10  6.82e-05 4.13e-02  2.87e+04   311s
+[2025-09-11 20:29:56] DEBUG    43   2.57295201e+14 -5.88906661e+10  6.48e-05 3.83e-02  2.53e+04   322s
+[2025-09-11 20:30:06] DEBUG    44   2.55367095e+14 -5.10423946e+10  6.20e-05 3.50e-02  2.24e+04   332s
+[2025-09-11 20:30:17] DEBUG    45   2.54462699e+14 -4.71184952e+10  6.10e-05 3.33e-02  2.10e+04   342s
+[2025-09-11 20:30:27] DEBUG    46   2.51911547e+14 -3.11048614e+10  6.44e-05 2.60e-02  1.64e+04   353s
+[2025-09-11 20:30:39] DEBUG    47   2.50704425e+14 -2.79915812e+10  5.48e-05 2.45e-02  1.52e+04   365s
+[2025-09-11 20:30:50] DEBUG    48   2.49934416e+14 -2.13651162e+10  7.06e-05 2.17e-02  1.35e+04   376s
+[2025-09-11 20:31:02] DEBUG    49   2.47475023e+14 -1.41160083e+10  4.91e-05 2.18e-02  1.09e+04   388s
+[2025-09-11 20:31:13] DEBUG    50   2.46769945e+14 -9.57606723e+09  5.96e-05 2.18e-02  9.76e+03   399s
+[2025-09-11 20:31:26] DEBUG    51   2.45431168e+14 -8.71945609e+09  6.39e-05 2.18e-02  9.06e+03   412s
+[2025-09-11 20:31:37] DEBUG    52   2.43863696e+14 -6.36449383e+09  5.20e-05 2.17e-02  8.03e+03   422s
+[2025-09-11 20:31:47] DEBUG    53   2.43025971e+14 -5.13946967e+09  8.20e-05 2.16e-02  7.53e+03   433s
+[2025-09-11 20:31:54] DEBUG    54   2.42376361e+14 -4.41397372e+09  8.58e-05 2.15e-02  7.21e+03   440s
+[2025-09-11 20:32:01] DEBUG    55   2.41849553e+14 -3.62377007e+09  1.14e-04 2.13e-02  6.92e+03   447s
+[2025-09-11 20:32:09] DEBUG    56   2.41328438e+14 -2.87832668e+09  1.15e-04 2.11e-02  6.64e+03   454s
+[2025-09-11 20:32:16] DEBUG    57   2.40512406e+14 -2.11433389e+09  9.78e-05 2.09e-02  6.29e+03   461s
+[2025-09-11 20:32:26] DEBUG    58   2.39010157e+14 -1.01678606e+09  8.82e-05 2.07e-02  5.67e+03   472s
+[2025-09-11 20:32:36] DEBUG    59   2.37400118e+14 -1.18430056e+08  6.89e-05 2.03e-02  5.10e+03   482s
+[2025-09-11 20:32:47] DEBUG    60   2.35186881e+14  8.40278540e+08  5.91e-05 1.96e-02  4.44e+03   493s
+[2025-09-11 20:32:56] DEBUG    61   2.34505556e+14  1.66457020e+09  7.87e-05 1.87e-02  4.18e+03   502s
+[2025-09-11 20:33:06] DEBUG    62   2.32877073e+14  2.47908063e+09  5.13e-05 1.77e-02  3.74e+03   512s
+[2025-09-11 20:33:14] DEBUG    63   2.32491404e+14  3.15280571e+09  5.65e-05 1.66e-02  3.57e+03   520s
+[2025-09-11 20:33:24] DEBUG    64   2.31122806e+14  3.49522936e+09  6.56e-05 1.61e-02  3.30e+03   530s
+[2025-09-11 20:33:33] DEBUG    65   2.29904120e+14  3.99791677e+09  5.91e-05 1.49e-02  3.04e+03   539s
+[2025-09-11 20:33:40] DEBUG    66   2.29410996e+14  4.53811239e+09  5.84e-05 1.38e-02  2.89e+03   546s
+[2025-09-11 20:33:50] DEBUG    67   2.28640004e+14  4.92695740e+09  8.06e-05 1.30e-02  2.73e+03   556s
+[2025-09-11 20:33:57] DEBUG    68   2.28165023e+14  5.06244368e+09  6.63e-05 1.26e-02  2.65e+03   563s
+[2025-09-11 20:34:08] DEBUG    69   2.25520027e+14  5.49769565e+09  6.39e-05 1.17e-02  2.21e+03   574s
+[2025-09-11 20:34:19] DEBUG    70   2.23913668e+14  5.90156190e+09  6.44e-05 1.17e-02  1.96e+03   584s
+[2025-09-11 20:34:29] DEBUG    71   2.22311437e+14  6.55846203e+09  5.44e-05 1.17e-02  1.69e+03   595s
+[2025-09-11 20:34:40] DEBUG    72   2.20232840e+14  6.85544773e+09  7.25e-05 1.16e-02  1.47e+03   605s
+[2025-09-11 20:34:50] DEBUG    73   2.19686173e+14  7.04393093e+09  8.30e-05 1.16e-02  1.40e+03   616s
+[2025-09-11 20:34:59] DEBUG    74   2.17741010e+14  7.28796180e+09  7.20e-05 1.16e-02  1.23e+03   625s
+[2025-09-11 20:35:06] DEBUG    75   2.16720476e+14  7.42840877e+09  1.03e-04 1.16e-02  1.15e+03   632s
+[2025-09-11 20:35:17] DEBUG    76   2.15563199e+14  7.65991782e+09  6.87e-05 1.16e-02  1.03e+03   642s
+[2025-09-11 20:35:27] DEBUG    77   2.14156318e+14  7.76086123e+09  1.21e-04 1.16e-02  9.42e+02   653s
+[2025-09-11 20:35:37] DEBUG    78   2.13342410e+14  7.83919131e+09  9.73e-05 1.16e-02  8.90e+02   663s
+[2025-09-11 20:35:47] DEBUG    79   2.12023980e+14  8.03020969e+09  8.87e-05 1.15e-02  7.98e+02   673s
+[2025-09-11 20:35:57] DEBUG    80   2.11056837e+14  8.16472842e+09  1.08e-04 1.15e-02  7.34e+02   683s
+[2025-09-11 20:36:08] DEBUG    81   2.08925321e+14  8.29556211e+09  6.01e-05 1.15e-02  6.24e+02   694s
+[2025-09-11 20:36:18] DEBUG    82   2.08194918e+14  8.35851124e+09  6.53e-05 1.15e-02  5.87e+02   704s
+[2025-09-11 20:36:29] DEBUG    83   2.07568709e+14  8.41291214e+09  8.06e-05 1.15e-02  5.56e+02   714s
+[2025-09-11 20:36:38] DEBUG    84   2.05258489e+14  8.48926645e+09  8.30e-05 1.15e-02  4.73e+02   724s
+[2025-09-11 20:36:49] DEBUG    85   2.03401795e+14  8.56122943e+09  5.53e-05 1.15e-02  4.12e+02   735s
+[2025-09-11 20:36:59] DEBUG    86   2.02902617e+14  8.58575264e+09  8.92e-05 1.15e-02  3.96e+02   745s
+[2025-09-11 20:37:09] DEBUG    87   2.01088031e+14  8.63464097e+09  7.15e-05 1.15e-02  3.45e+02   755s
+[2025-09-11 20:37:20] DEBUG    88   2.00319004e+14  8.66080326e+09  8.01e-05 1.15e-02  3.24e+02   765s
+[2025-09-11 20:37:30] DEBUG    89   1.99046474e+14  8.70817639e+09  7.25e-05 1.15e-02  2.91e+02   776s
+[2025-09-11 20:37:41] DEBUG    90   1.97469332e+14  8.72530950e+09  6.87e-05 1.14e-02  2.62e+02   787s
+[2025-09-11 20:37:50] DEBUG    91   1.97040337e+14  8.72760304e+09  5.70e-05 1.14e-02  2.55e+02   796s
+[2025-09-11 20:38:01] DEBUG    92   1.96040340e+14  8.74855379e+09  6.53e-05 1.14e-02  2.36e+02   806s
+[2025-09-11 20:38:08] DEBUG    93   1.95554794e+14  8.75285590e+09  6.82e-05 1.14e-02  2.29e+02   813s
+[2025-09-11 20:38:16] DEBUG    94   1.94090823e+14  8.76927638e+09  4.72e-05 1.14e-02  2.07e+02   822s
+[2025-09-11 20:38:27] DEBUG    95   1.93288508e+14  8.78988609e+09  5.30e-05 1.14e-02  1.93e+02   833s
+[2025-09-11 20:38:38] DEBUG    96   1.90688937e+14  8.79732147e+09  4.70e-05 1.14e-02  1.63e+02   843s
+[2025-09-11 20:38:47] DEBUG    97   1.89192190e+14  8.81170213e+09  5.64e-05 1.14e-02  1.45e+02   853s
+[2025-09-11 20:38:57] DEBUG    98   1.87855516e+14  8.82488101e+09  5.96e-05 1.14e-02  1.32e+02   863s
+[2025-09-11 20:39:12] DEBUG    99   1.86904096e+14  8.82707254e+09  6.72e-05 1.14e-02  1.25e+02   878s
+[2025-09-11 20:39:22] DEBUG    100   1.86135418e+14  8.83809814e+09  6.01e-05 1.14e-02  1.18e+02   888s
+[2025-09-11 20:39:22] DEBUG    Barrier performed 100 iterations in 887.57 seconds (176.75 work units)
+[2025-09-11 20:39:22] DEBUG    Barrier solve interrupted - model solved by another algorithm
+[2025-09-11 20:39:22] DEBUG    Solved with dual simplex
+[2025-09-11 20:39:31] DEBUG    Iteration    Objective       Primal Inf.    Dual Inf.      Time
+[2025-09-11 20:39:31] DEBUG    572883    1.1658942e+10   0.000000e+00   0.000000e+00    897s
+
+Solved in 572883 iterations and 896.64 seconds (220.14 work units)
+[2025-09-11 20:39:31] DEBUG    Optimal objective  1.165894206e+10
+❌ Errore nel run di autarky_GT+VRES_2030_PHES: 'Model' object has no attribute 'backend_model'
+🏁 Tutti gli scenari sono stati processati.

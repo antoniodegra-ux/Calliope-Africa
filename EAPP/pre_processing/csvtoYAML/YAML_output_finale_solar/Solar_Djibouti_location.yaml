@@ -1,0 +1,7 @@
+
+    PV_Djibouti_MSR1:
+        constraints:
+            energy_cap_min: 0
+            energy_cap_max: 2462372.0497
+            resource: file=Solar_WAPP_MSR.csv:Djibouti1
+            resource_unit: energy_per_cap

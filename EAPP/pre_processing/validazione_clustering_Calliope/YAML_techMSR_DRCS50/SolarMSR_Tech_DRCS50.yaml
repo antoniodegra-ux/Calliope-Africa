@@ -1,0 +1,900 @@
+
+    PV_DRC_S_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 1
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1326.849219800495
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 2
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1425.1145699377666
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 3
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1423.2082729977424
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 4
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1478.9399876388204
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 5
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1400.2643298825399
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR6:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 6
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1477.7730803714594
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR7:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 7
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1369.120761714126
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR8:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 8
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1441.757224458343
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR9:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 9
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1552.792507078118
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR10:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 10
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1298.6814164739883
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR11:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 11
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1448.9086499835296
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR12:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 12
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1419.7031121743514
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR13:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 13
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1306.8420186184135
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR14:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 14
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1296.5111241405807
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR15:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 15
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1465.1691583998406
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR16:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 16
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1381.919638849321
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR17:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 17
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1303.982252268289
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR18:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 18
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1598.2383918445182
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR19:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 19
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1382.780828054048
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR20:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 20
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1356.0482507322436
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR21:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 21
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1595.1474924089089
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR22:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 22
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1356.5502629875004
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR23:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 23
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1339.116978462141
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR24:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 24
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1504.1892119823174
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR25:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 25
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1483.0576724591251
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR26:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 26
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1509.892939628196
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR27:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 27
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1374.331265722667
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR28:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 28
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1505.9435299809193
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR29:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 29
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1421.3317712254543
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR30:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 30
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1374.13544115438
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR31:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 31
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1422.8158130287754
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR32:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 32
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1496.2861349181758
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR33:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 33
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1373.0723714501844
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR34:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 34
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1493.8991242217853
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR35:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 35
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1391.3608413206043
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR36:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 36
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1574.1033266100512
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR37:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 37
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1377.058889264938
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR38:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 38
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1526.7342600300535
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR39:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 39
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1501.0105600226236
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR40:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 40
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1349.635193775685
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR41:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 41
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1580.3570160651213
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR42:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 42
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1621.8488453063899
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR43:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 43
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1512.7649368015689
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR44:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 44
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1441.5830758535603
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR45:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 45
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1482.1338115627182
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR46:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 46
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1386.9923212731587
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR47:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 47
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1302.394292017156
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR48:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 48
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1488.4910711713248
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR49:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 49
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1327.4641173233294
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0
+
+    PV_DRC_S_MSR50:
+        essentials:
+            color: '#FFA52B'
+            name: PV Power Plant DRC_S 50
+            parent: supply_plus
+            carrier_out: power
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+            energy_cap: 1308.9780282349718
+            om_annual: 15
+            interest_rate: 0.1
+            co2:
+            om_prod: 0

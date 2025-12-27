@@ -1,0 +1,36 @@
+#######################################################################################
+# MODEL.YAML - versione corretta per struttura run_autarky/ con common_inputs/       #
+#######################################################################################
+
+import: 
+  - 'Model_config/Location_Constraints.yaml'
+  - '../common_inputs/Model_config/Transmission_links.yaml'
+  - '../common_inputs/Model_config/Technologies.yaml'
+
+model:
+  name: 'PLANNING EAPP 2030'
+  calliope_version: 0.6.10
+  timeseries_data_path: '../common_inputs/Timeseries'
+  timeseries_dateformat: '%Y/%m/%d %H:%M:%S'
+  subset_time: ['2030-01-01', '2030-12-31']
+
+run:
+  mode: plan
+
+  operation:
+    horizon: 48
+    window: 24
+
+  solver: gurobi
+  solver_options:
+    NumericFocus: 1
+
+  ensure_feasibility: true
+  bigM: 1e6
+  zero_threshold: 1e-20
+
+  objective_options:
+    cost_class:
+      monetary: 1
+      co2: 0
+    sense: minimize

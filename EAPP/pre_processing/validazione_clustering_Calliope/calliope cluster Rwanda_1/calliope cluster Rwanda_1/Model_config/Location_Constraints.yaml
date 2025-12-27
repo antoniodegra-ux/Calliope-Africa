@@ -1,0 +1,121 @@
+
+# Location Definition #
+
+# Parameters:
+
+    # lat: Latitude of the location
+    # lon: Longtitude of the location 
+    # energy_cap_equals: Real Capacity [kW]
+
+# Defining the locations 
+
+locations:
+
+
+
+                    
+
+################################### Rwanda ##################################                                                                                                                                                      
+    Rwanda:
+ 
+
+        # Available Technologies              
+        techs:
+        
+            Diesel_Engine_RWANDA:
+                constraints:
+                    energy_cap_equals: 68800 #kW
+            Gas_Engine_RWANDA:
+                constraints:
+                    energy_cap_equals: 111980 #kW
+           
+                
+            Solar_PV1:
+                constraints:
+                    energy_cap_equals: 8500 #kW
+                    resource: file=Solar.csv:Rwanda1
+                    resource_unit: energy_per_cap 
+            Solar_PV2:
+                constraints:
+                    energy_cap_equals: 3300 #kW
+                    resource: file=Solar.csv:Rwanda2
+                    resource_unit: energy_per_cap 
+            Solar_PV3:
+                constraints:
+                    energy_cap_equals: 250 #kW
+                    resource: file=Solar.csv:Rwanda3
+                    resource_unit: energy_per_cap 
+            Solar_PV4:
+                constraints:
+                    energy_cap_equals: 7000 #kW
+                    resource: file=Solar.csv:Rwanda4
+                    resource_unit: energy_per_cap 
+            Solar_PV5:
+                constraints:
+                    energy_cap_equals: 1800 #kW
+                    resource: file=Solar.csv:Rwanda5
+                    resource_unit: energy_per_cap 
+            Solar_PV6:
+                constraints:
+                    energy_cap_equals: 2400 #kW
+                    resource: file=Solar.csv:Rwanda6
+                    resource_unit: energy_per_cap 
+            Hydro_Power_Plant_large1:
+                constraints:
+                    energy_cap_equals: 28000 #kW
+                    resource: file=Hydro.csv:Rwanda1
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large2:
+                constraints:
+                    energy_cap_equals: 80000 #kW
+                    resource: file=Hydro.csv:Rwanda2
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large3:
+                constraints:
+                    energy_cap_equals: 32250 #kW
+                    resource: file=Hydro.csv:Rwanda3
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large4:
+                constraints:
+                    energy_cap_equals: 250000 #kW
+                    resource: file=Hydro.csv:Rwanda4
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large5:
+                constraints:
+                    energy_cap_equals: 30000 #kW
+                    resource: file=Hydro.csv:Rwanda5
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small1:
+                constraints:
+                    energy_cap_equals: 500 #kW
+                    resource: file=Hydro.csv:Rwanda6
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small2:
+                constraints:
+                    energy_cap_equals: 2600 #kW
+                    resource: file=Hydro.csv:Rwanda7
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_small3:
+                constraints:
+                    energy_cap_equals: 5000 #kW
+                    resource: file=Hydro.csv:Rwanda8
+                    resource_unit: energy_per_cap
+            Hydro_Power_Plant_large6:
+                constraints:
+                    energy_cap_equals: 36522 #kW
+                    resource: file=Hydro.csv:Rwanda9
+                    resource_unit: energy_per_cap
+            Bioenergy_Power_Plant:
+                constraints:
+                    energy_cap_equals: 13000 #kW 
+            
+            final_demand:
+                constraints:
+                    resource: file=Demand_2040_giusta.csv:Rwanda
+
+            PV_Rwanda_MSR1:
+                constraints:
+                   energy_cap_min: 0
+                   energy_cap_max: 4054295.883080001
+                   resource: file=Solar_EAPP_MSR.csv:Rwanda1
+                   resource_unit: energy_per_cap

@@ -1,0 +1,12 @@
+locs,techs,energy_cap_equals
+DRC_S,Diesel_Engine_DRC,89000.0
+DRC_S,Hydro_Power_Plant_large1,42120.0
+DRC_S,Hydro_Power_Plant_large2,68000.0
+DRC_S,Hydro_Power_Plant_large3,110000.0
+DRC_S,Hydro_Power_Plant_large4,248000.0
+DRC_S,Hydro_Power_Plant_large5,243000.0
+DRC_S,Hydro_Power_Plant_large6,40000.0
+DRC_S,Hydro_Power_Plant_small1,9900.0
+DRC_S,Hydro_Power_Plant_small2,400.0
+DRC_S,Solar_PV1,1100.0
+DRC_S,Solar_PV2,48000.0

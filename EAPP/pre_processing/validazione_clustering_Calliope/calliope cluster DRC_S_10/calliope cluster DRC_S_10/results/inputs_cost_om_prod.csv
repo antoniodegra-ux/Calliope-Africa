@@ -1,0 +1,15 @@
+costs,locs,techs,cost_om_prod
+monetary,DRC_S,Diesel_Engine_DRC,0.003
+co2,DRC_S,Diesel_Engine_DRC,0.6514
+co2,DRC_S,PV_DRC_S_MSR1,0.0
+co2,DRC_S,PV_DRC_S_MSR10,0.0
+co2,DRC_S,PV_DRC_S_MSR2,0.0
+co2,DRC_S,PV_DRC_S_MSR3,0.0
+co2,DRC_S,PV_DRC_S_MSR4,0.0
+co2,DRC_S,PV_DRC_S_MSR5,0.0
+co2,DRC_S,PV_DRC_S_MSR6,0.0
+co2,DRC_S,PV_DRC_S_MSR7,0.0
+co2,DRC_S,PV_DRC_S_MSR8,0.0
+co2,DRC_S,PV_DRC_S_MSR9,0.0
+co2,DRC_S,Solar_PV1,0.0
+co2,DRC_S,Solar_PV2,0.0

@@ -1,0 +1,6967 @@
+# Technology Definition #
+
+# Parameters and Units:
+
+    # resource:      limitation over the power output
+    # resource_unit: Defines the unit of numbers provided in resource
+    # energy_eff:    efficiency of power plant             [-]
+    # lifetime:      Life time of the power plant          [year]
+    # energy_cap:    Capital investment of the technology  [$/kW]
+    # om_annual:     Fixed annual O&M cost                 [$/kW]
+    # om_prod:       Variable cost of production           [$/kWh]
+    # om_con:        Variable cost of fuel                 [$/kWh]
+    # energy_cap:    Investment Cost of Technology         [$/kW]
+    # lifetime:      Life time of the Technology           [years]
+    # interest_rate: Interest rate                         [-]
+# Reference: Updated Least Cost Power Development Plan 2017-2035 Report
+
+techs:
+
+# Supply and Conversion Technologies #
+############################### OCGT Oil###############################
+  OCGT_NG:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.385
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        om_annual: 11           #$/kW*year                 
+        om_prod: 0.0035          #$/kWh_el                  
+        om_con: 0.0188         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.37
+  OCGT_NG_new_2035_installed:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.385
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        om_annual: 11           #$/kW*year                 
+        om_prod: 0.0035          #$/kWh_el                  
+        om_con: 0.0188         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.37
+  OCGT_NG_new_2040_installed:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.385
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        om_annual: 11           #$/kW*year                 
+        om_prod: 0.0035          #$/kWh_el                  
+        om_con: 0.0188         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.37
+  OCGT_NG_new:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.385
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        energy_cap: 950         #$/kW
+        om_annual: 11           #$/kW*year                 
+        om_prod: 0.0035          #$/kWh_el                  
+        om_con: 0.0188         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.37
+
+
+
+
+
+  OCGT_LFO:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_lfo_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.385
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 11           #$/kW*year                 
+        om_prod: 0.0035          #$/kWh_el                  
+        om_con: 0.0139         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.60014
+  OCGT_Kerosene_KEN:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ker_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.385
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 11           #$/kW*year                 
+        om_prod: 0.0035          #$/kWh_el                  
+        om_con: 0.4824         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.60014
+  CCGT_NG:
+    essentials:
+      color: '#2980B9'
+      name: 'Combined_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.56
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 13.5           #$/kW*year                 
+        om_prod: 0.0025          #$/kWh_el                  
+        om_con: 0.013651877         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.5275
+
+  Diesel_Engine:
+    essentials:
+      color: '#2980B9'
+      name: 'Diesel_Engine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.35
+      resource: inf
+      lifetime: 30
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 24
+        om_prod: 0.003
+        om_con: 0.136
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.6514
+
+  Gas_Engine:
+    essentials:
+      color: '#2980B9'
+      name: 'GAS_Engine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.4
+      resource: inf
+      lifetime: 30
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 24
+        om_prod: 0.0024
+        om_con: 0.0188
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.5645
+
+  HFO_PP:
+    essentials:
+      color: '#2980B9'
+      name: 'HFO_PP'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.35
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 26.5
+        om_prod: 0.001
+        om_con: 0.134
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.7381
+
+
+  Steam_turbine_NG:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.35
+      resource: inf
+      lifetime: 50
+
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 26.52           #$/kW*year                 
+        om_prod: 0.00184         #$/kWh_el                  
+        om_con: 0.013651877         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.528
+  Steam_turbine_petroleum_coke_SUDAN:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.35
+      resource: inf
+      lifetime: 50
+
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 26.52           #$/kW*year                 
+        om_prod: 0.00184          #$/kWh_el                  
+        om_con: 0.017054         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 1.2144
+
+
+  ICCC_NG_EGYPT:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.5
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 24.3           #$/kW*year                 
+        om_prod: 0.00625         #$/kWh_el                  
+        om_con: 0.00341         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.079125
+  ISCC_NG_EGYPT:
+    essentials:
+      color: '#2980B9'
+      name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.5
+      resource: inf
+      lifetime: 30
+
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 13.9          #$/kW*year                 
+        om_prod: 0.0025         #$/kWh_el                  
+        om_con: 0.00341         #$/kWh-fuel                  
+        interest_rate: 0.10
+      co2:
+        om_prod: 0.37
+############################### wind turbine ###############################
+  Wind_Turbine1:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine2:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine3:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine4:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine5:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine6:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine7:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine8:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine9:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Wind_Turbine10:
+    essentials:
+      color: '#2980B9'
+      name: 'wind_turbine'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 20
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 38         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV1:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV2:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV3:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV4:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV5:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV6:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV7:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV8:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV9:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV10:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV11:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV12:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV13:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV14:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV15:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV16:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV17:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV18:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV19:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV20:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  Solar_PV21:
+    essentials:
+      color: '#2980B9'
+      name: 'SOLAR_PV'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+      lifetime: 25
+
+    costs:
+      monetary:
+        energy_cap: 0         #$/kW
+        om_annual: 16.6         #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+############################### Geothermal Power Plant ###############################
+  Geothermal_Power_Plant:
+    essentials:
+      color: '#2980B9'
+      name: 'Geothermal_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 40
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 151.5
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+
+
+
+
+
+
+
+############################### Hydro Power Plant ###############################
+  Hydro_Power_Plant_large1:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large2:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large3:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large4:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large5:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large6:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large7:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large8:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large9:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large10:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large11:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large12:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large13:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large14:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large15:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large16:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large17:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large18:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large19:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large20:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large21:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large22:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large23:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_large24:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 50
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 60
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_small1:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 30
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 65
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_small2:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 30
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 65
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_small3:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 30
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 65
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_small4:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 30
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 65
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_small5:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 30
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 65
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+  Hydro_Power_Plant_small6:
+    essentials:
+      color: '#2980B9'
+      name: 'Hydro_Power_Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 1
+      resource: inf
+      lifetime: 30
+
+    costs:
+      monetary:
+        energy_cap: 0
+        om_annual: 65
+                # om_prod: 1                    
+                # om_con: 1                   
+        interest_rate: 0.10
+
+  Bioenergy_Power_Plant:
+    essentials:
+      color: '#873600'
+      name: 'Bioenergy Power Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.2263                          # https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf, Geometric mean of the indicated values for the less efficient technology  
+      resource: inf
+      lifetime: 25                                # https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf   
+      energy_ramping: 0.3                         # https://www.sciencedirect.com/science/article/pii/S1364032117309206
+
+    costs:
+      monetary:
+        energy_cap: 0                         # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values for the most expensive technology
+        om_annual: 62                             # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values                                                     
+        om_prod: 0.0075                           # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values                   
+        om_con: 0.0113                            # https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf ,  Arithmetic mean of the indicated values 
+                #om_con: 0               
+        interest_rate: 0.1
+      co2:
+        om_prod: 0.133                               # https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf
+                                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+#nuclear
+  Nuclear:
+    essentials:
+      color: '#A6FF00'
+      name: 'Nuclear Power Plant'
+      parent: supply
+      carrier_out: electricity
+
+    constraints:
+      energy_eff: 0.3098                          # https://iea-etsap.org/E-TechDS/PDF/E03-Nuclear-Power-GS-AD-gct_FINAL.pdf,  Geometric mean of the indicated values for the less efficient technology                    
+      resource: inf
+      lifetime: 43                                # https://iea-etsap.org/E-TechDS/PDF/E03-Nuclear-Power-GS-AD-gct_FINAL.pdf , Geometric mean of the indicated values
+      energy_ramping: 0.04                        # https://energytransition.org/2018/03/can-nuclear-and-renewables-coexist/
+
+    costs:
+      monetary:
+        energy_cap: 0
+                #energy_cap: 3000                  # https://iea-etsap.org/E-TechDS/PDF/E03-Nuclear-Power-GS-AD-gct_FINAL.pdf , Typical value
+        om_annual: 89.2                           # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values                                           
+        om_prod: 0.00090                          # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values                          
+        om_con: 0.00294                           # https://iea-etsap.org/E-TechDS/PDF/E03-Nuclear-Power-GS-AD-gct_FINAL.pdf , Arithmetic mean of the indicated values                 
+        interest_rate: 0.10
+      co2:
+        om_prod: 0                                # https://iea-etsap.org/E-TechDS/PDF/E03-Nuclear-Power-GS-AD-gct_FINAL.pdf
+                #om_prod: 0.012                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf               
+
+
+  PHES:
+    essentials:
+      color: '#2980B9'
+      name: 'Pumped Hydro Storage'
+      parent: storage
+      carrier: electricity
+
+    constraints:
+      energy_eff: 0.9487
+      storage_loss: 0
+      lifetime: 40
+      storage_discharge_depth: 0.2
+      storage_initial: 0.2
+
+    costs:
+      monetary:
+        energy_cap: 2656.448
+        om_annual: 17.82         #$/kW                   
+        om_prod: 0.000513
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  PHES_2030_installed:
+    essentials:
+      color: '#2980B9'
+      name: 'Pumped Hydro Storage'
+      parent: storage
+      carrier: electricity
+
+    constraints:
+      energy_eff: 0.9487
+      storage_loss: 0
+      lifetime: 40
+      storage_discharge_depth: 0.2
+      storage_initial: 0.2
+
+    costs:
+      monetary:
+        om_annual: 17.82         #$/kW                   
+        om_prod: 0.000513
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  PHES_2035_installed:
+    essentials:
+      color: '#2980B9'
+      name: 'Pumped Hydro Storage'
+      parent: storage
+      carrier: electricity
+
+    constraints:
+      energy_eff: 0.9487
+      storage_loss: 0
+      lifetime: 40
+      storage_discharge_depth: 0.2
+      storage_initial: 0.2
+
+    costs:
+      monetary:
+        om_annual: 17.82         #$/kW                   
+        om_prod: 0.000513
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  PHES_2040_installed:
+    essentials:
+      color: '#2980B9'
+      name: 'Pumped Hydro Storage'
+      parent: storage
+      carrier: electricity
+
+    constraints:
+      energy_eff: 0.9487
+      storage_loss: 0
+      lifetime: 40
+      storage_discharge_depth: 0.2
+      storage_initial: 0.2
+
+    costs:
+      monetary:
+        om_annual: 17.82         #$/kW                   
+        om_prod: 0.000513
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  BESS:
+    essentials:
+      color: '#2980B9'
+      name: 'Battery Energy Storage System'
+      parent: storage
+      carrier: electricity
+
+    constraints:
+      energy_eff: 0.96
+      storage_loss: 0
+      lifetime: 15
+      storage_discharge_depth: 0.1
+      storage_initial: 0.2
+
+    costs:
+      monetary:
+        energy_cap: 1173.726         #$/kW
+        om_annual: 29.343         #$/kW                                                     
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  BESS_2030_installed:
+    essentials:
+      color: '#2980B9'
+      name: 'Battery Energy Storage System'
+      parent: storage
+      carrier: electricity
+
+    constraints:
+      energy_eff: 0.96
+      storage_loss: 0
+      lifetime: 15
+      storage_discharge_depth: 0.1
+      storage_initial: 0.2
+
+    costs:
+      monetary:
+        om_annual: 29.343         #$/kW                                                     
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  BESS_2035_installed:
+    essentials:
+      color: '#2980B9'
+      name: 'Battery Energy Storage System'
+      parent: storage
+      carrier: electricity
+
+    constraints:
+      energy_eff: 0.96
+      storage_loss: 0
+      lifetime: 15
+      storage_discharge_depth: 0.1
+      storage_initial: 0.2
+
+    costs:
+      monetary:
+        om_annual: 29.343         #$/kW                                                     
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+  BESS_2040_installed:
+    essentials:
+      color: '#2980B9'
+      name: 'Battery Energy Storage System'
+      parent: storage
+      carrier: electricity
+
+    constraints:
+      energy_eff: 0.96
+      storage_loss: 0
+      lifetime: 15
+      storage_discharge_depth: 0.1
+      storage_initial: 0.2
+
+    costs:
+      monetary:
+        om_annual: 29.343         #$/kW                                                     
+        interest_rate: 0.10
+      co2:
+        om_prod: 0
+
+# MSR new solar
+
+  PV_Burundi_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Burundi 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1254.5649721013717
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1370.2007563715488
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1270.7431540150155
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR3:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1292.5089164167755
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR4:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1323.9804822636806
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1358.6843482512145
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1264.3921904609667
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR3:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1268.8396691608684
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR4:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1308.3364514404634
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR5:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 5'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1425.4271316071454
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR6:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 6'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1404.362266052945
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_DRC_S_MSR7:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 7'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1267.5519959054466
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR8:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 8'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1401.2104221481168
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR9:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 9'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1324.1125207309767
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR10:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 10'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1207.1662422162065
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1241.0219620125565
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1246.6268019263928
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR3:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1216.951871717441
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR4:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1280.6442187807081
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR5:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 5'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1256.0173402020544
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR6:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 6'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1228.5126320769816
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR7:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 7'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1265.3046827487933
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR8:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 8'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1231.167925134628
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_Djibouti_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Djibouti 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1199.3696596044008
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Egypt_CN_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_CN 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1221.773694704768
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Egypt_CN_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_CN 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1219.635488677158
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Egypt_UE_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_UE 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1231.4981538923305
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Eritrea_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Eritrea 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1296.3633264672992
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1237.893941590032
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1213.3501900033473
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR3:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1251.1379734726868
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR4:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1223.37332328995
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR5:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 5'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1231.7251486237728
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR6:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 6'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1231.6802195377225
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_MTKR_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_MTKR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1224.8429274351874
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1225.1081010771388
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1240.1745805227863
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR3:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1231.6388895824448
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_Libya_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Libya 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1220.7936225881592
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Libya_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Libya 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1249.7985502297993
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Rwanda_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Rwanda 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1244.2912749968486
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_SouthSudan_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant SouthSudan 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1280.3097651329613
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1250.8179275281927
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1218.5494488198374
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR3:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1227.3277683791725
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_CR_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_CR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1231.6259892383687
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_CR_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_CR 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1231.6135283157726
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_LR_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_LR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1235.1603895886378
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_NR_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_NR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1252.0598455567808
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_SWR_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_SWR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1225.164751470618
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR1:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1255.6733460283447
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR2:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1253.3151180301236
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR3:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1280.2618651959842
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+# MSR new wind
+  Wind_DRC_S_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant DRC_S 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1487.022113656539
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_DRC_W_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: Wind Power Plant DRC_W 1
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1429.5080211884504
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_Djibouti_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Djibouti 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1428.7437024101255
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_AL_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_AL 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1531.0546138671898
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1448.582859360839
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR2:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1483.137760952729
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR3:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1510.1863402395738
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR4:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1433.5091384116704
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1464.9663414446281
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_ME_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_ME 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1525.8660082030276
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_NE_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_NE 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1442.9097147951788
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_UE_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_UE 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1495.2455920892398
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_UE_MSR2:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_UE 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1535.3485167779518
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Eritrea_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Eritrea 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1860.1101311237642
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1615.0201500563546
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR2:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1482.7693255120655
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR3:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1469.0535431219632
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR4:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1437.344163777705
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_Ethiopia_MSR5:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 5'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1740.0570533606615
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1568.8346217196113
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR2:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1448.7631567834699
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR3:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1565.5298824738425
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_NR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_NR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1403.3957289089365
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_WSTR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_WSTR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1516.4612112892848
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1452.8735360149083
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR2:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1465.474743178374
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR3:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1421.0592994139693
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR4:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1617.4696080271294
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_SouthSudan_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant SouthSudan 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 2057.1866371242204
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_SouthSudan_MSR2:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant SouthSudan 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1507.928645765344
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1545.0284436049094
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR2:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1559.7014000354598
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR3:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1562.0106213216695
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR4:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1606.3247574522265
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR5:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 5'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1540.2986886205124
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR6:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 6'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1537.5666545906731
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR7:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 7'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1619.0474756231852
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_TAN_CR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1481.9983037932525
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR2:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 2'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1545.6279010941178
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR3:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 3'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1430.2762612604192
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR4:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 4'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1461.3912103932
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_ER_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_ER 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1420.236138905079
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_LR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_LR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1600.4598935697377
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_SR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_SR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1733.148801195772
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_SWR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_SWR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1470.5232671101096
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_WR_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_WR 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1575.8357238755766
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Uganda_MSR1:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Uganda 1'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        energy_cap: 1652.1072143139831
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+#MSR already istalled wind
+  Wind_DRC_S_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant DRC_S 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Djibouti_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Djibouti 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_AL_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_AL 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR2_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR3_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR4_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_ME_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_ME 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_NE_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_NE 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_UE_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_UE 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_UE_MSR2_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_UE 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Eritrea_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Eritrea 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR2_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_Ethiopia_MSR3_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR4_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR5_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 5 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR2_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR3_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_NR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_NR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_WSTR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_WSTR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR2_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR3_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR4_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_SouthSudan_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant SouthSudan 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_SouthSudan_MSR2_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant SouthSudan 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_Sudan_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR2_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR3_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR4_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR5_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 5 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR6_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 6 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR7_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 7 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR2_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR3_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR4_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_ER_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_ER 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_LR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_LR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_SR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_SR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_SWR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_SWR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_TAN_WR_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_WR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Uganda_MSR1_2035_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Uganda 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_DRC_S_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant DRC_S 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Djibouti_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Djibouti 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_AL_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_AL 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR2_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR3_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CN_MSR4_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CN 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_CR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_CR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_ME_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_ME 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_NE_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_NE 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_UE_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_UE 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Egypt_UE_MSR2_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Egypt_UE 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Eritrea_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Eritrea 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR2_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_Ethiopia_MSR3_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR4_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Ethiopia_MSR5_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Ethiopia 5 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR2_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_MTKR_MSR3_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_MTKR 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_NR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_NR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_KEN_WSTR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant KEN_WSTR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR2_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR3_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Libya_MSR4_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Libya 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_SouthSudan_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant SouthSudan 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_SouthSudan_MSR2_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant SouthSudan 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_Sudan_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR2_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR3_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR4_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR5_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 5 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR6_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 6 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Sudan_MSR7_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Sudan 7 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR2_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR3_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_CR_MSR4_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_CR 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_ER_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_ER 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_LR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_LR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_SR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_SR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_TAN_SWR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_SWR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  Wind_TAN_WR_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant TAN_WR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  Wind_Uganda_MSR1_2040_installed:
+    essentials:
+      color: '#E32E18'
+      name: 'Wind Power Plant Uganda 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 20
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 35
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+#MSR solar already exiisting
+  PV_Burundi_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Burundi 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR3_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR4_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR3_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR4_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR5_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 5 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR6_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 6 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_DRC_S_MSR7_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 7 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR8_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 8 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR9_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 9 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR10_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 10 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR3_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR4_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR5_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 5 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR6_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 6 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR7_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 7 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR8_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 8 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Djibouti_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Djibouti 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_Egypt_CN_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_CN 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Egypt_CN_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_CN 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Egypt_UE_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_UE 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Eritrea_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Eritrea 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR3_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR4_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 4 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR5_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 5 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR6_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 6 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_MTKR_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_MTKR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR3_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_Libya_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Libya 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Libya_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Libya 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Rwanda_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Rwanda 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_SouthSudan_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant SouthSudan 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR3_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_CR_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_CR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_CR_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_CR 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_LR_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_LR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_NR_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_NR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_SWR_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_SWR 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR1_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 1 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR2_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 2 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR3_2035_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 3 2035 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_Burundi_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Burundi 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR3_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_E_MSR4_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_E 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR3_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR4_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR5_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 5 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR6_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 6 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_DRC_S_MSR7_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 7 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR8_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 8 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR9_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 9 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_S_MSR10_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_S 10 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR3_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR4_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR5_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 5 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR6_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 6 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR7_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 7 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_DRC_W_MSR8_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant DRC_W 8 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Djibouti_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Djibouti 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_Egypt_CN_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_CN 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Egypt_CN_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_CN 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Egypt_UE_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Egypt_UE 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Eritrea_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Eritrea 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR3_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR4_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 4 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR5_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 5 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Ethiopia_MSR6_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Ethiopia 6 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_MTKR_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_MTKR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_KEN_WSTR_MSR3_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant KEN_WSTR 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+  PV_Libya_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Libya 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Libya_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Libya 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Rwanda_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Rwanda 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_SouthSudan_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant SouthSudan 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Sudan_MSR3_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Sudan 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_CR_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_CR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_CR_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_CR 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_LR_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_LR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_NR_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_NR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_TAN_SWR_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant TAN_SWR 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR1_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 1 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR2_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 2 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+  PV_Uganda_MSR3_2040_installed:
+    essentials:
+      color: '#FFA52B'
+      name: 'PV Power Plant Uganda 3 2040 installed'
+      parent: supply_plus
+      carrier_out: electricity
+    constraints:
+      resource: inf
+      lifetime: 25
+      force_resource: true
+    costs:
+      monetary:
+        om_annual: 15
+        interest_rate: 0.1
+      co2:
+        om_prod: 0
+
+
+
+
+# Consuming Technologies #
+
+#################################### Electricity ####################################
+  final_demand:
+    essentials:
+      name: 'final_demand'
+      color: '#000000'
+      parent: demand
+      carrier: electricity
+
+
+
+

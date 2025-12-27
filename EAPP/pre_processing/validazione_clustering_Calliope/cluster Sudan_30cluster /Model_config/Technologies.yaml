@@ -1,0 +1,2597 @@
+
+# Technology Definition #
+
+# Parameters and Units:
+
+    # resource:      limitation over the power output
+    # resource_unit: Defines the unit of numbers provided in resource
+    # energy_eff:    efficiency of power plant             [-]
+    # lifetime:      Life time of the power plant          [year]
+    # energy_cap:    Capital investment of the technology  [$/kW]
+    # om_annual:     Fixed annual O&M cost                 [$/kW]
+    # om_prod:       Variable cost of production           [$/kWh]
+    # om_con:        Variable cost of fuel                 [$/kWh]
+    # energy_cap:    Investment Cost of Technology         [$/kW]
+    # lifetime:      Life time of the Technology           [years]
+    # interest_rate: Interest rate                         [-]
+   
+# Reference: Updated Least Cost Power Development Plan 2017-2035 Report
+
+techs: 
+
+# Supply and Conversion Technologies #
+############################### OCGT Oil###############################
+    OCGT_NG_UGANDA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.385
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 11   #$/kW*year                 
+                om_prod: 0.0035  #$/kWh_el                  
+                om_con: 0.0188 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.37                                    
+
+    OCGT_NG_SUDAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.385
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 11   #$/kW*year                 
+                om_prod: 0.0035  #$/kWh_el                  
+                om_con: 0.013651877 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.37   
+    OCGT_NG_TAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.385
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 11   #$/kW*year                 
+                om_prod: 0.0035  #$/kWh_el                  
+                om_con: 0.0153 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.37   
+    OCGT_NG_LYBIA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.385
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 11   #$/kW*year                 
+                om_prod: 0.0035  #$/kWh_el                  
+                om_con: 0.008532423 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.37   
+    OCGT_NG_EGYPT:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.385
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 11   #$/kW*year                 
+                om_prod: 0.0035  #$/kWh_el                  
+                om_con: 0.00341 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.37   
+    OCGT_LFO:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.385
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 11   #$/kW*year                 
+                om_prod: 0.0035  #$/kWh_el                  
+                om_con: 0.0139 #$/kWh-fuel                  
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.60014  
+    OCGT_Kerosene_KEN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.385
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 11   #$/kW*year                 
+                om_prod: 0.0035  #$/kWh_el                  
+                om_con: 0.4824 #$/kWh-fuel                  
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.60014  
+    CCGT_NG_SUDAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.56
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 13.5   #$/kW*year                 
+                om_prod: 0.0025  #$/kWh_el                  
+                om_con: 0.013651877 #$/kWh-fuel                  
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.5275  
+    CCGT_NG_TAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.56
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 13.5   #$/kW*year                 
+                om_prod: 0.0025  #$/kWh_el                  
+                om_con: 0.0153 #$/kWh-fuel                  
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.5275  
+    CCGT_NG_LYBIA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.56
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 13.5   #$/kW*year                 
+                om_prod: 0.0025  #$/kWh_el                  
+                om_con: 0.008532423 #$/kWh-fuel                  
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.5275      
+    CCGT_NG_EGYPT:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.56
+            resource: inf     
+            lifetime: 30  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 13.5   #$/kW*year                 
+                om_prod: 0.0025  #$/kWh_el                  
+                om_con: 0.00341 #$/kWh-fuel                  
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.5275  
+    Diesel_Engine_UGANDA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.484615385                  
+                interest_rate: 0.10  
+            co2:
+                om_prod: 0.6514 
+    Diesel_Engine_SUDAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.252307692                  
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.6514  
+    Diesel_Engine_SOUTH_SUDAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.252307692                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.6514  
+    Diesel_Engine_TAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.409615385                 
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.6514 
+    Diesel_Engine_ERITREA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.384615385                 
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.6514  
+    Diesel_Engine_ETHIOPIA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.336923077                
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.6514 
+    Diesel_Engine_DJIBOUTI:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.2               
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.6514    
+    Diesel_Engine_RWANDA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.442692308               
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0.6514  
+    Diesel_Engine_LYBIA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.010384615              
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.6514 
+    Diesel_Engine_KENYA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.488461538              
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.6514 
+    Diesel_Engine_DRC:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Diesel_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.003                    
+                om_con: 0.406923077             
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.6514 
+    Gas_Engine_TANZANIA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'GAS_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.4        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.0024                    
+                om_con: 0.0153             
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.5645 
+    Gas_Engine_BURUNDI:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'GAS_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.4        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.0024                    
+                om_con: 0.0188            
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.5645 
+    Gas_Engine_RWANDA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'GAS_Engine'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.4        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 24                    
+                om_prod: 0.0024                    
+                om_con: 0.0188            
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.5645 
+    HFO_PP_UGANDA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'HFO_PP'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35       
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 26.5                    
+                om_prod: 0.001                    
+                om_con: 0.134           
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.7381
+    HFO_PP_SUDAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'HFO_PP'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35       
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 26.5                    
+                om_prod: 0.001                    
+                om_con: 0.13            
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.7381  
+    HFO_PP_TANZANIA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'HFO_PP'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35       
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 26.5                    
+                om_prod: 0.001                    
+                om_con: 0.134            
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.7381
+    HFO_PP_LYBIA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'HFO_PP'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35       
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 26.5                    
+                om_prod: 0.001                    
+                om_con: 0.1          
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.7381
+    HFO_PP_KENYA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'HFO_PP'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 0.35       
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 26.5                    
+                om_prod: 0.001                    
+                om_con: 0.134          
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.7381
+    Steam_turbine_NG_SUDAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.35
+            resource: inf     
+            lifetime: 50 
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 26.52   #$/kW*year                 
+                om_prod: 0.00184 #$/kWh_el                  
+                om_con: 0.013651877 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.528   
+    Steam_turbine_petroleum_coke_SUDAN:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.35
+            resource: inf     
+            lifetime: 50  
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 26.52   #$/kW*year                 
+                om_prod: 0.00184  #$/kWh_el                  
+                om_con: 0.017054 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 1.2144  
+    Steam_turbine_NG_LYBIA:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.35
+            resource: inf     
+            lifetime: 50 
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 26.52   #$/kW*year                 
+                om_prod: 0.00184 #$/kWh_el                  
+                om_con: 0.008532423 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.528 
+    Steam_turbine_NG_EGYPT:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.35
+            resource: inf     
+            lifetime: 50 
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 26.52   #$/kW*year                 
+                om_prod: 0.00184 #$/kWh_el                  
+                om_con: 0.00341 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.528 
+    ICCC_NG_EGYPT:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.5
+            resource: inf     
+            lifetime: 30 
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 24.3   #$/kW*year                 
+                om_prod: 0.00625 #$/kWh_el                  
+                om_con: 0.00341 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.079125 
+    ISCC_NG_EGYPT:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Open_Cycle_Gas_Turbine_ng_fuelled'
+            parent: supply 
+            carrier_out: electricity                    
+
+        constraints:
+            energy_eff: 0.5
+            resource: inf     
+            lifetime: 30 
+                                           
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 13.9  #$/kW*year                 
+                om_prod: 0.0025 #$/kWh_el                  
+                om_con: 0.00341 #$/kWh-fuel                  
+                interest_rate: 0.10
+            co2:
+                om_prod: 0.37
+############################### wind turbine ###############################
+    Wind_Turbine1:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'wind_turbine'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 20  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 38 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0
+    Wind_Turbine2:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'wind_turbine'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 20  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 38 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0
+    Wind_Turbine3:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'wind_turbine'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 20  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 38 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0
+    Wind_Turbine4:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'wind_turbine'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 20  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 38 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0
+    Wind_Turbine5:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'wind_turbine'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 20  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 38 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0
+    Wind_Turbine6:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'wind_turbine'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 20  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 38 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0
+    Wind_Turbine7:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'wind_turbine'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 20  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 38 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0    
+    Solar_PV1:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV2:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV3:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV4:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV5:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV6:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV7:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV8:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV9:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0  
+    Solar_PV10:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0       
+    Solar_PV11:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0     
+    Solar_PV12:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0     
+    Solar_PV13:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0       
+    Solar_PV14:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0     
+    Solar_PV15:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0 
+    Solar_PV16:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0       
+    Solar_PV17:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0     
+    Solar_PV18:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0       
+    Solar_PV19:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0     
+    Solar_PV20:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'SOLAR_PV'
+            parent: supply 
+            carrier_out: electricity                     
+                   
+        constraints:
+            # energy_eff: 1        
+            # resource: can be limited or infinite                               
+            lifetime: 25
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0 #$/kW
+                om_annual: 16.6 #$/kW                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+            co2:
+                om_prod: 0     
+
+          
+############################### Geothermal Power Plant ###############################
+    Geothermal_Power_Plant:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Geothermal_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                 
+                   
+        constraints:
+            energy_eff: 1       
+            resource: inf                               
+            lifetime: 40   
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 151.5                    
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10                       
+                
+
+
+    
+                
+    ############################### Heavy Fuel Oil Power Plant ###############################
+    Heavy_Fuel_Oil_Power_Plant:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Heavy_Fuel_Oil_Power-Plant'
+            parent: supply 
+            carrier_out: electricity                    
+                   
+        constraints:
+            energy_eff: 0.35        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 26.5                    
+                om_prod: 0.001                    
+                om_con: 0.0493                   
+                interest_rate: 0.10   
+
+                                 
+############################### Hydro Power Plant ###############################
+    Hydro_Power_Plant_large1:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10  
+    Hydro_Power_Plant_large2:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large3:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large4:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large5:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large6:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large7:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large8:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large9:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large10:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large11:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large12:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large13:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large14:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large15:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large16:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_large17:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10  
+    Hydro_Power_Plant_large18:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10  
+    Hydro_Power_Plant_large19:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10  
+    Hydro_Power_Plant_large20:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10  
+    Hydro_Power_Plant_large21:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 50  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 60                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10  
+    Hydro_Power_Plant_small1:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 65                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_small2:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 65                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_small3:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 65                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_small4:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 65                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_small5:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 65                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    Hydro_Power_Plant_small6:
+    
+        essentials:
+            color: '#2980B9'
+            name: 'Hydro_Power_Plant'
+            parent: supply 
+            carrier_out: electricity                      
+                   
+        constraints:
+            energy_eff: 1        
+            resource: inf                              
+            lifetime: 30  
+                                     
+        costs:
+            monetary:    
+                energy_cap: 0
+                om_annual: 65                   
+                # om_prod: 1                    
+                # om_con: 1                   
+                interest_rate: 0.10 
+    
+    Bioenergy_Power_Plant:
+        essentials:
+            color: '#873600' 
+            name: 'Bioenergy Power Plant'
+            parent: supply                 
+            carrier_out: electricity                     
+                  
+        constraints:
+            energy_eff: 0.2263                    # https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf, Geometric mean of the indicated values for the less efficient technology  
+            resource: inf                                                    
+            lifetime: 25                          # https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf   
+            energy_ramping: 0.3                   # https://www.sciencedirect.com/science/article/pii/S1364032117309206
+
+        costs:
+            monetary:   
+                energy_cap: 0                 # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values for the most expensive technology
+                om_annual: 62                     # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values                                                     
+                om_prod: 0.0075                   # https://www.nrel.gov/docs/fy11osti/48595.pdf, Arithmetic mean of the indicated values                   
+                om_con: 0.0113                    # https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf ,  Arithmetic mean of the indicated values 
+                #om_con: 0               
+                interest_rate: 0.1
+            co2:
+                om_prod: 0.133                       # https://iea-etsap.org/E-TechDS/PDF/E05-Biomass%20for%20HP-GS-AD-gct_FINAL.pdf
+                                    # https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf
+    PV_SUD_MSR1:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 1'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1328.1354464054937
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR2:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 2'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1320.5628364779716
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR3:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 3'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1318.2719653337663
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR4:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 4'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1351.9838218794043
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR5:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 5'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1315.3184743845318
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR6:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 6'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1310.0488299231656
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR7:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 7'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1338.3962216097455
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR8:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 8'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1317.8817820718116
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR9:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 9'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1336.830358255919
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR10:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 10'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1335.2741796189157
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR11:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 11'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1305.9115200006834
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR12:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 12'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1319.7493717233115
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR13:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 13'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1316.163867020753
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR14:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 14'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1378.684711477778
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR15:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 15'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1311.8874682388305
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR16:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 16'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1347.7384938956534
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR17:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 17'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1343.9691101074284
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR18:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 18'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1290.4203823900418
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR19:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 19'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1350.2603198302074
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR20:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 20'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1326.816450777228
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR21:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 21'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1311.1446137421128
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR22:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 22'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1379.1059149
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR23:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 23'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1343.5752218244904
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR24:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 24'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1344.279598245935
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR25:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 25'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1302.3391982344988
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR26:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 26'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1302.625312
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR27:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 27'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1332.9452791046165
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR28:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 28'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1323.255472199858
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR29:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 29'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1300.9141880163843
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+    PV_SUD_MSR30:
+        essentials:
+            color: '#FFA52B'
+            name: 'PV Power Plant SUD 30'
+            parent: supply_plus
+            carrier_out: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+            force_resource: true
+        costs:
+            monetary:
+                energy_cap: 1334.291130314231
+                om_annual: 15
+                interest_rate: 0.1
+            co2:
+                om_prod: 0
+
+# Consuming Technologies #
+
+#################################### Electricity ####################################
+    final_demand:
+    
+        essentials:
+            name: 'final_demand'
+            color: '#000000'
+            parent: demand
+            carrier: electricity 
+   
+    
