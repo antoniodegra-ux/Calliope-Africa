@@ -7,3 +7,5 @@ This work is part of the Master’s thesis project by Antonio De Grazia and Ilar
 The folder *pre_processing* contains information about the individualization and classification of the Wind and Solar **MSRs (Model Supply Regions)**
 The folder *model* contains the input files to be used in Calliope pipeline. 
 The folder *post_processing* contains the code to generate the final plots of the results and additional analysis.  
+To run the model for each reference scenario, navigate to the model directory and select the year to be simulated along with the macro-scenario type (Existing Transmission, Transmission Expansion, or Autarky).
+From there, run the Run_in_Spyder.py file, which sequentially launches the six sub-scenarios.
